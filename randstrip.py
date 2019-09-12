@@ -1,9 +1,17 @@
+#!/usr/bin/env python3
 from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 import csv
 import random
 
+def fetchText(indText):
+	with open("rtext.csv") as rtext:
+		csvReader = csv.reader(rtext)
+		for row in csvReader:
+			if (row[0]==indText):
+				return row[random.randint(1,len(row)-1)] 
+				
 def fetchVign():
 	starts = []
 	startdest = []
@@ -24,12 +32,18 @@ def fetchVign():
 		nvign +=1
 	return story
 		
-def writeStrip():
-	vign = Image.open("A00.png")
-	addtext = ImageDraw.Draw(vign)
-	fnt = ImageFont.truetype("ubuntu.ttf",16)
-	addtext.text((268,77),"egadrg",fill="#000000",font=fnt)
-	return vign
+def writeStrip(story):
+	for indVign in story:
+		if indVign!="000":
+			vign = Image.open(indVign)
+			addtext = ImageDraw.Draw(vign)
+			fnt = ImageFont.truetype("ubuntu.ttf",16)
+			textVign = fetchText(indVign)
+			print(textVign)
+			addtext.text((268,77),textVign,fill="#000000",font=fnt)
+			vign.show()
 
 if __name__ == "__main__":
-	fetchVign()
+	#story = fetchVign()
+	#writeStrip(story)
+	writeStrip(["A00.png"])
