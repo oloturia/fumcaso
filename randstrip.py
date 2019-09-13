@@ -43,6 +43,10 @@ def fetchVign():
 		nvign +=1
 	return story
 		
+def addThing(vign):
+	#TODO
+	pass
+
 def writeStrip(story):
 	for indVign in story:
 		if indVign!="000":
@@ -56,6 +60,11 @@ def writeStrip(story):
 				textVign = fetch2Text(indVign)
 				addtext.multiline_text((int(textVign[0]),int(textVign[1])),textVign[4],fill="#000000",font=fnt,align="center")
 				addtext.multiline_text((int(textVign[2]),int(textVign[3])),textVign[5],fill="#000000",font=fnt,align="center")
+			obj = addThing(indVign)
+			if obj!=(0,0):
+				#TODO
+				pass
+				
 			vign.show()
 
 if __name__ == "__main__":
