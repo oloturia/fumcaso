@@ -9,8 +9,8 @@ def fetchText(indText):
 	with open("rtext.csv") as rtext:
 		csvReader = csv.reader(rtext,delimiter=';')
 		for row in csvReader:
-			if len(row)>1:
-				if row[0]==indText:
+			if row[0]==indText:
+				if len(row)>2:
 					return row[1],row[2],row[random.randint(3,len(row)-1)].replace('@','\n')
 				else:
 					return 0
@@ -19,15 +19,15 @@ def fetch2Text(indText):
 		with open("r2text.csv") as rtext:
 			csvReader = csv.reader(rtext,delimiter=';')
 			for row in csvReader:
-				if len(row)>1:
-					if row[0]==indText:
+				if row[0]==indText:
+					if len(row)>2:
 						rand1 = random.randint(5,len(row)-1)
 						if rand1 %2 == 0:
-							rand1 +=1
+							rand1 -=1
 						rand2 = rand1+1
 						return row[1],row[2],row[3],row[4],row[rand1].replace('@','\n'),row[rand2].replace('@','\n')
-				else:
-					return 0
+					else:
+						return 0
 					
 def fetchVign():
 	starts = []
@@ -88,5 +88,6 @@ def writeStrip(story):
 
 if __name__ == "__main__":
 	story = fetchVign()
+	print(story)
 	finalStrip = writeStrip(story)
 	finalStrip.show()
