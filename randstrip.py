@@ -5,6 +5,14 @@ from PIL import ImageDraw
 import csv
 import random
 
+def replaceText(text):
+	with open("subs.csv") as rtext:
+		csvReader = csv.reader(rtext,delimiter=";")
+		for row in csvReader:
+			if text.find(row[0]) != -1:
+				text = text.replace(row[0],row[random.randint(1,len(row)-1)])
+				return text
+
 def fetchText(indText):
 	with open("rtext.csv") as rtext:
 		csvReader = csv.reader(rtext,delimiter=';')
@@ -68,12 +76,21 @@ def writeStrip(story):
 			if indVign[0] == 'A':
 				textVign = fetchText(indVign)
 				if textVign !=0:
-					addtext.multiline_text((int(textVign[0]),int(textVign[1])),textVign[2],fill="#000000",font=fnt,align="center")
+					text1 = textVign[2]
+					if text1.find('§') != -1:
+						text1 = replaceText(text1)
+					addtext.multiline_text((int(textVign[0]),int(textVign[1])),text1,fill="#000000",font=fnt,align="center")
 			else:
 				textVign = fetch2Text(indVign)
 				if textVign!=0:
-					addtext.multiline_text((int(textVign[0]),int(textVign[1])),textVign[4],fill="#000000",font=fnt,align="center")
-					addtext.multiline_text((int(textVign[2]),int(textVign[3])),textVign[5],fill="#000000",font=fnt,align="center")
+					text1 = textVign[4]
+					text2 = textVign[5]
+					if text1.find('§') != -1:
+						text1 = replaceText(text1)
+					if text2.find('§') != -1:
+						text2 = replaceText(text2)
+					addtext.multiline_text((int(textVign[0]),int(textVign[1])),text1,fill="#000000",font=fnt,align="center")
+					addtext.multiline_text((int(textVign[2]),int(textVign[3])),text2,fill="#000000",font=fnt,align="center")
 			obj = addThing(indVign)
 			if obj!=0:
 				objImg = Image.open(obj[0])
