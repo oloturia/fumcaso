@@ -50,15 +50,19 @@ def fetchVign():
 		nvign +=1
 	return story
 		
-def addThing(vign):
-	#TODO
-	pass
+def addThing(indVign):
+	with open("obj.csv") as obj:
+		csvReader = csv.reader(obj)
+		for row in csvReader:
+			if row[0] == indVign:
+				return row[random.randint(3,len(row)-1)],row[1],row[2]
+		return 0
 
 def writeStrip(story):
 	strip = []
 	for indVign in story:
 		if indVign!="000":
-			vign = Image.open(indVign)
+			vign = Image.open(indVign).convert('RGBA')
 			addtext = ImageDraw.Draw(vign)
 			fnt = ImageFont.truetype("ubuntu.ttf",16)
 			if indVign[0] == 'A':
@@ -71,11 +75,11 @@ def writeStrip(story):
 					addtext.multiline_text((int(textVign[0]),int(textVign[1])),textVign[4],fill="#000000",font=fnt,align="center")
 					addtext.multiline_text((int(textVign[2]),int(textVign[3])),textVign[5],fill="#000000",font=fnt,align="center")
 			obj = addThing(indVign)
-			if obj!=(0,0):
-				#TODO
-				pass
+			if obj!=0:
+				objImg = Image.open(obj[0])
+				vign.paste(objImg,(int(obj[1]),int(obj[2])))
 			strip.append(vign)
-	image = Image.new('RGB',(2400,500))
+	image = Image.new('RGBA',(2400,500))
 	xshift=0
 	for vign in strip:
 		image.paste(vign,(xshift,0))
