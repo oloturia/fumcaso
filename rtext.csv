@@ -1,12 +1,12 @@
-A00.png;268;77;Che giornata@del cacchio@oggi;C'è nessuno?;Come vorrei@§OBJECT;Il telefono non prende;Hey!;§NAME, dove sei?;Ciccioli di mare;Esco a comperare@§OBJECT
-A01.png;327;110;Che nervi!@Dio che nervi!;Sono molto@arrabbiato!;Che rabbia!;§OBJECT;Vaffanbrodo!;AAAAAH!;§SWEARING
+A00.png;268;77;Che giornata@del cacchio@oggi;C'è nessuno?;Come vorrei@$OBJECT;Il telefono non prende;Hey!;$NAME, dove sei?;Ciccioli di mare;Esco a comperare@$OBJECT
+A01.png;327;110;Che nervi!@Dio che nervi!;Sono molto@arrabbiato!;Che rabbia!;$OBJECT;Vaffanbrodo!;AAAAAH!;$SWEARING
 A02.png;282;100;Sono molto@risolutivo!;Ho un'idea!;Ciccioli di mare;Ragazzo, una pizza!
-A03.png;296;103;Cosa conterrà@questa scatola;È arrivato un@pacco da Ammazzon;Ciccioli di mare;Lo manda §NAME;È di §NAME,@lo apro lo stesso?
+A03.png;296;103;Cosa conterrà@questa scatola;È arrivato un@pacco da Ammazzon;Ciccioli di mare;Lo manda $NAME;È di $NAME,@lo apro lo stesso?
 A04.png;
 A05.png;
 A06.png;
 A07.png;228;96;HO NO!@È CAZZOPOLLO!;CAZZOPOLLO!
-A08.png;293;132;DAI DEL PANE@AL CANE PAZZO!@DAI DEL PANE@AL CANE PANE;§SWEARING;È COLPA DI §NAME!
+A08.png;293;132;DAI DEL PANE@AL CANE PAZZO!@DAI DEL PANE@AL CANE PANE;$SWEARING;È COLPA DI §NAME!
 A09.png;286;136;Che efficacia!;Molto bene!;È così che si fa!;È esattamente così;Non fa una grinza;Ciccioli di mare;Mancano pochi giorni@al natale
 A10.png;
 A11.png;
