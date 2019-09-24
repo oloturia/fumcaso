@@ -4,17 +4,28 @@ from PIL import ImageFont
 from PIL import ImageDraw
 import csv
 import random
+import os
+
+fileDir = os.path.dirname(os.path.abspath(__file__))
+fileDir = fileDir +"/"
+
 
 def replaceText(text):
-	with open("subs.csv") as rtext:
-		csvReader = csv.reader(rtext,delimiter=";")
+	"""This function replace $WILDCARD with a word found in subs.csv
+	subs.csv definition is 1st colum $WILDCARD, subsequent columns, possible values (chosen at random), delimiter is ;"""
+	with open(fileDir+"subs.csv") as rtext: 
+		csvReader = csv.reader(rtext,delimiter=";") 
 		for row in csvReader:
 			if text.find(row[0]) != -1:
 				text = text.replace(row[0],row[random.randint(1,len(row)-1)])
 				return text
 
-def fetchText(indText):
-	with open("rtext.csv") as rtext:
+def fetchText(indText):	
+	"""This function fetch the text for the image with just only one character
+	rtext.csv definition is: 1st column the name of the file (i.e. A001.png), 2nd x-coord, 3rd y-coord, 4th and subsequent, the possible outcomes
+	Delimiter is ; and line feeds @, if there aren't any options, it returns 0 (no text)
+	It returns a tuple (x,y,text)"""
+	with open(fileDir+"rtext.csv") as rtext:
 		csvReader = csv.reader(rtext,delimiter=';')
 		for row in csvReader:
 			if row[0]==indText:
@@ -22,28 +33,37 @@ def fetchText(indText):
 					return row[1],row[2],row[random.randint(3,len(row)-1)].replace('@','\n')
 				else:
 					return 0
-					
+
 def fetch2Text(indText):
-		with open("r2text.csv") as rtext:
-			csvReader = csv.reader(rtext,delimiter=';')
-			for row in csvReader:
-				if row[0]==indText:
-					if len(row)>2:
-						rand1 = random.randint(5,len(row)-1)
-						if rand1 %2 == 0:
-							rand1 -=1
-						rand2 = rand1+1
-						return row[1],row[2],row[3],row[4],row[rand1].replace('@','\n'),row[rand2].replace('@','\n')
-					else:
-						return 0
-					
+	"""This function fetch the text for the image with two characters
+	rtext.csv definition is: 1st column the name of the file (i.e. B001.png), 2nd x-coord, 3rd y-coord of the first string
+	4th x-coord, 5th y-coord of the second string, 6th and subsequent are the outcomes, alternated as the odd one is an
+	answer to the even one
+	Delimiter is ; and line feeds @, if there aren't any options, it returns 0 (no text)
+	It returns a tuple(x1,y1,x2,y2,text1,text2)"""
+	with open(fileDir+"r2text.csv") as rtext:
+		csvReader = csv.reader(rtext,delimiter=';')
+		for row in csvReader:
+			if row[0]==indText:
+				if len(row)>2:
+					rand1 = random.randint(5,len(row)-1)
+					if rand1 %2 == 0:
+						rand1 -=1
+					rand2 = rand1+1
+					return row[1],row[2],row[3],row[4],row[rand1].replace('@','\n'),row[rand2].replace('@','\n')
+				else:
+					return 0
+				
 def fetchVign():
+	"""This functions fetch an image, randomly, chosen from a markov tree defined in ram.csv
+	ram.csv definition is: 1st column the name of the image (without extension), subsequent columns, possible outcomes chosen randomly
+	It returns an array with the file names"""
 	starts = []
 	startdest = []
 	nvign = 0
 	currVign = "000"
 	story = []
-	with open("ram.csv") as ram:
+	with open(fileDir+"ram.csv") as ram:
 		csvReader = csv.reader(ram)
 		for row in csvReader:
 			starts.append(row[0])
@@ -59,7 +79,10 @@ def fetchVign():
 	return story
 		
 def addThing(indVign):
-	with open("obj.csv") as obj:
+	"""This function adds a small image (object) to a larger image
+	obj.csv definition is: name of the image (i.e. A001.png), x-coord, y-coord, subsequent columns possible outcomes
+	It returns a tuple (object file name, x, y)"""
+	with open(fileDir+"obj.csv") as obj:
 		csvReader = csv.reader(obj)
 		for row in csvReader:
 			if row[0] == indVign:
@@ -67,12 +90,14 @@ def addThing(indVign):
 		return 0
 
 def writeStrip(story):
+	"""This function creates the strip returning an image object that could be saved or viewed. It takes an array with filenames as parameter
+	The first image is always 000, then appends to strip the files, then decorates it fetching text and adding objects"""
 	strip = []
 	for indVign in story:
 		if indVign!="000":
-			vign = Image.open(indVign).convert('RGBA')
+			vign = Image.open(fileDir+indVign).convert('RGBA')
 			addtext = ImageDraw.Draw(vign)
-			fnt = ImageFont.truetype("ubuntu.ttf",16)
+			fnt = ImageFont.truetype(fileDir+"ubuntu.ttf",16)
 			if indVign[0] == 'A':
 				textVign = fetchText(indVign)
 				if textVign !=0:
@@ -93,7 +118,7 @@ def writeStrip(story):
 					addtext.multiline_text((int(textVign[2]),int(textVign[3])),text2,fill="#000000",font=fnt,align="center")
 			obj = addThing(indVign)
 			if obj!=0:
-				objImg = Image.open(obj[0])
+				objImg = Image.open(fileDir+obj[0])
 				vign.paste(objImg,(int(obj[1]),int(obj[2])))
 			strip.append(vign)
 	image = Image.new('RGBA',(2400,500))
@@ -104,6 +129,8 @@ def writeStrip(story):
 	return image
 
 def createStrip(name):
+	"""Create strip and save it
+	createStrip(str path/filename)"""
 	try:
 		story = fetchVign()
 		finalStrip = writeStrip(story)
