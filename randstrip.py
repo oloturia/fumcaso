@@ -134,7 +134,7 @@ def createStrip(name):
 	try:
 		story = fetchVign()
 		finalStrip = writeStrip(story)
-		finalStrip.save(name)
+		finalStrip.save(fileDir+name)
 		return 0
 	except Exception as err:
 		return err

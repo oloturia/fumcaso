@@ -8,7 +8,7 @@ fileDir = os.path.dirname(os.path.abspath(__file__))
 fileDir = fileDir +"/"
 
 def newStrip(bot, update):
-	status = createStrip(fileDir+"telegram.png")
+	status = createStrip("telegram.png")
 	if status == 0:
 		try:
 			bot.send_photo(chat_id=update.message.chat_id,photo=open(fileDir+"telegram.png","rb"))
