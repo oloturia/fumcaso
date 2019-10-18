@@ -71,9 +71,6 @@ def fetchVign():
 	while nvign <= 3:
 		story.append(startdest[starts.index(currVign)][random.randint(1,len(startdest[starts.index(currVign)])-1)])
 		currVign = story[nvign]
-		if story[nvign] == "B00":
-			story[nvign] += "."
-			story[nvign] += str(random.randint(0,2))
 		story[nvign]+=".png"
 		nvign +=1
 	return story
