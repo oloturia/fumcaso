@@ -94,7 +94,7 @@ def writeStrip(story):
 		if indVign!="000":
 			vign = Image.open(fileDir+indVign).convert('RGBA')
 			addtext = ImageDraw.Draw(vign)
-			fnt = ImageFont.truetype(fileDir+"ubuntu.ttf",16)
+			fnt = ImageFont.truetype(fileDir+"ubuntu.ttf",22)
 			if indVign[0] == 'A':
 				textVign = fetchText(indVign)
 				if textVign !=0:
