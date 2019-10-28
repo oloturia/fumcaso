@@ -1,11 +1,13 @@
-$NAME;Bobby;Carl;Lorenz;Giuseppe;Alma;Antonietto;Laura;Ascanio
-$SWEARING;CAZZAROLA!;PORCO CANE!;MONDO LADRO!;PORCA PALETTA!;SANTO CIELO;PER BACCO TACCO!
+$NAME;Bobby;Carl;Lorenz;Giuseppe;Alma;Antonietto;Laura;Ascanio;Gianni;Lello;Arnaldo;Brogio;Linda
+$SWEARING;CACCHIAROLA!;PORCO CANE!;MONDO LADRO!;PORCA PALETTA!;SANTO CIELO;PER BACCO TACCO!;ROBA DA MATTI!
 $OBJECT;ciccioli di mare;un portafogli;un tornio;due ganci;del lievito;un uovo
-$ANIMAL;formicaleoni;zebre;centauri;lepri;cicale;spugne;chiurli
+$ANIMAL;formicaleoni;zebre;centauri;lepri;cicale;spugne;chiurli;echidne;rapaci;gufi;lemuri;barbagianni
 $HELP;Aiuto!;Ohibò!;Come faremo?;AAAAH!;Accorruomo!;Soccorso!
 $INSULT;Cretino!;Scemo!;Pazzo!;Cialtrone!;Che rabbia!;Che nervi!;Vaffanbrodo!
 $PROGRAM;il Trono di Spandex;the Big Bongo Theory;il commissario Bombalbamba;l'ispett. Coglianstro;Batman del '66;Superquorks;Manimals;miominipony;Polpo Grosso;Doraemondo Vianello;I Robinzon;Arriva Albertone;Scuby Doo
 $CHNL;Brete4;Granale5;BRAIUNO;Telemontescarso;Elefante TV;Nestflix;Ammazzon Prime;BRAISTORIA;SantoCielo TV;Tele Capperi;Ondeon TV;Italia GrUMO
 $FILMS;Avvatar;Il Padruccio;Peter Pong;Twin Pupps;Batmans;gli Avgengivers;Star Truks;Guerre Sbarellari;Pearl Barbor;KOYAAANISCATZI;il Barbogio di Sivliglia;Babe il maialino scoreggioso;Moby Brick;i Gohtsebulstelrs;Puppa Pig
-$FOOD;ciccioli di mare;erba;muschi e licheni;lumache vive;fogliame;funghi;nuche di daino;uova di dattero;pelo di paleino;salsicciotti;stici di cefalo
-$NUMERO;23423;46765;42341;453;123;11;345566;4356349349;3;456;33;23450;0;912;1120;2;564554545
+$FOOD;ciccioli di mare;erba;muschi e licheni;lumache vive;fogliame;funghi;nuche di daino;cassoela;uova di dattero;pelo di paleino;salsicciotti;stici di cefalo;toast di zucca;lepre dolce;pasticcio di $ANIMAL;totani;ciglia di calabrone;ciliegie;lutuli al vapore;koala imburrato;menta;salsapariglia;una zangola di burro;ceci;formaggi;formaggi puzzolenti;testina di vitello;arrosto di fuco;merluzzo;leccarda;pizza;vacuoli farciti
+$NUMERO;23423;46765;42341;453;123;11;345566;4356349349;3;456;33;23450;0;912;1120;2;564554545;40
+$SIDEDISH;limoni frucidi;asparagi;coriandoli;pop corns;mandorle pralinate;brodo di luppolo;tannini;solfiti;lardo;grasso di fuco;gamberoni;fagioli;fagiolini;fagiolissimi;carote;carotine;instalata saisberg;cespo d'aglio;colori a tempera;pane di pelo;acciughette;patate arrosto;patate fritte;patate al vapore
+$DRESSING;salamoia;aceto e vino;sugo di lamantino;marmellata di lamponi;sangue di boa;sugo di lumache;acqua di fogna;guazzetto;bagnomaria;olio e aglio;burro;cenere

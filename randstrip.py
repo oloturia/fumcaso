@@ -17,31 +17,31 @@ def replaceText(text):
 		csvReader = csv.reader(rtext,delimiter=";") 
 		for row in csvReader:
 			if text.find(row[0]) != -1:
-				text = text.replace(row[0],row[random.randint(1,len(row)-1)])
+				text = text.replace(row[0],row[random.randint(1,len(row)-1)],1)
 				return text
 
-def fetchText(indText):	
-	"""This function fetch the text for the image with just only one character
-	rtext.csv definition is: 1st column the name of the file (i.e. A001.png), 2nd x-coord, 3rd y-coord, 4th and subsequent, the possible outcomes
-	Delimiter is ; and line feeds @, if there aren't any options, it returns 0 (no text)
-	It returns a tuple (x,y,text)"""
-	with open(fileDir+"rtext.csv") as rtext:
-		csvReader = csv.reader(rtext,delimiter=';')
-		for row in csvReader:
-			if row[0]==indText:
-				if len(row)>2:
-					return row[1],row[2],row[random.randint(3,len(row)-1)].replace('@','\n')
-				else:
-					return 0
+#def fetchText(indText):	
+#	"""This function fetch the text for the image with just only one character
+#	rtext.csv definition is: 1st column the name of the file (i.e. A001.png), 2nd x-coord, 3rd y-coord, 4th and subsequent, the possible outcomes
+#	Delimiter is ; and line feeds @, if there aren't any options, it returns 0 (no text)
+#	It returns a tuple (x,y,text)"""
+#	with open(fileDir+"rtext.csv") as rtext:
+#		csvReader = csv.reader(rtext,delimiter=';')
+#		for row in csvReader:
+#			if row[0]==indText:
+#				if len(row)>2:
+#					return row[1],row[2],row[random.randint(3,len(row)-1)].replace('@','\n')
+#				else:
+#					return 0
 
-def fetch2Text(indText):
+def fetchText(indText):
 	"""This function fetch the text for the image with two characters
 	rtext.csv definition is: 1st column the name of the file (i.e. B001.png), 2nd x-coord, 3rd y-coord of the first string
 	4th x-coord, 5th y-coord of the second string, 6th and subsequent are the outcomes, alternated as the odd one is an
 	answer to the even one
 	Delimiter is ; and line feeds @, if there aren't any options, it returns 0 (no text)
 	It returns a tuple(x1,y1,x2,y2,text1,text2)"""
-	with open(fileDir+"r2text.csv") as rtext:
+	with open(fileDir+"rtext.csv") as rtext:
 		csvReader = csv.reader(rtext,delimiter=';')
 		for row in csvReader:
 			if row[0]==indText:
@@ -95,24 +95,26 @@ def writeStrip(story):
 			vign = Image.open(fileDir+indVign).convert('RGBA')
 			addtext = ImageDraw.Draw(vign)
 			fnt = ImageFont.truetype(fileDir+"ubuntu.ttf",22)
-			if indVign[0] == 'A':
-				textVign = fetchText(indVign)
-				if textVign !=0:
-					text1 = textVign[2]
-					if text1.find('$') != -1:
-						text1 = replaceText(text1)
-					addtext.multiline_text((int(textVign[0]),int(textVign[1])),text1,fill="#000000",font=fnt,align="center")
-			else:
-				textVign = fetch2Text(indVign)
-				if textVign!=0:
-					text1 = textVign[4]
-					text2 = textVign[5]
-					if text1.find('$') != -1:
-						text1 = replaceText(text1)
-					if text2.find('$') != -1:
-						text2 = replaceText(text2)
-					addtext.multiline_text((int(textVign[0]),int(textVign[1])),text1,fill="#000000",font=fnt,align="center")
-					addtext.multiline_text((int(textVign[2]),int(textVign[3])),text2,fill="#000000",font=fnt,align="center")
+			#if indVign[0] == 'A':
+			#	textVign = fetchText(indVign)
+			#	if textVign !=0:
+			#		text1 = textVign[2]
+			#		if text1.find('$') != -1:
+			#			text1 = replaceText(text1)
+			#		addtext.multiline_text((int(textVign[0]),int(textVign[1])),text1,fill="#000000",font=fnt,align="center")
+			#else:
+			textVign = fetchText(indVign)
+			
+			if textVign!=0:
+				text1 = textVign[4]
+				text2 = textVign[5]
+				while text1.find('$') != -1:
+					text1 = replaceText(text1)
+				while text2.find('$') != -1:
+					text2 = replaceText(text2)
+				addtext.multiline_text((int(textVign[0]),int(textVign[1])),text1,fill="#000000",font=fnt,align="center")
+				addtext.multiline_text((int(textVign[2]),int(textVign[3])),text2,fill="#000000",font=fnt,align="center")
+			
 			obj = addThing(indVign)
 			if obj!=0:
 				objImg = Image.open(fileDir+obj[0])
