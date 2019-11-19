@@ -22,7 +22,7 @@ mastodon_main.py:
   
 telegram_main.py:
 - libssl
-  # apt-get install libssl-dev
+  $ sudo apt-get install libssl-dev
 
 - python-telegram-bot 
   $ pip3 install python-telegram-bot
