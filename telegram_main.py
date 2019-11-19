@@ -19,7 +19,7 @@ def newStrip(bot, update):
 		print(status)
 	
 if __name__ == "__main__":
-	with open(fileDir+"token") as token_file:
+	with open(fileDir+"telegram_token") as token_file:
 		content = token_file.readlines()
 	token = content[0].strip()
 	updater = Updater(token)

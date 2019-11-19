@@ -18,6 +18,7 @@ def replaceText(text):
 		for row in csvReader:
 			if text.find(row[0]) != -1:
 				text = text.replace(row[0],row[random.randint(1,len(row)-1)],1)
+				text = text.replace('@','\n')
 				return text
 
 #def fetchText(indText):	

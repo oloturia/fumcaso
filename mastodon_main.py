@@ -8,7 +8,7 @@ fileDir = fileDir +"/"
 API_URL = "https://botsin.space"
 	
 if __name__ == "__main__":
-	with open(fileDir+"createapp") as f:
+	with open(fileDir+"mastodon_token") as f:
 		createapp = f.readlines()
 	createapp = [x.strip() for x in createapp]
 	TOKEN = createapp[0]
