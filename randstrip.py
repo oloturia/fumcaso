@@ -87,7 +87,7 @@ def addThing(indVign):
 				return row[random.randint(3,len(row)-1)],row[1],row[2]
 		return 0
 
-def writeStrip(story):
+def writeStrip(story,fontSize):
 	"""This function creates the strip returning an image object that could be saved or viewed. It takes an array with filenames as parameter
 	The first image is always 000, then appends to strip the files, then decorates it fetching text and adding objects"""
 	strip = []
@@ -95,15 +95,7 @@ def writeStrip(story):
 		if indVign!="000":
 			vign = Image.open(fileDir+indVign).convert('RGBA')
 			addtext = ImageDraw.Draw(vign)
-			fnt = ImageFont.truetype(fileDir+"ubuntu.ttf",22)
-			#if indVign[0] == 'A':
-			#	textVign = fetchText(indVign)
-			#	if textVign !=0:
-			#		text1 = textVign[2]
-			#		if text1.find('$') != -1:
-			#			text1 = replaceText(text1)
-			#		addtext.multiline_text((int(textVign[0]),int(textVign[1])),text1,fill="#000000",font=fnt,align="center")
-			#else:
+			fnt = ImageFont.truetype(fileDir+"ubuntu.ttf",fontSize)
 			textVign = fetchText(indVign)
 			
 			if textVign!=0:
@@ -128,12 +120,12 @@ def writeStrip(story):
 		xshift += 600
 	return image
 
-def createStrip(name):
+def createStrip(name,fontSize=22):
 	"""Create strip and save it
 	createStrip(str path/filename)"""
 	try:
 		story = fetchVign()
-		finalStrip = writeStrip(story)
+		finalStrip = writeStrip(story,fontSize)
 		finalStrip.save(fileDir+name)
 		return 0
 	except Exception as err:
@@ -141,5 +133,5 @@ def createStrip(name):
 
 if __name__ == "__main__":
 	story = fetchVign()
-	finalStrip = writeStrip(story)
+	finalStrip = writeStrip(story,22)
 	finalStrip.show()
