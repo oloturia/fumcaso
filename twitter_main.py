@@ -17,7 +17,6 @@ if __name__ == "__main__":
 		api = tweepy.API(auth)
 		try:
 			api.verify_credentials()
-			print("Auth OK")
 			api.update_with_media(fileDir+"twitter.png","Generatore automatico di strip. Striscia di oggi.")
 		except:
 			print("Auth error")
