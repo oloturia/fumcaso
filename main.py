@@ -7,7 +7,7 @@ from kivy.uix.boxlayout import BoxLayout
 from randstrip import createStrip
 
 class strip_Layout(App):
-	img = Image(source="./android.png")
+	img = Image(source="android.png")
 	
 	def build(self):
 		layout = BoxLayout(orientation="vertical")
@@ -18,7 +18,7 @@ class strip_Layout(App):
 		return layout
 	
 	def newStrip(self,instance):
-		createStrip("android.png",30)
+		createStrip("android",30)
 		self.img.reload()
 
 if __name__=="__main__":

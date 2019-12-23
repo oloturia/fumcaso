@@ -126,12 +126,16 @@ def createStrip(name,fontSize=22):
 	try:
 		story = fetchVign()
 		finalStrip = writeStrip(story,fontSize)
-		finalStrip.save(fileDir+name)
-		return 0
+		if name == "android":
+			return finalStrip
+		else:
+			finalStrip.save(fileDir+name)
+			return 0
 	except Exception as err:
 		return err
 
 if __name__ == "__main__":
 	story = fetchVign()
 	finalStrip = writeStrip(story,22)
+	print(story)
 	finalStrip.show()
