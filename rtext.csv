@@ -17,7 +17,7 @@ A15.png;
 A16.png;
 A17.png;
 A18.png;
-B00.0.png;147;48;238;141;Scusi,@per la stazione?;La stazione?;Cosa ne pensa @$QUESTOP?;$ANSOP;Come si cucinano i@$FOOD?;E che ne so?;Ma $FOOD@va con i $DRESSING?;Pare di sì;Conosce $NAME?;Non mi pare;È lei $NAME?;No io sono@$NAME;Ci siamo già visti su@$SOCIAL?;Forse sì;La sua faccia@non mi è nuova;La mia cosa?;Può spostare la@macchina?;Perché,@intralcia?;Ho brutte notizie@per il suo $PET;Ho no!@Che è successo?
+B00.0.png;147;48;238;121;Scusi,@per la stazione?;La stazione?;Cosa ne pensa @$QUESTOP?;$ANSOP;Come si cucinano i@$FOOD?;E che ne so?;Ma $FOOD@va con i $DRESSING?;Pare di sì;Conosce $NAME?;Non mi pare;È lei $NAME?;No io sono@$NAME;Ci siamo già visti su@$SOCIAL?;Forse sì;La sua faccia@non mi è nuova;La mia cosa?;Può spostare la@macchina?;Perché,@intralcia?;Ho brutte notizie@per il suo $PET;Ho no!@Che è successo?
 B00.1.png;159;45;315;122;Permette;Cosa vuole?;Scusi;Cosa c'è?;Vorrei $OBJECT;Di mare o di terra?;Cerco il bagno;Fuori da@casa mia!;Il bagno è@infestato di@$ANIMAL!;Ellapeppa!;Cerco il bagno;In fondo a destra!;Una domanda per@$QUOTID;$RSTAMPA;Ma esattamente,@lei chi è?;Sono $NAME!;Ssst...;Ma...
 B00.2.png;128;55;330;71;$HELP;$HELP
 B01.png;205;38;226;156;Ma sei scemo?;Badi@al fraseggio;Ti odio!;Male!;Chiamo@la polizia!;La polizia@non può@aiutarti;Vaffanbrodo!;Vaffanbrodo@a lei;Perché ha urlato?;Perché ha@urlato lei!;Ma le sembra?;Mi sembra sì!;Che odio;L'odio è negativo;La prossima volta@mi arrabbio;Non ci sarà@un'altra volta
