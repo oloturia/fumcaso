@@ -97,7 +97,6 @@ def writeStrip(story,fontSize):
 			addtext = ImageDraw.Draw(vign)
 			fnt = ImageFont.truetype(fileDir+"ubuntu.ttf",fontSize)
 			textVign = fetchText(indVign)
-			print(textVign)
 			if textVign!=0:
 				text1 = textVign[4]
 				text2 = textVign[5]
