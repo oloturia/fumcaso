@@ -97,7 +97,7 @@ def writeStrip(story,fontSize):
 			addtext = ImageDraw.Draw(vign)
 			fnt = ImageFont.truetype(fileDir+"ubuntu.ttf",fontSize)
 			textVign = fetchText(indVign)
-			
+			print(textVign)
 			if textVign!=0:
 				text1 = textVign[4]
 				text2 = textVign[5]
@@ -135,7 +135,16 @@ def createStrip(name,fontSize=22):
 		return err
 
 if __name__ == "__main__":
-	story = fetchVign()
-	finalStrip = writeStrip(story,22)
+	import argparse
+	parser = argparse.ArgumentParser()
+	parser.add_argument('-s','--story',metavar='story',default='',nargs=4,help='name of the images')
+	args = parser.parse_args()
+	if (args.story == ''):
+		story = fetchVign()
+	else:
+		story = []
+		for x in args.story:
+			story.append(x)
 	print(story)
+	finalStrip = writeStrip(story,22)
 	finalStrip.show()

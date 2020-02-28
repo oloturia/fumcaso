@@ -12,7 +12,7 @@ $FOOD;ciccioli di mare;erba;muschi e licheni;lumache vive;fogliame;funghi;nuche 
 $NUMERO;23423;46765;42341;453;123;11;345566;4356349349;3;456;33;23450;0;912;1120;2;564554545;40
 $SIDEDISH;limoni frucidi;asparagi;coriandoli;pop corns;mandorle pralinate;brodo di luppolo;tannini;solfiti;lardo;grasso di fuco;gamberoni;fagioli;fagiolini;fagiolissimi;carote;carotine;instalata saisberg;cespo d'aglio;colori a tempera;pane di pelo;acciughette;patate arrosto;patate fritte;patate al vapore;caramelle gommose;stici di cefalo
 $DRESSING;salamoia;aceto e vino;sugo di lamantino;marmellata di lamponi;sangue di boa;sugo di lumache;acqua di fogna;guazzetto;bagnomaria;olio e aglio;burro;cenere
-$QUESTOP;del riscaldamento@globale;dei ciccioli@di mare;del cambio@di stagione;dell'annoso@problema dei@boa consrictor;dei limoni@frucidi;di Elvis Presley;dell'antico@popolo@dei Cimbri;del Gran Premio;di Sputifiy;del finale dei@Mezzosopranos;della nuova serie@di Star Brik;dell'uso sconsiderato@del social $SOCIAL;da parte dei giovani?
+$QUESTOP;del riscaldamento@globale;dei ciccioli@di mare;del cambio@di stagione;dell'annoso@problema dei@boa consrictor;dei limoni@frucidi;di Elvis Presley;dell'antico@popolo@dei Cimbri;del Gran Premio;di Sputifiy;del finale dei@Mezzosopranos;della nuova serie@di Star Brik;dell'uso sconsiderato@del social $SOCIAL@da parte dei giovani?
 $ANSOP;Oddio, così@su due piedi...;Non saprei!;Sono favorevole!;Sono contrario!;Eh?;Dipende...;Ma no!;Ma dai!;La penso come@$NAME
 $CANE;PAZZO;CAZZO;PANE;CANE
 $SOCIAL;Fungobook;Twinter;Mastostonz;Tinber;Pinderes;Istagrazz;Whastappz;Telgramm;Vkonkatze;GOGLE ORKUT;Stiktoks;YouBute;Pornopalle
@@ -23,6 +23,6 @@ $AZIONECP;combatte il crimine;corre a perdifiato;indaga;segue una pista
 $LUOGOCP;Rimini;Riccione;Cattolica;Gatteo a Mare;Bassano del Grappa;Paularo;Domodossola;Fano;Canegrate;Cinisello Balsamo;Casalecchio di Reno;Carpi;Soliera;Washington;Rubiera;Pianoro;Monghidoro;Maddaloni;Banzi;Portoferraio;Cormons;Cittadella;Carate-Urio;Reggio Emilia;Reggio Calabria;Reggio Umbria;Massa Carrara;Rapallo;Milano Marittima
 $VILLAINCP;Capitan Parrucca;Capitan Ascella;Tenete Cappello;Madame Pelosetta;Vello d'Oro;Luna Peluta;Orsacchiottone;Capitan Pelame;Capitan Barbiere;Capitan Barbogio
 $STATOVILLAINCP;all'avanguardia;sull'attenti;incombente;mai domo;sempre vigile;una minaccia;sulle sue tracce
-$PLANET;Urabo;Saturbo;Giglove;Percurio;Wenere;la Bluna;Barte;Nettubo;Blutino;Quaoar;il nucleo del BSOLE;Kelper 334b;Bune;Enbor;la Morte Grigia;pianeta Ceppo;pianeta Conco;la cometa di Sbrolley;Hale Sbopp
-$ALLARMEA;ROSSO;ROSSISSIMO;GIALLO;GIALLOGNOLO;VERDE;ROSSICCIO;NERO;ROTTO;ASTEROIDI;NUCLEARE;BOMBA;ALLARME;BUGO
-$DESPAIR;Siamo perduti!;Ai posti di combattimento;È la fine;Che zio ce la mandi buona;OH NO!;Ho paura!
+$PLANET;Urabo;Saturbo;Giglove;Percurio;Wenere;la Bluna;Barte;Nettubo;Blutino;Quaoar;il nucleo del BSOLE;Kelper 334b;Bune;Enbor;la Morte Grigia;pianeta Ceppo;pianeta Conco;la cometa@di Sbrolley;Hale Sbopp
+$COLORA;ROSSO;ROSSISSIMO;GIALLO;GIALLOGNOLO;VERDE;ROSSICCIO;NERO;ROTTO;ASTEROIDI;NUCLEARE;BOMBA;ALLARME;BUGO
+$DESPAIR;Siamo perduti!;Ai posti di@combattimento;È la fine;Che zio ce@la mandi buona;OH NO!;Ho paura!
