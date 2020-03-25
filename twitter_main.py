@@ -15,10 +15,16 @@ if __name__ == "__main__":
 		auth = tweepy.OAuthHandler(tokens[0],tokens[1])
 		auth.set_access_token(tokens[2],tokens[3])
 		api = tweepy.API(auth)
-		try:
-			api.verify_credentials()
-			api.update_with_media(fileDir+"twitter.png","Generatore automatico di strip. Striscia di oggi.")
-		except:
+		published = False
+		for i in range(0,100):
+			try:
+				api.verify_credentials()
+				api.update_with_media(fileDir+"twitter.png","Generatore automatico di strip. Striscia di oggi.")
+				published = True
+			except:
+				continue
+			break
+		if not(published):
 			print("Auth error")
 	else:
 		print("Error creating image\n")

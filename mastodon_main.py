@@ -15,8 +15,17 @@ if __name__ == "__main__":
 	mastodon = Mastodon(access_token = TOKEN,api_base_url = API_URL)
 	status = createStrip("mastodon.png")
 	if status == 0:
-		new_strip = mastodon.media_post(fileDir+"mastodon.png","image/png")
-		mastodon.status_post("Nuova striscia",media_ids=new_strip)
+		published = False
+		for i in range(1,100):
+			try:
+				new_strip = mastodon.media_post(fileDir+"mastodon.png","image/png")
+				mastodon.status_post("Nuova striscia",media_ids=new_strip)
+				published = True
+			except:
+				continue
+			break
+		if not(published):
+			print("Auth error")
 	else:
 		print("error creating image\n")
 		print(status)
