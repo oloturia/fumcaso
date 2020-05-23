@@ -51,9 +51,9 @@ B14.png;
 B15.png;
 B16.png;
 B20.png;145;81;335;139;Guardiamo@un po' cosa@c'è in TV; ;Oh, le repliche di@ $PROGRAM; ;Chissà che danno su@$CHNL; ;È ora di TV;piripì@piripò;Metto su il DVD di@ $FILMS;bzuuz
-B21.0.png;110;81;219;61; ;...da diverse@MIGLIAIA di anni!; ;...la riproduzione@dei $ANIMAL...; ;...prima che possa@dire "beo"!; ;...$ANIMAL si nutrono di@ $FOOD ...; ;POW ZAP@BOOM!; ;...dannato $NAME@non mi avrai!; ;...e questa è la ricetta@del $FOOD in brodo; ;...è scoppiata la terza@guerra mondiale!!!
-B21.1.png;110;81;219;61; ;...da diverse@MIGLIAIA di anni!; ;...la riproduzione@dei $ANIMAL...; ;...prima che possa@dire "beo"!; ;...$ANIMAL si nutrono di@ $FOOD ...; ;POW ZAP@BOOM!; ;...dannato $NAME@non mi avrai!; ;...e questa è la ricetta@del $FOOD in brodo; ;...per quanto@ne sappiamo@è ebola...
-B21.2.png;110;81;219;61; ;...da diverse@MIGLIAIA di anni!; ;...la riproduzione@dei $ANIMAL...; ;...prima che possa@dire "beo"!; ;...$ANIMAL si nutrono di@ $FOOD ...; ;POW ZAP@BOOM!; ;...dannato $NAME@non mi avrai!; ;...e questa è la ricetta@del $FOOD in brodo; ;...$NUMERO morti@e $NUMERO feriti
+B21.0.png;110;81;219;61; ;...da diverse@MIGLIAIA di anni!; ;...la riproduzione@dei $ANIMAL...; ;...prima che possa@dire "beo"!; ;...$ANIMAL si nutrono di@ $FOOD ...; ;POW ZAP@BOOM!; ;...dannato $NAME@non mi avrai!; ;...e questa è la ricetta@di $FOOD in brodo; ;...è scoppiata la terza@guerra mondiale!!!
+B21.1.png;110;81;219;61; ;...da diverse@MIGLIAIA di anni!; ;...la riproduzione@dei $ANIMAL...; ;...prima che possa@dire "beo"!; ;...$ANIMAL si nutrono di@ $FOOD ...; ;POW ZAP@BOOM!; ;...dannato $NAME@non mi avrai!; ;...e questa è la ricetta@di $FOOD in brodo; ;...per quanto@ne sappiamo@è ebola...
+B21.2.png;110;81;219;61; ;...da diverse@MIGLIAIA di anni!; ;...la riproduzione@dei $ANIMAL...; ;...prima che possa@dire "beo"!; ;...$ANIMAL si nutrono di@ $FOOD ...; ;POW ZAP@BOOM!; ;...dannato $NAME@non mi avrai!; ;...e questa è la ricetta@di $FOOD in brodo; ;...$NUMERO morti@e $NUMERO feriti
 B22.png;189;100;389;88;Ma è inaudito!; ;Roba da matti!; ;Ma sono impazziti?!; ;Che rabbia!; ;Basta con la TV@spazzatura!; ;E pago il canone@per queste@idiozie?; ;Porco cane!; ;Santo cielo!; ;Ma vaffanbrodo!; 
 B23.png;
 B24.png;
@@ -61,7 +61,7 @@ B25.0.png;131;87;349;73;Uahahah!; ;Che ridere!; ;Ridicolo!; ;Da sbellicarsi!; ;O
 B25.1.png;131;87;349;73;Uahahah!; ;Che ridere!; ;Ridicolo!; ;Da sbellicarsi!; ;Oh ahahah!; ;Ahah che scemo!; 
 B26.0.png;
 B26.1.png;
-B27.png;157;119;0;0;Vado a dormire@che è meglio; ;Basta TV per oggi; ;Bha; ;Che TV degrado; ;Basta con questa TV@spazzatura, vado a farmi un@panino al $FOOD@; ;Controllo gli@aggiornamenti su@$SOCIAL; 
+B27.png;157;119;0;0;Vado a dormire@che è meglio; ;Basta TV per oggi; ;Bha; ;Che TV degrado; ;Basta con questa TV@spazzatura, vado a farmi un@panino a $FOOD@; ;Controllo gli@aggiornamenti su@$SOCIAL; 
 B28.png;118;43;470;92;Vorrei $FOOD@con contorno di $SIDEDISH@e $FOOD in@$DRESSING;Subito@monsieur
 C01.png;293;266;0;0;Capitan pelato@$AZIONECP@a $LUOGOCP@ma $VILLAINCP@è $STATOVILLAINCP; 
 C02.png;323;115;0;0;Hop!@Hop!@Hop!; 
