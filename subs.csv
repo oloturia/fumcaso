@@ -1,4 +1,10 @@
-$NAME;Bobby;Carl;Lorenz;Giuseppe;Alma;Antonietto;Laura;Ascanio;Gianni;Lello;Arnaldo;Brogio;Linda;Soros;Davide;Luca;Acracido;Anna;Berlusconi;Cefalo;Bumbo;Dupont;Susan;Perla;Valentina
+$NAME;Bobby;Carl;Lorenz;Giuseppe;Alma;Antonietto;Laura;Ascanio;Gianni;Lello;Arnaldo;Brogio;Linda;Soros;Davide;Luca;Acracido;Anna;Berlusconi;Cefalo;Evaristo;Bumbo;Dupont;Susan;Perla;Valentina
+$COGNAME;Frothinson;Sirmione;Simonson;Giubba;Melao;Mulino;Arboldo;Anicono;Bruale;Batticane;Contado;Costa;Cimbri;Cogan;Dimbricips;Dogan;Donta;Ephraudites;Eszaia;Frottage;Fittante;Forches;Fintabale;Funemezzo;Ghiardo;Giband;Ghuken;Giborio;Hont;Iride;Ipsilante;Johnson;Krab;Limone;Lardo;Loco;Leo;Linea;Mattioli;Miccie;Marroval;Noto;Notunga;Nostrano;Nicolbeo;Ospurga;Obra;Panti;Pascolo;Pangibao;Quirico;Ramasti;Riccorno;Rauco;Roger;Savu;Samba;Sassone;Tronco;Tundra;Tipo;Uveo;Unco;Vante;Vaggibassi;Vicolante;Wolf;Xarsbl;Yobur;Zona;Zio;Zimbricio;Stinco;Stabbi;Sberrick
+$TITOLO;Marchese;Margravio;Conte;Commendator;Cavaliere;Duca;Signor
+$SOSPETTO;il MAGGIORDOMO!;la CAMERIERA!;il SEGRETARIO!;il $TITOLO $COGNAME;l'AMANTE;il LATTAIO!;la MOGLIE!;il MARITO!;il CUGINO!;il CANE!;ME STESSO!
+$WEAPON;uno stiletto;un candelabro;una pistola;un fucile;un mattone;una chiave inglese;un punteruolo;il veleno;una matita;un leone affamato;un cobra;un grosso martello;un mitra;una granata;una freccia;un coltellaccio;un bisturi;una sgorbia;un batecco;un bulino;un cavatappi;un crotalo impazzito;un gatto addestrato;una trappola;una sega circolare;un colpo di karate
+$SURPRISE;Wow!;Wuao!;OMG!;Pazzesco!;Ma va!;Incredibile!;Impensabile;Impossibile;Ma dai?
+$TRACCIA;sangue;muco;sugo;olio da motore;cefalo;unto;colla;sudore;erba;pane;sigarette;pinguino
 $SWEARING;CACCHIAROLA!;PORCO CANE!;MONDO LADRO!;PORCA PALETTA!;SANTO CIELO;PER BACCO TACCO!;ROBA DA MATTI!;ACCIDENTI!;ACCIDENTACCIO!;ZIOCANE!
 $OBJECT;ciccioli di mare;un portafogli;un tornio;due ganci;del lievito;un uovo;un catafalco;una gallina;un righello;uno pneumatico;un robot $ROBOT@;una zangola;un CD di@$PROGRAM;una vanga;una palla;una casa@per bambole;un cipresso;un cono;un orologio;una penna;un gioco@in scatola;un pilone
 $ROBOT;assassino;per fare@i compiti;astronave;impazzito;poliziotto;che fa le@pulizie;metallico;indistruttibile;che sappia@amare;sessuale;lucido
@@ -26,3 +32,7 @@ $STATOVILLAINCP;all'avanguardia;sull'attenti;incombente;mai domo;sempre vigile;u
 $PLANET;Urabo;Saturbo;Giglove;Percurio;Wenere;la Bluna;Barte;Nettubo;Blutino;Quaoar;il nucleo del BSOLE;Kelper 334b;Bune;Enbor;la Morte Grigia;pianeta Ceppo;pianeta Conco;la cometa@di Sbrolley;Hale Sbopp
 $COLORA;ROSSO;ROSSISSIMO;GIALLO;GIALLOGNOLO;VERDE;ROSSICCIO;NERO;ROTTO;ASTEROIDI;NUCLEARE;BOMBA;ALLARME;BUGO
 $DESPAIR;Siamo perduti!;Ai posti di@combattimento;È la fine;Che zio ce@la mandi buona;OH NO!;Ho paura!
+$TRIBUNE;Sballaro;La gubbia;Il Fattoz;Tribuna Polistica;Sbagorà;Disabatò;L'acqua che tira;Non è la renna;Viapulita;Tangadà
+$PROBLEM;tasse;cultura;parità;giuggiolate;sanità;istruzione;economia;sport;enti locali;cavalli;$SOCIAL
+$AUTO;Glasont;Punda;Pesante;Escrot;Ingolf;Dunda;Mucca;Suxo;Priapus;Smurt;Scassienne;Tfungo;Ybsilbulb;Climbo;Mucra
+$MARCAAUTO;Fuca;Peggiot;Renult;Wolsvfangen;Frond;Citron;Luccia;Toyoya;Missan

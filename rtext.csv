@@ -69,3 +69,28 @@ C03.png;343;132;0;0;Hop!@Hop!@Hop!;
 C04.png;132;113;0;0;Aaanf!@Aaanf!@Aaanf!; 
 C05.png;123;140;0;0;Sono vicinissimo!; ;Sono... molto vicino!; ;Sono quasi arrivato!; ;Caspita! Sono vicino!; ;Arrivo!; ;Manca pochissimo!; ;Manca molto poco; 
 C06.png;317;60;0;0;Hop!@Hop!@Hop!; 
+Q00.png;
+Q01.png;200;183;0;0;Ep n.$NUMERO@Bingu va in campagna; ;Ep n.$NUMERO@Bingu salva il pianeta; ;Ep n.$NUMERO@Bingu pazzo; ;Ep n.$NUMERO@Bingu gioca a cricket; ;Ep n.$NUMERO@Bingu a $LUOGOCP; ;Ep n.$NUMERO@Bingu supereroe; ;Ep n.$NUMERO@Bingu supersonico; ;Ep n.$NUMERO@Bingu fa la dich. dei redditi; ;Ep n.$NUMERO@Bingu esplode; ;Ep n.$NUMERO@Bingu nello spazio; ;Ep n.$NUMERO@Bingu spara@$LUOGOCP risponde; ;Ep n.$NUMERO@Bingu pela $FOOD; ;Ep n.$NUMERO@Bingu gioca a palla; ;Ep n.$NUMERO@Bingu commenta Kant;
+Q02.1.png;
+Q02.2.png;111;125;300;167;nuorg... nuorgon...;bopsulapsi;asgkanazewani;okhotooo;urialenea;guoabauob;mufurghiu;acadpeo;cipbrobzal;fungublast;turtigliaz;menubauos;kobrobangkoegh;giufbans;origiogao;bmububmlfumb;gieobobo;pingdfo;zkobkbfm;gogogo;auguaugu;igneosvuz;spaziobin;ghauruf;orghorsof;pantido;bglibul;asplru;ssooosfm;bbbubbusbn;itsudo;vudizby;anvufnv;eiegugu;sivivivivbibiib;clckcju
+Q03.png;
+Q04.png;290;226;247;349;$COGNAME;$NAME $COGNAME
+Q05.png;190;89;0;0;Ispettore!@Il corpo del $TITOLO $COGNAME@è stato pugnalato@$NUMERO volte!; ;Ispettore!@Questo arzigogolo pare@irrisolvibile! Tutti@hanno un'alibi!; ;Ispettore!@brancoliamo nel buio!; ;Ispettore!@la cameriera ha sentito un@rumore sospetto attorno alle@dieci; ;Ispettore!@tutti i sospetti ricadono su@$SOSPETTO; ;Ispettore!@sospettiamo che@ abbiano avveleato@$FOOD!; ;Ispettore!@ci sono tracce di $TRACCIA @e $TRACCIA; ;Ispettore!@L'assassino ha usato@$WEAPON; 
+Q06.png;150;80;260;188;Ho capito, la colpa è de@$SOSPETTO;$SURPRISE;Ci sono!@L'arma del delitto è@$WEAPON;$SURPRISE;Facciamo due domande a@$SOSPETTO;$SURPRISE;Mi arrendo non so@risolvere questo caso;$SURPRISE;Si tratta chiaramente di@SUICIDIO!;$SURPRISE
+Q07.png;
+Q08.png;220;257;0;0;Chef $COGNAME;
+Q09.png;125;119;0;0;Oggi vi imparo a fare $FOOD@in $DRESSING; ;Per il menu di oggi avrete bisogno di@$SIDEDISH, $SIDEDISH e $SIDEDISH; ;Buongiorno a tutti gli ascoltatori@e tutte le ascoltatrici!; ;Il piatto di oggi è tipico della@cucina di $LUOGOCP; ;Per prima cosa, prepariamo@un po' di $DRESSING;
+Q10.png;190;156;0;0;Facciamo una bella @emulsione di $SIDEDISH; ;Mi raccomando@mescolate bene gli ingredienti; ;Mescolate $DRESSING @fino a ottenere@un impasto OMOGENEO; ;Aggiungete $SIDEDISH a@$DRESSING; ;Aggiungete $SIDEDISH @fino a che non sentite@l'impasto compatto;
+Q11.png;247;137;0;0;Et voila!@Ecco $FOOD; ;Pronto per il forno!; ;Servite in ciotole calde; ;Lasciate riposare@$NUMERO ore; ;Nel frattempo, preparate@$FOOD; ;Beh, spero che le@pizzerie siano ancora@aperte;
+Q12.png;135;127;0;0;Infornate per @$NUMERO minuti; ;Sarà pronto in un@batterdocchio!; ;Ecco che cuoce@$FOOD;
+Q13.png;256;184;0;0;Assaggiamo!; ;Yum yum!; ;Sentiamo un po'...; ;Dev'essere buonissimo;
+Q14.png;
+Q15.png;213;89;0;0;bhe; ;bha; ;mmm; ;bof; ;yum!; ;buono; ;buonino; ;non male; ;mbleah; ;sigh; ;schifo; ;buonooooo; ;argh; ;chiamate un'autoambulanza; ;manca di sale; ;manca di zucchero; ;manca di cumino;
+Q16.png;111;97;259;148;Dov'eravate quando i cittadini@non arrivavano a fine mese?;Dov'eravate voi?;Avete messo $NUMERO @tasse!;Le avete messe voi!;Non avete rispetto!;Voi non avete rispetto!;Restituite i $NUMERO euro@che avete rubato!;Restituiteli voi!;Alle prossime elezioni@vi faremo vedere!;Noi vi faremo vedere!;Cosa pensate di fare con@$PROBLEM?;Cosa pensate voi!;L'articolo su $QUOTID @dice che...;Non mi importa cosa dice!;Non mi interrompa! Io non l'ho interrotta!;Non mi interrompa lei!
+Q17.png;105;100;0;0;Buona sera e benvenuti a@$TRIBUNE @Oggi con noi avremo l'on.$COGNAME e@l'on.$COGNAME che parleranno di $PROBLEM;
+Q18.png;201;105;375;159;Ti spacco la testa!;Pubblicità!;Ti ammazzo!;Rèclame!;Ti strozzo;Securityy!;Ti inchiodo;Oh no!;Ti rompo il muso;Fermi!
+Q19.png;110;143;366;192;Basta me ne vado;Va bhe;Con voi non si può parlare;Rimanga!;È impossibile, io esco!;Pubblicità
+Q20.png;170;129;0;0;Guidare una $AUTO@vuol dire libertà; ;Tua a sole $NUMERO rate!@TAN $NUMERO%@TAEG $NUMERO%; ;Vieni a provarla@il sabato e la domenica@nei concessionari $MARCAAUTO;
+Q21.png;201;129;0;0;Eau de $NAME@pour homme; ;COMPRA ANCHE TU@questa cosa; ;a soli $NUMERO euro!; 
+Q22.png;105;176;0;0;Eau de $NAME; ;Il medicinale puòavere@effetticolanteralianche@gravinonsomuinstraxu@zodblflpylxyx; ;Chiara e fresca come nevischio!; ;Meglio oggi che domani!;
+Q23.png;164;326;0;0;Elimina fino al $NUMERO @ percento dei batteri; ;L'acqua $COGNAME @ha gli oligoelementi; ;Povera di sbodio; ;Rimuove le impurità e migliora@ del $NUMERO percento la lucentezza;
