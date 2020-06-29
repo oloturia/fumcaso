@@ -69,12 +69,15 @@ def fetchVign():
 		for row in csvReader:
 			starts.append(row[0])
 			startdest.append(row)
-	while nvign <= 3:
+	while nvign <100:
 		story.append(startdest[starts.index(currVign)][random.randint(1,len(startdest[starts.index(currVign)])-1)])
 		currVign = story[nvign]
+		if currVign == "END":
+			return story
 		story[nvign]+=".png"
 		nvign +=1
-	return story
+	print("tree with no END")
+	quit()
 		
 def addThing(indVign):
 	"""This function adds a small image (object) to a larger image
@@ -92,7 +95,8 @@ def writeStrip(story,fontSize):
 	The first image is always 000, then appends to strip the files, then decorates it fetching text and adding objects"""
 	strip = []
 	for indVign in story:
-		if indVign!="000":
+		#if indVign!="000":
+		try:
 			vign = Image.open(fileDir+indVign).convert('RGBA')
 			addtext = ImageDraw.Draw(vign)
 			fnt = ImageFont.truetype(fileDir+"ubuntu.ttf",fontSize)
@@ -112,6 +116,8 @@ def writeStrip(story,fontSize):
 				objImg = Image.open(fileDir+obj[0])
 				vign.paste(objImg,(int(obj[1]),int(obj[2])))
 			strip.append(vign)
+		except FileNotFoundError:
+			pass
 	image = Image.new('RGBA',(2400,500))
 	xshift=0
 	for vign in strip:
