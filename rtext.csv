@@ -28,7 +28,7 @@ A26.png;91;91;0;0;$SWEARING; ;Se lo trovo lo smonto!; ;$NAME me l'ha fatta di nu
 A27.png;90;113;0;0;Ahh...; ;Eh... oh!; ;$NAME e $NAME saranno@soddisfatti; ;È ora di prendere un@nuovo $PET; ;L'anno scorso ho guadagnato@$NUMERO euro; ;È ora che la smetta di@acquistare compulsivamente@$OBJECT; ;D'altronde, è proprio così!; ;D'altronde, è quello che@ha scritto $QUOTID; ;Tutti dobbiamo morire...; 
 A28.png;157;204;0;0;Stiamo@precipitando@su $PLANET; ;I sensori dicono@che l'aria@su $PLANET è@respirabile; ;Oh no stiamo@andando@alla deriva@nello Spazio!; ;La rotta di Kessler@in meno di@$NUMERO Parsec!; ;Come sono@finito qui?; ;I viaggi@nel cosmo!; ;Lo Spazio!; ;Da qui@la vista è@meravigliosa; 
 A29.png;126;65;0;0; ; ;Un piccolo passo per un uomo...; ;Un piccolo passo per una donna...; ;Ciao $NAME; ;Da qui si vede casa mia; ;La Terra da quassù è bella; ;Reclamo questo pianeta; 
-A30.png;309;87;0;0;Sono dentro@al Matrix!; ;Sono nella@REALTÀ VIRTUALE!; ;AIUTO!; ;Tiratemi fuori@da qui!; ;Il vortice delle@informazioni!; ;Vedo il@CYBERSPAZIO!; ;Sono@nell'INTERNET!; 
+A30.png;309;87;0;0;Sono dentro@al Matrix!; ;Sono nella@REALTÀ VIRTUALE!; ;SONO IN UN@UNIVERSO PARALLELO!; ;Tiratemi fuori@da questo computer!; ;Il vortice delle@informazioni!; ;Vedo il@CYBERSPAZIO!; ;Sono@nell'INTERNET!; 
 A31.png;113;111;281;309;ALLARME $COLORA;$HELP;ALLARME $COLORA;$DESPAIR
 A32.png;109;91;134;213;Spazio, ultima frontiera...;$LUOGOCP;Spazio, ultima frontiera;$PLANET;Diario del capitano, oggi anno $NUMERO;$PLANET
 B00.0.png;70;48;228;121;Scusi,@per la stazione?;La stazione?;Cosa ne pensa @$QUESTOP?;$ANSOP;Come si cucinano @$FOOD?;E che ne so?;Ma $FOOD @va con $DRESSING?;Pare di sì;Conosce $NAME?;Non mi pare;È lei $NAME?;No io sono@$NAME;Ci siamo già visti su@$SOCIAL?;Forse sì;La sua faccia@non mi è nuova;La mia cosa?;Può spostare la@macchina?;Perché,@intralcia?;Ho brutte notizie@per il suo $PET;Ho no!@Che è successo?
@@ -69,6 +69,14 @@ C03.png;343;132;0;0;Hop!@Hop!@Hop!;
 C04.png;132;113;0;0;Aaanf!@Aaanf!@Aaanf!; 
 C05.png;123;140;0;0;Sono vicinissimo!; ;Sono... molto vicino!; ;Sono quasi arrivato!; ;Caspita! Sono vicino!; ;Arrivo!; ;Manca pochissimo!; ;Manca molto poco; 
 C06.png;317;60;0;0;Hop!@Hop!@Hop!; 
+O00.0.png;280;141;360;332;$OPERA;testi $COGNAME @disegni $COGNAME
+O00.1.png;147;200;369;351;$OPERA;testi $COGNAME @disegni $COGNAME
+O00.2.png;
+O00.3.png;204;177;325;316;$OPERA;testi $COGNAME @disegni $COGNAME
+O01.png;53;55;350;278;Sei un mostro orrendo!;$VERSO;Muori bestia immonda, muori!;$VERSO;Hai ucciso $NAME @nessuna pietà per te@mostro osceno;$VERSO
+O02.png;365;128;96;133;I fantasmi!;$VERSO;Gli zombi!;$VERSO;Gli spettri!;$VERSO;I vampiri!;$VERSO;I marziani!;$VERSO
+O04.png;74;61;0;0;Non è colpa tua...; ;Non potevi salvarlo...; ;È finita ora...; ;L'incubo è finito; ;Hai vendicato $NAME;
+O05.png;122;103;0;0;Ma chi è il vero mostro?; ;I veri mostri SIAMO NOI; ;Il vero tesoro è L'AMICIZIA; 
 Q00.png;
 Q01.png;200;183;0;0;Ep n.$NUMERO@Bingu va in campagna; ;Ep n.$NUMERO@Bingu salva il pianeta; ;Ep n.$NUMERO@Bingu pazzo; ;Ep n.$NUMERO@Bingu gioca a cricket; ;Ep n.$NUMERO@Bingu a $LUOGOCP; ;Ep n.$NUMERO@Bingu supereroe; ;Ep n.$NUMERO@Bingu supersonico; ;Ep n.$NUMERO@Bingu fa la dich. dei redditi; ;Ep n.$NUMERO@Bingu esplode; ;Ep n.$NUMERO@Bingu nello spazio; ;Ep n.$NUMERO@Bingu spara@$LUOGOCP risponde; ;Ep n.$NUMERO@Bingu pela $FOOD; ;Ep n.$NUMERO@Bingu gioca a palla; ;Ep n.$NUMERO@Bingu commenta Kant;
 Q02.1.png;
