@@ -12,7 +12,7 @@ A10.png;
 A11.png;
 A12.png;
 A13.png;
-A14.png;330;168;0;0;Che noia!; ;Come vorrei @$OBJECT; ;Mi manca@$NAME; ;Mangerei financo@$FOOD; ;Sono già $NUMERO@giorni che sto qui; ;Per fortuna@non piove; ;$SWEARING; ;È colpa di@$NAME; ;Mi basterebbe@$OBJECT per@costruire una zattera; ;Dico, una barca@all'orizzonte?; 
+A14.png;330;168;0;0;Che noia!; ;Come vorrei @$OBJECT; ;Mi manca@$NAME; ;Mangerei financo@$FOOD; ;Sono già $NUMERO@giorni che sto qui; ;Per fortuna@non piove; ;$SWEARING; ;È colpa di@$NAME; ;Mi basterebbe@$OBJECT per@costruire una zattera; ;Dico, una barca@all'orizzonte?; ;Eeeeeeh...;
 A15.png;
 A16.png;
 A17.png;
@@ -102,3 +102,4 @@ Q20.png;170;129;0;0;Guidare una $AUTO@vuol dire libertà; ;$MARCAAUTO $AUTO @Tua
 Q21.png;201;129;0;0;Eau de $NAME@pour homme; ;COMPRA ANCHE TU@questa cosa; ;a soli $NUMERO euro!; 
 Q22.png;105;176;0;0;Eau de $NAME; ;Il medicinale puòavere@effetticolanteralianche@gravinonsomuinstraxu@zodblflpylxyx; ;Chiara e fresca come nevischio!; ;Meglio oggi che domani!;
 Q23.png;164;326;0;0;Elimina fino al $NUMERO @ percento dei batteri; ;L'acqua $COGNAME @ha gli oligoelementi; ;Povera di sbodio; ;Rimuove le impurità e migliora@ del $NUMERO percento la lucentezza;
+U00.png;63;153;0;0;Ho no! Gli ufo @$UFO; ;Oh no! Gli ufo @$UFO;
