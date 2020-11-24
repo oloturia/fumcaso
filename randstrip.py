@@ -92,7 +92,8 @@ def addThing(indVign):
 
 def writeStrip(story,fontSize):
 	"""This function creates the strip returning an image object that could be saved or viewed. It takes an array with filenames as parameter
-	The first image is always 000, then appends to strip the files, then decorates it fetching text and adding objects"""
+	The first image is always 000, then appends to strip the files, then decorates it fetching text and adding objects. If the object is an R, then
+	repeats the last object."""
 	strip = []
 	for indVign in story:
 		#if indVign!="000":
@@ -113,7 +114,11 @@ def writeStrip(story,fontSize):
 			
 			obj = addThing(indVign)
 			if obj!=0:
-				objImg = Image.open(fileDir+obj[0])
+				if obj[0] == 'R':
+					objImg = Image.open(fileDir+prevObj[0])
+				else:
+					prevObj = obj
+					objImg = Image.open(fileDir+obj[0])
 				vign.paste(objImg,(int(obj[1]),int(obj[2])))
 			strip.append(vign)
 		except FileNotFoundError:
