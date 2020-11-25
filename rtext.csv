@@ -46,7 +46,8 @@ B05.png;171;102;200;220;Ma cosa?;Come cosa?;Ma io non...;È colpa tua!;I cicciol
 B06.png;179;80;245;165;Scusa;Bha;Scusa;Vaffanbrodo;Non pensavo@fossero@ciccioli di mare;Pensavi male;Ma ho preparato@anche $SIDEDISH;Mangialo da solo!
 B07.png;297;89;0;0;Che curiosità; ;Non dovevi!; ;Chissà cos'è!; 
 B08.png;280;106;0;0;HO NO! CAZZOPOLLO!; ;CAZZOPOLLO!; 
-B09.png;
+B09.0.png;
+B09.1.png;
 B10.png;
 B11.png;182;97;247;202;CHE SCHIFO!;BLEARGH!;Ecco lo sapevo@hai mangiato@$FOOD;iBLORGH!;Bha...;GLOAGG
 B12.png;288;130;0;0;$INSULT; ;Ciccioli di mare!; ;A MAI PIÙ!; ;Ti cancello da@$SOCIAL; ;$QUOTID mi sentirà!
