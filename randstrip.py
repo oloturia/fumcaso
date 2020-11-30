@@ -155,7 +155,6 @@ if __name__ == "__main__":
 	parser.add_argument('-s','--story',metavar='story',default='',nargs=4,help='name of the images')
 	parser.add_argument('-m','--multiple',metavar='multiple',default=[1],nargs=1,type=int,help='multiple output')
 	args = parser.parse_args()
-	print(args)
 	if args.multiple[0] <= 0:
 		quit()
 	for x in range(0,args.multiple[0]):
