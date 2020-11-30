@@ -51,7 +51,12 @@ def fetchText(indText):
 					if rand1 %2 == 0:
 						rand1 -=1
 					rand2 = rand1+1
-					return row[1],row[2],row[3],row[4],row[rand1].replace('@','\n'),row[rand2].replace('@','\n')
+					try:
+						return row[1],row[2],row[3],row[4],row[rand1].replace('@','\n'),row[rand2].replace('@','\n')
+					except IndexError:
+						print("Error in database row number:")
+						print(indText)
+						quit()
 				else:
 					return 0
 				
@@ -148,13 +153,19 @@ if __name__ == "__main__":
 	import argparse
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-s','--story',metavar='story',default='',nargs=4,help='name of the images')
+	parser.add_argument('-m','--multiple',metavar='multiple',default=[1],nargs=1,type=int,help='multiple output')
 	args = parser.parse_args()
-	if (args.story == ''):
-		story = fetchVign()
-	else:
-		story = []
-		for x in args.story:
-			story.append(x)
-	print(story)
-	finalStrip = writeStrip(story,22)
-	finalStrip.show()
+	print(args)
+	if args.multiple[0] <= 0:
+		quit()
+	for x in range(0,args.multiple[0]):
+		if (args.story == ''):
+			story = fetchVign()
+		else:
+			story = []
+			for x in args.story:
+				story.append(x)
+		print(story)
+		finalStrip = writeStrip(story,22)
+		if args.multiple[0] == 1:
+			finalStrip.show()
