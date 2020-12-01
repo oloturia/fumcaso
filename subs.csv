@@ -36,7 +36,7 @@ $TRIBUNE;Sballaro;La gubbia;Il Fattoz;Tribuna Polistica;Sbagorà;Disabatò;L'acq
 $PROBLEM;tasse;cultura;parità;giuggiolate;sanità;istruzione;economia;sport;enti locali;cavalli;omeostasi;$SOCIAL
 $AUTO;Glasont;Punda;Pesante;Escrot;Ingolf;Dunda;Mucca;Suxo;Priapus;Smurt;Scassienne;Tfungo;Ybsilbulb;Climbo;Mucra
 $MARCAAUTO;Fuca;Peggiot;Renult;Wolsvfangen;Frond;Citron;Luccia;Toyoya;Missan
-$VERSO;Ghargh;Nuorghs;Blaargh;Orghll;Blough;Murghle;Gahbnnur
+$VERSO;Ghargh;Nuorghs;Blaargh;Orghll;Blough;Murghle;Gahbnnur;Ptoar;Splutz
 $OPERA;$MOSTRO maledetto;Il $PET ninja;Il mistero di $LUOGOCP;Attenzione:@ $MOSTRO uccide;$MOSTRO da $PLANET;Morte a $LUOGOCP;$WEAPON per $COGNAME;$WEAPON mortale;Il $PET @con $WEAPON;$MOSTRO con $WEAPON
 $MOSTRO;Il Vampiro;Lo Zombi;Il Fantasma;L'Alieno;Il Ninja;Lo Scheletro;Il Mago
 $UFO;stanno rapendo $VIP !;stanno clonando $VIP !;da $PLANET ci invadono!;distruggono $LUOGOCP !;sgangiano ordigni $ALIENTECH !;sparano raggi $ALIENTECH!;$DESPAIR;avvelenano $FOOD
@@ -52,3 +52,6 @@ $CORPOAZIONE;mi segua;@devo farle@alcune domande;mi segua@senza fare storie;devo
 $REAZIONECORPO;Non ho fatto niente!;Non è stata colpa mia!;Non è colpa mia!;Sono innocente!;Vi state sbagliando!;Ho un alibi!;State prendendo@fischi per fiocchi!;State prendendo@fiaschi per funghi!;Le giuro che non@so nulla!;Ho già detto tutto ai@$CORPONOME
 $REAZIONENAME;No io sono@$COGNAME !;$REAZIONECORPO
 $COMPLOTTS;dei Poteri Forti;di Soros;di Berluscao;degli UFO;degli Illuminati di Gruviera;dei comunisti;dei servizi segreti deviati;del club dei terroristi;del club di Topolino;del governo ombra;dei zombi;del mago Nascimento;della SPEGTRE;del KGB;della CIA;del 6G;della mafia dei mappamondi
+$VINO;un Ghianti;un Amaronte;una Falangina;un Rebusco;un Lambracchio;un Trebbibubbo;un Cannobuao;uno Shibruaz;un Bumbarolo;una Spasserina;un Petardao;un Toccai;un Sangibollo;un Barbatrucco;un Sbudello di Montalpaschio;un Gabinett;un Vulv Clitord;un Moetschandos;un Gewurzstramzilxbxy;un Moller Turgidau;un Brancamuco;un Libollo;un Pingu;un Gibaldrao;un vino
+$REAZIONEVINO;è disgustoso;è imbevibile;è ottimo;è superbo;sa di $SIDEDISH;aaaah wunderbars!;veramente buono;ha un retrogusto di $TRACCIA;farò una buona@recensione su $SOCIAL;fa vomitare;è su-per-la-ti-vo!
+$ANNO;2013;2010;2009;2001;1994;1982;1965;1958;1931;1920;1883;1432;450;212 a.C.;3000 a.C.;2058;2092;4923;40543;$NUMERO a.C.;$NUMERO d.C.
