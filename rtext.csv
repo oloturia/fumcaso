@@ -1,115 +1,115 @@
-A00.png;268;77;0;0;Che giornata@del cacchio@oggi; ;C'è nessuno?; ;Come vorrei@$OBJECT; ;Il telefono non prende; ;Hey!; ;$NAME, dove sei?; ;Ciccioli di mare; ;Esco a comperare@$OBJECT; ;Chissà che fine@ha fatto@$NAME; ;È uscito@$FILMS@al cine; ;Ho mangiato@$FOOD; ;Dai del pane@al... no...; 
-A01.png;327;110;0;0;Che nervi!@Dio che nervi!; ;Sono molto@arrabbiato!; ;Che rabbia!; ;$OBJECT; ;Vaffanbrodo!; ;AAAAAH!; ;$SWEARING; ;Ma quanto ci mette@$NAME?;
-A02.png;282;100;0;0;Sono molto@risolutivo!; ;Ho un'idea!; ;Ciccioli di mare; ;Ragazzo, una pizza!; ;Dai del pane@al cane pazzo...; 
-A03.png;296;103;0;0;Cosa conterrà@questa scatola; ;È arrivato un@pacco da Ammazzon; ;Ciccioli di mare; ;Lo manda $NAME; ;È di $NAME,@lo apro lo stesso?; ;Di solito non apro@pacchi anonimi; ;Con questa@risolverò@i miei problemi; 
-A04.png;
-A05.png;
-A06.png;
-A07.png;228;96;0;0;HO NO!@È CAZZOPOLLO!; ;CAZZOPOLLO!; 
-A08.png;293;132;0;0;DAI DEL PANE@AL CANE PAZZO!@DAI DEL $CANE@AL $CANE $CANE; ;$SWEARING; ;È COLPA DI $NAME!; ;MA COM'È@CHE È SEMPRE@COLPA MIA!; ;SE LO BECCO@LO SMONTO!; ;GIORNATA DEL@CACCHIO!; 
-A09.png;286;136;0;0;Che efficacia!; ;Molto bene!; ;È così che si fa!; ;È esattamente così; ;Non fa una grinza; ;Ciccioli di mare; ;Mancano pochi giorni@al natale; ;$NAME aveva@ragione; ;$NAME aveva@torto marcio; 
-A10.png;
-A11.png;
-A12.png;
-A13.png;
-A14.png;330;168;0;0;Che noia!; ;Come vorrei @$OBJECT; ;Mi manca@$NAME; ;Mangerei financo@$FOOD; ;Sono già $NUMERO@giorni che sto qui; ;Per fortuna@non piove; ;$SWEARING; ;È colpa di@$NAME; ;Mi basterebbe@$OBJECT per@costruire una zattera; ;Dico, una barca@all'orizzonte?; ;Eeeeeeh...;
-A15.png;
-A16.png;
-A17.png;
-A18.png;
-A19.png;122;108;0;0;Che malinconia...; ;A volte mi chiedo@cosa accadrebbe@fra $NUMERO anni...; ;Chissà dove si va@dopo la morte...; ;Chissà che fine@ha fatto $NAME; ;Chissà se riusciremo@a risolvere il problema@$QUESTOP; ;Mi manca il mio@$PET; ;Avrei bisogno di@un robot@$ROBOT; ;Mi manca $NAME; ;Aveva ragione $NAME; ;Che bel tramonto...; 
-A20.png;
-A21.png;
-A22.png;123;110;0;0;Bhe, del resto...; ;Ma d'altronde...; ;Comunque sia...; ;Eh bhe...; ;Ma sì, ma sì...; ;Forse...; ;Ma quindi...; ;Però d'altra parte...; 
-A23.png;188;102;0;0;Forse mi hanno scoperto; ;Oh no!; ; $SWEARING ; ;Ho lasciato acceso il gas; ;Non ho restituito $OBJECT @a $NAME; ;Non ho digerito $FOOD; ;Non ho digerito i $SIDEDISH @in $DRESSING; ;oh oh...; ;Mi hanno hackerato $SOCIAL; ;$NAME ha scoperto che@me la faccio con $NAME; ;La mafia di $LUOGOCP @mi troverà anche a $LUOGOCP; ;È la fine; 
-A24.png;104;110;0;0;Improvvisamente... l'ORRORE; ;Eh, ma cos...; ;Ho dimenticato il mio $PET@all'Autoglill; ;Forse $FOOD @erano avvelenati!; ;Ecco il vero senso@della vita!; ;Ora ho capito il finale@de $FILMS ; ;Yabba dabba bubba; ;$NAME mi tradisce con $NAME; ;Chissà dove ho lasciato $OBJECT; 
-A25.png;94;55;0;0;Ah, che belli i fumetti!; ;L'ultimo album di Capitan Pelato!; ;E se la vita fosse un fumetto?; ;Amo i fumetti!; ;Che strips divertenti!; ;Leggiamo l'ultimo Dulan Dug; ;Leggerò l'ultimo Zugor; ;Vediamo l'ultimo albo de@I MAGNIFICI SEI; 
-A26.png;91;91;0;0;$SWEARING; ;Se lo trovo lo smonto!; ;$NAME me l'ha fatta di nuovo; ;Se lo becco gli dò@$NUMERO pugni; ;Vendicherò il mio $PET; ;Sono stato giocato come@un poppante!; ;Non ho capito il finale@de $FILMS; 
-A27.png;90;113;0;0;Ahh...; ;Eh... oh!; ;$NAME e $NAME saranno@soddisfatti; ;È ora di prendere un@nuovo $PET; ;L'anno scorso ho guadagnato@$NUMERO euro; ;È ora che la smetta di@acquistare compulsivamente@$OBJECT; ;D'altronde, è proprio così!; ;D'altronde, è quello che@ha scritto $QUOTID; ;Tutti dobbiamo morire...; 
-A28.png;157;204;0;0;Stiamo@precipitando@su $PLANET; ;I sensori dicono@che l'aria@su $PLANET è@respirabile; ;Oh no stiamo@andando@alla deriva@nello Spazio!; ;La rotta di Kessler@in meno di@$NUMERO Parsec!; ;Come sono@finito qui?; ;I viaggi@nel cosmo!; ;Lo Spazio!; ;Da qui@la vista è@meravigliosa; 
-A29.png;126;65;0;0; ; ;Un piccolo passo per un uomo...; ;Un piccolo passo per una donna...; ;Ciao $NAME; ;Da qui si vede casa mia; ;La Terra da quassù è bella; ;Reclamo questo pianeta; 
-A30.png;309;87;0;0;Sono dentro@al Matrix!; ;Sono nella@REALTÀ VIRTUALE!; ;SONO IN UN@UNIVERSO PARALLELO!; ;Tiratemi fuori@da questo computer!; ;Il vortice delle@informazioni!; ;Vedo il@CYBERSPAZIO!; ;Sono@nell'INTERNET!; 
-A31.png;113;111;281;309;ALLARME $COLORA;$HELP;ALLARME $COLORA;$DESPAIR
-A32.png;109;91;134;213;Spazio, ultima frontiera...;$LUOGOCP;Spazio, ultima frontiera;$PLANET;Diario del capitano, oggi anno $NUMERO;$PLANET
-ART00.png;62;90;0;0;Hm... la personale di@$NAME $COGNAME; ;Vado alla mostra di@$NAME $COGNAME; ;Una rassegna sui $ARTE $MOVIMENTO; ;...$NAME $COGNAME faceva@parte del movimento dei@$MOVIMENTO; ;Una rassegna@di $ARTE, che bello!;
-ART01.png;70;80;0;0;Hm...@"$TITOLARTE"; ; "$TITOLARTE" è un@chiaro esempio@dell'arte dei@$MOVIMENTO; ;Questo è il famoso@ "$TITOLARTE"; ;Un'opera di@$NAME $COGNAME; ; "$TITOLARTE"@di $NAME $COGNAME;
-ART02.png;
-ART03.png;54;66;0;0;WOW, quest'opera@$VALUTAZIONE; ;Quest'opera vale@$NUMERO Euro!; ;E'un classico esempio del@movimento dei@$MOVIMENTO; ;Avrebbero dovuto chiamarlo@"$TITOLARTE" invece; ;Perché?; ;E' la $NUMERO@volta che la vedo@ed è sempre come@la prima:$VALUTAZIONE; ;Ma è un falso!; ;$NAME direbbe che@$VALUTAZIONE@ma io penso che@$VALUTAZIONE; ;$VALUTAZIONE;  
-B00.0.png;70;48;248;111;Scusi,@per la stazione?;La stazione?;Cosa ne pensa @$QUESTOP?;$ANSOP;Come si cucinano @$FOOD?;E che ne so?;Ma $FOOD @va con $DRESSING?;Pare di sì;Conosce $NAME?;Non mi pare;È lei $NAME?;No io sono@$NAME;Ci siamo già visti su@$SOCIAL?;Forse sì;La sua faccia@non mi è nuova;La mia cosa?;Può spostare la@macchina?;Perché,@intralcia?;Ho brutte notizie@per il suo $PET;Ho no!@Che è successo?
-B00.1.png;159;45;315;122;Permette;Cosa vuole?;Scusi;Cosa c'è?;Vorrei $OBJECT;Di mare o di terra?;Cerco il bagno;Fuori da@casa mia!;Il bagno è@infestato di@$ANIMAL!;Ellapeppa!;Cerco il bagno;In fondo a destra!;Una domanda per@$QUOTID;$RSTAMPA;Ma esattamente,@lei chi è?;Sono $NAME!;Ssst...;Ma...
-B00.2.png;48;40;320;45;$HELP;$HELP;È un complotto@$COMPLOTTS!;$INSULT;È tutta colpa tua!;Non è colpa mia,@è colpa@ $COMPLOTTS!;Siamo braccati da@$CORPONOME;$DESPAIR;$SWEARING;$SWEARING; $CORPONOME ha trovato@tracce di $TRACCIA @su $WEAPON;$REAZIONECORPO;Il piatto di@$FOOD era@avvelenato!;$DESPAIR
-B00.3.png;90;85;286;120;$CORPONOME, $CORPOAZIONE;$REAZIONECORPO ;$CORPONOME, è lei@$COGNAME ?;$REAZIONENAME
-B01.png;160;38;250;80;Ma sei scemo?;Badi@al fraseggio;Ti odio!;Male!;Chiamo@la polizia!;La polizia@non può@aiutarti;Vaffanbrodo!;Vaffanbrodo@a lei;Perché ha urlato?;Perché ha@urlato lei!;Ma le sembra?;Mi sembra sì!;Che odio;L'odio è negativo;La prossima volta@mi arrabbio;Non ci sarà@un'altra volta
-B02.png;219;67;247;180;$INSULT;$INSULT
-B03.png;188;79;270;172;Ho un regalo!;Per me?@Evviva!;Ti ho preso@questo!;Wow!;Un piccolo@presente!;Cacchio che@bello!;Davanti alla porta@c'era questo;Ooh,@lo aspettavo!
-B04.png;
-B05.png;171;102;200;220;Ma cosa?;Come cosa?;Ma io non...;È colpa tua!;I ciccioli di mare?;Proprio loro!;Eppure;Un corno!;Ma quindi non@era $NAME?;Ti ho detto che era@$NAME!;Non sapevo che@non dovevo dar@$FOOD al tuo@$PET;Ma cosa ti dice@la testa?;E dove l'hai letto?;Sul $QUOTID;Ah, era privato?;Sì, e tu l'hai@postato su@$SOCIAL!;Oops, non avevi visto@l'ultima puntata di@$PROGRAM?;No dannazione,@hai spoilerato!
-B06.png;179;80;245;165;Scusa;Bha;Scusa;Vaffanbrodo;Non pensavo@fossero@ciccioli di mare;Pensavi male;Ma ho preparato@anche $SIDEDISH;Mangialo da solo!
-B07.png;297;89;0;0;Che curiosità; ;Non dovevi!; ;Chissà cos'è!; 
-B08.png;280;106;0;0;HO NO! CAZZOPOLLO!; ;CAZZOPOLLO!; 
-B09.0.png;
-B09.1.png;
-B10.png;
-B11.png;182;97;247;202;CHE SCHIFO!;BLEARGH!;Ecco lo sapevo@hai mangiato@$FOOD;iBLORGH!;Bha...;GLOAGG
-B12.png;288;130;0;0;$INSULT; ;Ciccioli di mare!; ;A MAI PIÙ!; ;Ti cancello da@$SOCIAL; ;$QUOTID mi sentirà!
-B13.png;
-B14.png;
-B15.png;
-B16.png;
-B20.png;145;81;335;139;Guardiamo@un po' cosa@c'è in TV; ;Oh, le repliche di@ $PROGRAM; ;Chissà che danno su@$CHNL; ;È ora di TV;piripì@piripò;Metto su il DVD di@ $FILMS;bzuuz
-B21.0.png;110;81;219;61; ;...da diverse@MIGLIAIA di anni!; ;...la riproduzione@dei $ANIMAL...; ;...prima che possa@dire "beo"!; ;...$ANIMAL si nutrono di@ $FOOD ...; ;POW ZAP@BOOM!; ;...dannato $NAME@non mi avrai!; ;...e questa è la ricetta@di $FOOD in brodo; ;...è scoppiata la terza@guerra mondiale!!!
-B21.1.png;110;81;219;61; ;...da diverse@MIGLIAIA di anni!; ;...la riproduzione@dei $ANIMAL...; ;...prima che possa@dire "beo"!; ;...$ANIMAL si nutrono di@ $FOOD ...; ;POW ZAP@BOOM!; ;...dannato $NAME@non mi avrai!; ;...e questa è la ricetta@di $FOOD in brodo; ;...per quanto@ne sappiamo@è ebola...
-B21.2.png;110;81;219;61; ;...da diverse@MIGLIAIA di anni!; ;...la riproduzione@dei $ANIMAL...; ;...prima che possa@dire "beo"!; ;...$ANIMAL si nutrono di@ $FOOD ...; ;POW ZAP@BOOM!; ;...dannato $NAME@non mi avrai!; ;...e questa è la ricetta@di $FOOD in brodo; ;...$NUMERO morti@e $NUMERO feriti
-B22.png;189;100;389;88;Ma è inaudito!; ;Roba da matti!; ;Ma sono impazziti?!; ;Che rabbia!; ;Basta con la TV@spazzatura!; ;E pago il canone@per queste@idiozie?; ;Porco cane!; ;Santo cielo!; ;Ma vaffanbrodo!; 
-B23.png;
-B24.png;
-B25.0.png;131;87;349;73;Uahahah!; ;Che ridere!; ;Ridicolo!; ;Da sbellicarsi!; ;Oh ahahah!; ;Ahah che scemo!; 
-B25.1.png;131;87;349;73;Uahahah!; ;Che ridere!; ;Ridicolo!; ;Da sbellicarsi!; ;Oh ahahah!; ;Ahah che scemo!; 
-B26.0.png;
-B26.1.png;
-B27.png;157;119;0;0;Vado a dormire@che è meglio; ;Basta TV per oggi; ;Bha; ;Che TV degrado; ;Basta con questa TV@spazzatura, vado a farmi un@panino a $FOOD@; ;Controllo gli@aggiornamenti su@$SOCIAL; 
-B28.png;118;43;470;92;Vorrei $FOOD@con contorno di $SIDEDISH@e $FOOD in@$DRESSING;Subito@monsieur
-B29.png;160;61;106;152;Le consiglio@$VINO del $ANNO;Un'ottima annata;Da bere le consiglio @$VINO;Il rosè va su tutto;Da bere cosa prende?;Prendo $VINO;Abbiamo $VINO ottimo@del $ANNO;Grazie ma preferisco $VINO;Abbiamo $VINO@di $LUOGOCP;Proviamolo!
-B30.png;
-B31.png;91;134;335;112;$REAZIONEVINO;grazie monsieur
-B32.png;135;157;290;109;$VERSO;non è di suo@gradimento, monsieur?
-C01.png;293;266;0;0;Capitan pelato@$AZIONECP@a $LUOGOCP@ma $VILLAINCP@è $STATOVILLAINCP; 
-C02.png;323;115;0;0;Hop!@Hop!@Hop!; 
-C03.png;343;132;0;0;Hop!@Hop!@Hop!; 
-C04.png;132;113;0;0;Aaanf!@Aaanf!@Aaanf!; 
-C05.png;123;140;0;0;Sono vicinissimo!; ;Sono... molto vicino!; ;Sono quasi arrivato!; ;Caspita! Sono vicino!; ;Arrivo!; ;Manca pochissimo!; ;Manca molto poco; 
-C06.png;317;60;0;0;Hop!@Hop!@Hop!; 
-O00.0.png;280;141;360;332;$OPERA;testi $COGNAME @disegni $COGNAME
-O00.1.png;147;200;369;351;$OPERA;testi $COGNAME @disegni $COGNAME
-O00.2.png;
-O00.3.png;204;177;325;316;$OPERA;testi $COGNAME @disegni $COGNAME
-O01.png;53;55;350;278;Sei un mostro orrendo!;$VERSO;Muori bestia immonda, muori!;$VERSO;Hai ucciso $NAME @nessuna pietà per te@mostro osceno;$VERSO
-O02.png;365;128;96;133;I fantasmi!;$VERSO;Gli zombi!;$VERSO;Gli spettri!;$VERSO;I vampiri!;$VERSO;I marziani!;$VERSO
-O04.png;74;61;0;0;Non è colpa tua...; ;Non potevi salvarlo...; ;È finita ora...; ;L'incubo è finito; ;Hai vendicato $NAME;
-O05.png;122;103;0;0;Ma chi è il vero mostro?; ;I veri mostri SIAMO NOI; ;Il vero tesoro è L'AMICIZIA; 
-Q00.png;
-Q01.png;200;183;0;0;Ep n.$NUMERO@Bingu va in campagna; ;Ep n.$NUMERO@Bingu salva il pianeta; ;Ep n.$NUMERO@Bingu pazzo; ;Ep n.$NUMERO@Bingu gioca a cricket; ;Ep n.$NUMERO@Bingu a $LUOGOCP; ;Ep n.$NUMERO@Bingu supereroe; ;Ep n.$NUMERO@Bingu supersonico; ;Ep n.$NUMERO@Bingu fa la dich. dei redditi; ;Ep n.$NUMERO@Bingu esplode; ;Ep n.$NUMERO@Bingu nello spazio; ;Ep n.$NUMERO@Bingu spara@$LUOGOCP risponde; ;Ep n.$NUMERO@Bingu pela $FOOD; ;Ep n.$NUMERO@Bingu gioca a palla; ;Ep n.$NUMERO@Bingu commenta Kant;
-Q02.1.png;
-Q02.2.png;111;125;300;167;nuorg... nuorgon...;bopsulapsi;asgkanazewani;okhotooo;urialenea;guoabauob;mufurghiu;acadpeo;cipbrobzal;fungublast;turtigliaz;menubauos;kobrobangkoegh;giufbans;origiogao;bmububmlfumb;gieobobo;pingdfo;zkobkbfm;gogogo;auguaugu;igneosvuz;spaziobin;ghauruf;orghorsof;pantido;bglibul;asplru;ssooosfm;bbbubbusbn;itsudo;vudizby;anvufnv;eiegugu;sivivivivbibiib;clckcju
-Q03.png;
-Q04.png;290;226;247;349;$COGNAME;$NAME $COGNAME
-Q05.png;190;89;0;0;Ispettore!@Il corpo del $TITOLO $COGNAME@è stato pugnalato@$NUMERO volte!; ;Ispettore!@Questo arzigogolo pare@irrisolvibile! Tutti@hanno un'alibi!; ;Ispettore!@brancoliamo nel buio!; ;Ispettore!@la cameriera ha sentito un@rumore sospetto attorno alle@dieci; ;Ispettore!@tutti i sospetti ricadono su@$SOSPETTO; ;Ispettore!@sospettiamo che@ abbiano avveleato@$FOOD!; ;Ispettore!@ci sono tracce di $TRACCIA @e $TRACCIA; ;Ispettore!@L'assassino ha usato@$WEAPON; 
-Q06.png;150;80;260;188;Ho capito, la colpa è de@$SOSPETTO;$SURPRISE;Ci sono!@L'arma del delitto è@$WEAPON;$SURPRISE;Facciamo due domande a@$SOSPETTO;$SURPRISE;Mi arrendo non so@risolvere questo caso;$SURPRISE;Si tratta chiaramente di@SUICIDIO!;$SURPRISE
-Q07.png;
-Q08.png;220;257;0;0;Chef $COGNAME;
-Q09.png;125;119;0;0;Oggi vi imparo a fare $FOOD@in $DRESSING; ;Per il menu di oggi avrete bisogno di@$SIDEDISH, $SIDEDISH e $SIDEDISH; ;Buongiorno a tutti gli ascoltatori@e tutte le ascoltatrici!; ;Il piatto di oggi è tipico della@cucina di $LUOGOCP; ;Per prima cosa, prepariamo@un po' di $DRESSING;
-Q10.png;190;156;0;0;Facciamo una bella @emulsione di $SIDEDISH; ;Mi raccomando@mescolate bene gli ingredienti; ;Mescolate $DRESSING @fino a ottenere@un impasto OMOGENEO; ;Aggiungete $SIDEDISH a@$DRESSING; ;Aggiungete $SIDEDISH @fino a che non sentite@l'impasto compatto;
-Q11.png;247;137;0;0;Et voila!@Ecco $FOOD; ;Pronto per il forno!; ;Servite in ciotole calde; ;Lasciate riposare@$NUMERO ore; ;Nel frattempo, preparate@$FOOD; ;Beh, spero che le@pizzerie siano ancora@aperte;
-Q12.png;135;127;0;0;Infornate per @$NUMERO minuti; ;Sarà pronto in un@batterdocchio!; ;Ecco che cuoce@$FOOD;
-Q13.png;256;184;0;0;Assaggiamo!; ;Yum yum!; ;Sentiamo un po'...; ;Dev'essere buonissimo;
-Q14.png;
-Q15.png;213;89;0;0;bhe; ;bha; ;mmm; ;bof; ;yum!; ;buono; ;buonino; ;non male; ;mbleah; ;sigh; ;schifo; ;buonooooo; ;argh; ;chiamate un'autoambulanza; ;manca di sale; ;manca di zucchero; ;manca di cumino;
-Q16.png;111;97;259;148;Dov'eravate quando i cittadini@non arrivavano a fine mese?;Dov'eravate voi?;Avete messo $NUMERO @tasse!;Le avete messe voi!;Non avete rispetto!;Voi non avete rispetto!;Restituite i $NUMERO euro@che avete rubato!;Restituiteli voi!;Alle prossime elezioni@vi faremo vedere!;Noi vi faremo vedere!;Cosa pensate di fare con@$PROBLEM?;Cosa pensate voi!;L'articolo su $QUOTID @dice che...;Non mi importa cosa dice!;Non mi interrompa! Io non l'ho interrotta!;Non mi interrompa lei!
-Q17.png;105;100;0;0;Buona sera e benvenuti a@$TRIBUNE @Oggi con noi avremo l'on.$COGNAME e@l'on.$COGNAME che parleranno di $PROBLEM;
-Q18.png;201;105;375;159;Ti spacco la testa!;Pubblicità!;Ti ammazzo!;Rèclame!;Ti strozzo;Securityy!;Ti inchiodo;Oh no!;Ti rompo il muso;Fermi!
-Q19.png;110;143;366;192;Basta me ne vado;Va bhe;Con voi non si può parlare;Rimanga!;È impossibile, io esco!;Pubblicità
-Q20.png;170;129;0;0;Guidare una $AUTO@vuol dire libertà; ;$MARCAAUTO $AUTO @Tua a sole $NUMERO rate!@TAN $NUMERO%@TAEG $NUMERO%; ;Vieni a provarla@il sabato e la domenica@nei concessionari $MARCAAUTO;
-Q21.png;201;129;0;0;Eau de $NAME@pour homme; ;COMPRA ANCHE TU@questa cosa; ;a soli $NUMERO euro!; 
-Q22.png;105;176;0;0;Eau de $NAME; ;Il medicinale puòavere@effetticolanteralianche@gravinonsomuinstraxu@zodblflpylxyx; ;Chiara e fresca come nevischio!; ;Meglio oggi che domani!;
-Q23.png;164;326;0;0;Elimina fino al $NUMERO @ percento dei batteri; ;L'acqua $COGNAME @ha gli oligoelementi; ;Povera di sbodio; ;Rimuove le impurità e migliora@ del $NUMERO percento la lucentezza;
-U00.png;63;153;0;0;Ho no! Gli ufo @$UFO; ;Oh no! Gli ufo @$UFO;
+A00.png;1;268;77;Che giornata@del cacchio@oggi;C'è nessuno?;Come vorrei@$OBJECT;Il telefono non prende;Hey!;$NAME, dove sei?;Ciccioli di mare;Esco a comperare@$OBJECT;Chissà che fine@ha fatto@$NAME;È uscito@$FILMS@al cine;Ho mangiato@$FOOD;Dai del pane@al... no...
+A01.png;1;327;110;Che nervi!@Dio che nervi!;Sono molto@arrabbiato!;Che rabbia!;$OBJECT;Vaffanbrodo!;AAAAAH!;$SWEARING;Ma quanto ci mette@$NAME?
+A02.png;1;282;100;Sono molto@risolutivo!;Ho un'idea!;Ciccioli di mare;Ragazzo, una pizza!;Dai del pane@al cane pazzo...
+A03.png;1;296;103;Cosa conterrà@questa scatola;È arrivato un@pacco da Ammazzon;Ciccioli di mare;Lo manda $NAME;È di $NAME,@lo apro lo stesso?;Di solito non apro@pacchi anonimi;Con questa@risolverò@i miei problemi
+A04.png;0
+A05.png;0
+A06.png;0
+A07.png;1;228;96;HO NO!@È CAZZOPOLLO!;CAZZOPOLLO!
+A08.png;1;293;132;DAI DEL PANE@AL CANE PAZZO!@DAI DEL $CANE@AL $CANE $CANE;$SWEARING;È COLPA DI $NAME!;MA COM'È@CHE È SEMPRE@COLPA MIA!;SE LO BECCO@LO SMONTO!;GIORNATA DEL@CACCHIO!
+A09.png;1;286;136;Che efficacia!;Molto bene!;È così che si fa!;È esattamente così;Non fa una grinza;Ciccioli di mare;Mancano pochi giorni@al natale;$NAME aveva@ragione;$NAME aveva@torto marcio
+A10.png;0
+A11.png;0
+A12.png;0
+A13.png;0
+A14.png;1;330;168;Che noia!;Vorrei tornare@a $LUOGOCP;Sono qui@dall'$ANNO ormai;Come vorrei @$OBJECT;Mi manca@$NAME;Mangerei financo@$FOOD;Sono già $NUMERO@giorni che sto qui;Per fortuna@non piove;$SWEARING;È colpa di@$NAME;Mi basterebbe@$OBJECT per@costruire una zattera;Dico, una barca@all'orizzonte?;Eeeeeeh...
+A15.png;0
+A16.png;0
+A17.png;0
+A18.png;0
+A19.png;1;122;108;Che malinconia...;A volte mi chiedo@cosa accadrebbe@fra $NUMERO anni...;Chissà dove si va@dopo la morte...;Chissà che fine@ha fatto $NAME;Chissà se riusciremo@a risolvere il problema@$QUESTOP;Mi manca il mio@$PET;Avrei bisogno di@un robot@$ROBOT;Mi manca $NAME;Aveva ragione $NAME;Che bel tramonto...
+A20.png;0
+A21.png;0
+A22.png;1;123;110;Bhe, del resto...;Ma d'altronde...;Comunque sia...;Eh bhe...;Ma sì, ma sì...;Forse...;Ma quindi...;Però d'altra parte...
+A23.png;1;188;102;Forse mi hanno scoperto;Oh no!; $SWEARING ;Ho lasciato acceso il gas;Non ho restituito $OBJECT @a $NAME;Non ho digerito $FOOD;Non ho digerito i $SIDEDISH @in $DRESSING;oh oh...;Mi hanno hackerato $SOCIAL;$NAME ha scoperto che@me la faccio con $NAME;La mafia di $LUOGOCP @mi troverà anche a $LUOGOCP;È la fine
+A24.png;1;104;110;Improvvisamente... l'ORRORE;Eh, ma cos...;Ho dimenticato il mio $PET@all'Autoglill;Forse $FOOD @erano avvelenati!;Ecco il vero senso@della vita!;Ora ho capito il finale@de $FILMS ;Yabba dabba bubba;$NAME mi tradisce con $NAME;Chissà dove ho lasciato $OBJECT
+A25.png;1;94;55;Ah, che belli i fumetti!;L'ultimo album di Capitan Pelato!;E se la vita fosse un fumetto?;Amo i fumetti!;Che strips divertenti!;Leggiamo l'ultimo Dulan Dug;Leggerò l'ultimo Zugor;Vediamo l'ultimo albo de@I MAGNIFICI SEI
+A26.png;1;91;91;$SWEARING;Se lo trovo lo smonto!;$NAME me l'ha fatta di nuovo;Se lo becco gli dò@$NUMERO pugni;Vendicherò il mio $PET;Sono stato giocato come@un poppante!;Non ho capito il finale@de $FILMS
+A27.png;1;90;113;Ahh...;Eh... oh!;$NAME e $NAME saranno@soddisfatti;È ora di prendere un@nuovo $PET;L'anno scorso ho guadagnato@$NUMERO euro;È ora che la smetta di@acquistare compulsivamente@$OBJECT;D'altronde, è proprio così!;D'altronde, è quello che@ha scritto $QUOTID;Tutti dobbiamo morire...
+A28.png;1;157;204;Stiamo@precipitando@su $PLANET;I sensori dicono@che l'aria@su $PLANET è@respirabile;Oh no stiamo@andando@alla deriva@nello Spazio!;La rotta di Kessler@in meno di@$NUMERO Parsec!;Come sono@finito qui?;I viaggi@nel cosmo!;Lo Spazio!;Da qui@la vista è@meravigliosa
+A29.png;1;126;65;Un piccolo passo per un uomo...;Un piccolo passo per una donna...;Ciao $NAME;Da qui si vede casa mia;La Terra da quassù è bella;Reclamo questo pianeta
+A30.png;1;309;87;Sono dentro@al Matrix!;Sono nella@REALTÀ VIRTUALE!;SONO IN UN@UNIVERSO PARALLELO!;Tiratemi fuori@da questo computer!;Il vortice delle@informazioni!;Vedo il@CYBERSPAZIO!;Sono@nell'INTERNET!
+A31.png;1;113;111;281;309;ALLARME $COLORA;$HELP;ALLARME $COLORA;$DESPAIR
+A32.png;1;109;91;134;213;Spazio, ultima frontiera...;$LUOGOCP;Spazio, ultima frontiera;$PLANET;Diario del capitano, oggi anno $NUMERO;$PLANET
+ART00.png;1;62;90;Hm... la personale di@$NAME $COGNAME;Vado alla mostra di@$NAME $COGNAME;Una rassegna sui $ARTE $MOVIMENTO;...$NAME $COGNAME faceva@parte del movimento dei@$MOVIMENTO;Una rassegna@di $ARTE, che bello!
+ART01.png;1;70;80;Hm...@"$TITOLARTE"; "$TITOLARTE" è un@chiaro esempio@dell'arte dei@$MOVIMENTO;Questo è il famoso@ "$TITOLARTE";Un'opera di@$NAME $COGNAME; "$TITOLARTE"@di $NAME $COGNAME
+ART02.png;0
+ART03.png;1;54;66;WOW, quest'opera@$VALUTAZIONE;Quest'opera vale@$NUMERO Euro!;E'un classico esempio del@movimento dei@$MOVIMENTO;Avrebbero dovuto chiamarlo@"$TITOLARTE" invece;Perché?;E' la $NUMERO@volta che la vedo@ed è sempre come@la prima:$VALUTAZIONE;Ma è un falso!;$NAME direbbe che@$VALUTAZIONE@ma io penso che@$VALUTAZIONE;$VALUTAZIONE
+B00.0.png;2;70;48;248;111;Scusi,@per la stazione?;La stazione?;Cosa ne pensa @$QUESTOP?;$ANSOP;Come si cucinano @$FOOD?;E che ne so?;Ma $FOOD @va con $DRESSING?;Pare di sì;Conosce $NAME?;Non mi pare;È lei $NAME?;No io sono@$NAME;Ci siamo già visti su@$SOCIAL?;Forse sì;La sua faccia@non mi è nuova;La mia cosa?;Può spostare la@macchina?;Perché,@intralcia?;Ho brutte notizie@per il suo $PET;Ho no!@Che è successo?
+B00.1.png;2;159;45;315;122;Permette;Cosa vuole?;Scusi;Cosa c'è?;Vorrei $OBJECT;Di mare o di terra?;Cerco il bagno;Fuori da@casa mia!;Il bagno è@infestato di@$ANIMAL!;Ellapeppa!;Cerco il bagno;In fondo a destra!;Una domanda per@$QUOTID;$RSTAMPA;Ma esattamente,@lei chi è?;Sono $NAME!;Ssst...;Ma...
+B00.2.png;2;48;40;320;45;$HELP;$HELP;È un complotto@$COMPLOTTS!;$INSULT;È tutta colpa tua!;Non è colpa mia,@è colpa@ $COMPLOTTS!;Siamo braccati da@$CORPONOME;$DESPAIR;$SWEARING;$SWEARING; $CORPONOME han trovato@tracce di $TRACCIA @su $WEAPON;$REAZIONECORPO;Il piatto di@$FOOD era@avvelenato!;$DESPAIR
+B00.3.png;2;90;85;286;120;$CORPONOME, $CORPOAZIONE;$REAZIONECORPO ;$CORPONOME, è lei@$COGNAME ?;$REAZIONENAME
+B01.png;2;160;38;250;80;Ma sei scemo?;Badi@al fraseggio;Ti odio!;Male!;Chiamo@la polizia!;La polizia@non può@aiutarti;Vaffanbrodo!;Vaffanbrodo@a lei;Perché ha urlato?;Perché ha@urlato lei!;Ma le sembra?;Mi sembra sì!;Che odio;L'odio è negativo;La prossima volta@mi arrabbio;Non ci sarà@un'altra volta
+B02.png;2;219;67;227;180;$INSULT;$INSULT
+B03.png;2;188;79;270;172;Ho un regalo!;Per me?@Evviva!;Ti ho preso@questo!;Wow!;Un piccolo@presente!;Cacchio che@bello!;Davanti alla porta@c'era questo;Ooh,@lo aspettavo!
+B04.png;0
+B05.png;2;171;102;200;220;Ma cosa?;Come cosa?;Ma io non...;È colpa tua!;I ciccioli di mare?;Proprio loro!;Eppure;Un corno!;Ma quindi non@era $NAME?;Ti ho detto che era@$NAME!;Non sapevo che@non dovevo dar@$FOOD al tuo@$PET;Ma cosa ti dice@la testa?;E dove l'hai letto?;Sul $QUOTID;Ah, era privato?;Sì, e tu l'hai@postato su@$SOCIAL!;Oops, non avevi visto@l'ultima puntata di@$PROGRAM?;No dannazione,@hai spoilerato!
+B06.png;2;179;80;245;165;Scusa;Bha;Scusa;Vaffanbrodo;Non pensavo@fossero@ciccioli di mare;Pensavi male;Ma ho preparato@anche $SIDEDISH;Mangialo da solo!
+B07.png;1;297;89;Che curiosità;Non dovevi!;Chissà cos'è!
+B08.png;1;80;106;HO NO! CAZZOPOLLO!;CAZZOPOLLO!
+B09.0.png;0
+B09.1.png;0
+B10.png;0
+B11.png;2;182;97;247;202;CHE SCHIFO!;BLEARGH!;Ecco lo sapevo@hai mangiato@$FOOD;iBLORGH!;Bha...;GLOAGG
+B12.png;1;288;130;$INSULT;Ciccioli di mare!;A MAI PIÙ!;Ti cancello da@$SOCIAL;$QUOTID mi sentirà!
+B13.png;0
+B14.png;0
+B15.png;0
+B16.png;0
+B20.png;2;145;81;335;139;Guardiamo@un po' cosa@c'è in TV;click;Oh, le repliche di@ $PROGRAM;click;Chissà che danno su@$CHNL;click;È ora di TV;piripì@piripò;Metto su il DVD di@ $FILMS;bzuuz
+B21.0.png;1;110;81;...da diverse@MIGLIAIA di anni!;...la riproduzione@dei $ANIMAL...;...prima che possa@dire "beo"!;...$ANIMAL si nutrono di@ $FOOD ...;POW ZAP@BOOM!;...dannato $COGNAME@non mi avrai!;...e questa è la ricetta@di $FOOD in brodo;...è scoppiata la terza@guerra mondiale!!!
+B21.1.png;1;110;81;...da diverse@MIGLIAIA di anni!;...la riproduzione@dei $ANIMAL...;...prima che possa@dire "beo"!;...$ANIMAL si nutrono di@ $FOOD ...;POW ZAP@BOOM!;...dannato $COGNAME@non mi avrai!;...e questa è la ricetta@di $FOOD in brodo;...per quanto@ne sappiamo@è ebola...
+B21.2.png;1;110;81;...da diverse@MIGLIAIA di anni!;...la riproduzione@dei $ANIMAL...;...prima che possa@dire "beo"!;...$ANIMAL si nutrono di@ $FOOD ...;POW ZAP@BOOM!;...orribile $NAME@non mi avrai!;...e questa è la ricetta@di $FOOD in brodo;...$NUMERO morti@e $NUMERO feriti
+B22.png;1;189;100;Ma è inaudito!;Roba da matti!;Ma sono impazziti?!;Che rabbia!;Basta con la TV@spazzatura!;E pago il canone@per queste@idiozie?;Porco cane!;Santo cielo!;Ma vaffanbrodo!
+B23.png;0
+B24.png;0
+B25.0.png;1;131;87;Uahahah!;Che ridere!;Ridicolo!;Da sbellicarsi!;Oh ahahah!;Ahah che scemo!
+B25.1.png;1;131;87;Uahahah!;Che ridere!;Ridicolo!;Da sbellicarsi!;Oh ahahah!;Ahah che scemo!
+B26.0.png;0
+B26.1.png;0
+B27.png;1;157;119;Vado a dormire@che è meglio;Basta TV per oggi;Bha;Che TV degrado;Basta con questa TV@spazzatura, vado a farmi un@panino a $FOOD@;Controllo gli@aggiornamenti su@$SOCIAL
+B28.png;2;118;43;470;92;Vorrei $FOOD@con contorno di $SIDEDISH@e $FOOD in@$DRESSING;Subito@monsieur
+B29.png;2;160;61;106;152;Le consiglio@$VINO del $ANNO;Un'ottima annata;Da bere le consiglio @$VINO;Il rosè va su tutto;Da bere cosa prende?;Prendo $VINO;Abbiamo $VINO ottimo@del $ANNO;Grazie ma preferisco $VINO;Abbiamo $VINO@di $LUOGOCP;Proviamolo!
+B30.png;0
+B31.png;2;91;134;335;112;$REAZIONEVINO;grazie monsieur
+B32.png;2;135;157;290;109;$VERSO;non è di suo@gradimento, monsieur?
+C01.png;1;293;266;Capitan pelato@$AZIONECP@a $LUOGOCP@ma $VILLAINCP@è $STATOVILLAINCP
+C02.png;1;323;115;Hop!@Hop!@Hop!
+C03.png;1;343;132;Hop!@Hop!@Hop!
+C04.png;1;132;113;Aaanf!@Aaanf!@Aaanf!
+C05.png;1;123;140;Sono vicinissimo!;Sono... molto vicino!;Sono quasi arrivato!;Caspita! Sono vicino!;Arrivo!;Manca pochissimo!;Manca molto poco
+C06.png;1;317;60;Hop!@Hop!@Hop!
+O00.0.png;2;280;141;360;332;$OPERA;testi $COGNAME @disegni $COGNAME
+O00.1.png;2;147;200;369;351;$OPERA;testi $COGNAME @disegni $COGNAME
+O00.2.png;0
+O00.3.png;2;204;177;325;316;$OPERA;testi $COGNAME @disegni $COGNAME
+O01.png;2;53;55;350;278;Sei un mostro orrendo!;$VERSO;Muori bestia immonda, muori!;$VERSO;Hai ucciso $NAME @nessuna pietà per te@mostro osceno;$VERSO
+O02.png;2;365;128;96;133;I fantasmi!;$VERSO;Gli zombi!;$VERSO;Gli spettri!;$VERSO;I vampiri!;$VERSO;I marziani!;$VERSO
+O04.png;1;74;61;Non è colpa tua...;Non potevi salvarlo...;È finita ora...;L'incubo è finito;Hai vendicato $NAME
+O05.png;1;122;103;Ma chi è il vero mostro?;I veri mostri SIAMO NOI;Il vero tesoro è L'AMICIZIA
+Q00.png;0
+Q01.png;1;200;183;Ep n.$NUMERO@Bingu va in campagna;Ep n.$NUMERO@Bingu salva il pianeta;Ep n.$NUMERO@Bingu pazzo;Ep n.$NUMERO@Bingu gioca a cricket;Ep n.$NUMERO@Bingu a $LUOGOCP;Ep n.$NUMERO@Bingu supereroe;Ep n.$NUMERO@Bingu supersonico;Ep n.$NUMERO@Bingu fa la dich. dei redditi;Ep n.$NUMERO@Bingu esplode;Ep n.$NUMERO@Bingu nello spazio;Ep n.$NUMERO@Bingu spara@$LUOGOCP risponde;Ep n.$NUMERO@Bingu pela $FOOD;Ep n.$NUMERO@Bingu gioca a palla;Ep n.$NUMERO@Bingu commenta Kant
+Q02.0.png;2;111;125;300;167;nuorg... nuorgon...;bopsulapsi;asgkanazewani;okhotooo;urialenea;guoabauob;mufurghiu;acadpeo;cipbrobzal;fungublast;turtigliaz;menubauos;kobrobangkoegh;giufbans;origiogao;bmububmlfumb;gieobobo;pingdfo;zkobkbfm;gogogo;auguaugu;igneosvuz;spaziobin;ghauruf;orghorsof;pantido;bglibul;asplru;ssooosfm;bbbubbusbn;itsudo;vudizby;anvufnv;eiegugu;sivivivivbibiib;clckcju
+Q02.1.png;0
+Q03.png;0
+Q04.png;2;290;226;247;349;$COGNAME;$NAME $COGNAME
+Q05.png;1;190;89;Ispettore!@Il corpo del $TITOLO $COGNAME@è stato pugnalato@$NUMERO volte!;Ispettore!@Questo arzigogolo pare@irrisolvibile! Tutti@hanno un'alibi!;Ispettore!@brancoliamo nel buio!;Ispettore!@la cameriera ha sentito un@rumore sospetto attorno alle@dieci;Ispettore!@tutti i sospetti ricadono su@$SOSPETTO;Ispettore!@sospettiamo che@ abbiano avveleato@$FOOD!;Ispettore!@ci sono tracce di $TRACCIA @e $TRACCIA;Ispettore!@L'assassino ha usato@$WEAPON
+Q06.png;2;150;80;260;188;Ho capito, la colpa è de@$SOSPETTO;$SURPRISE;Ci sono!@L'arma del delitto è@$WEAPON;$SURPRISE;Facciamo due domande a@$SOSPETTO;$SURPRISE;Mi arrendo non so@risolvere questo caso;$SURPRISE;Si tratta chiaramente di@SUICIDIO!;$SURPRISE
+Q07.png;0
+Q08.png;1;220;257;Chef $COGNAME
+Q09.png;1;125;119;Oggi vi imparo a fare $FOOD@in $DRESSING;Per il menu di oggi avrete bisogno di@$SIDEDISH, $SIDEDISH e $SIDEDISH;Buongiorno a tutti gli ascoltatori@e tutte le ascoltatrici!;Il piatto di oggi è tipico della@cucina di $LUOGOCP;Per prima cosa, prepariamo@un po' di $DRESSING
+Q10.png;1;190;156;Facciamo una bella @emulsione di $SIDEDISH;Mi raccomando@mescolate bene gli ingredienti;Mescolate $DRESSING @fino a ottenere@un impasto OMOGENEO;Aggiungete $SIDEDISH a@$DRESSING;Aggiungete $SIDEDISH @fino a che non sentite@l'impasto compatto
+Q11.png;1;247;137;Et voila!@Ecco $FOOD;Pronto per il forno!;Servite in ciotole calde;Lasciate riposare@$NUMERO ore;Nel frattempo, preparate@$FOOD;Beh, spero che le@pizzerie siano ancora@aperte
+Q12.png;1;135;127;Infornate per @$NUMERO minuti;Sarà pronto in un@batterdocchio!;Ecco che cuoce@$FOOD
+Q13.png;1;256;184;Assaggiamo!;Yum yum!;Sentiamo un po'...;Dev'essere buonissimo
+Q14.png;0
+Q15.png;1;213;89;bhe;bha;mmm;bof;yum!;buono;buonino;non male;mbleah;sigh;schifo;buonooooo;argh;chiamate un'autoambulanza;manca di sale;manca di zucchero;manca di cumino
+Q16.png;2;111;97;259;148;Dov'eravate quando i cittadini@non arrivavano a fine mese?;Dov'eravate voi?;Avete messo $NUMERO @tasse!;Le avete messe voi!;Non avete rispetto!;Voi non avete rispetto!;Restituite i $NUMERO euro@che avete rubato!;Restituiteli voi!;Alle prossime elezioni@vi faremo vedere!;Noi vi faremo vedere!;Cosa pensate di fare con@$PROBLEM?;Cosa pensate voi!;L'articolo su $QUOTID @dice che...;Non mi importa cosa dice!;Non mi interrompa! Io non l'ho interrotta!;Non mi interrompa lei!
+Q17.png;1;105;100;Buona sera e benvenuti a@$TRIBUNE @Oggi con noi avremo l'on.$COGNAME e@l'on.$COGNAME che parleranno di $PROBLEM
+Q18.png;2;201;105;375;159;Ti spacco la testa!;Pubblicità!;Ti ammazzo!;Rèclame!;Ti strozzo;Securityy!;Ti inchiodo;Oh no!;Ti rompo il muso;Fermi!
+Q19.png;2;110;143;366;192;Basta me ne vado;Va bhe;Con voi non si può parlare;Rimanga!;È impossibile, io esco!;Pubblicità
+Q20.png;1;170;129;Guidare una $AUTO@vuol dire libertà;$MARCAAUTO $AUTO @Tua a sole $NUMERO rate!@TAN $NUMERO%@TAEG $NUMERO%;Vieni a provarla@il sabato e la domenica@nei concessionari $MARCAAUTO
+Q21.png;1;201;129;Eau de $NAME@pour homme;COMPRA ANCHE TU@questa cosa;a soli $NUMERO euro!
+Q22.png;1;105;176;Eau de $NAME;Il medicinale puòavere@effetticolanteralianche@gravinonsomuinstraxu@zodblflpylxyx;Chiara e fresca come nevischio!;Meglio oggi che domani!
+Q23.png;1;164;326;Elimina fino al $NUMERO @ percento dei batteri;L'acqua $COGNAME @ha gli oligoelementi;Povera di sbodio;Rimuove le impurità e migliora@ del $NUMERO percento la lucentezza
+U00.png;1;63;153;Ho no! Gli ufo @$UFO;Oh no! Gli ufo @$UFO

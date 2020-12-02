@@ -13,52 +13,38 @@ fileDir = fileDir +"/"
 def replaceText(text):
 	"""This function replace $WILDCARD with a word found in subs.csv
 	subs.csv definition is 1st colum $WILDCARD, subsequent columns, possible values (chosen at random), delimiter is ;"""
-	with open(fileDir+"subs.csv") as rtext: 
-		csvReader = csv.reader(rtext,delimiter=";") 
+	with open(fileDir+"subs.csv") as subs: 
+		csvReader = csv.reader(subs,delimiter=";") 
 		for row in csvReader:
 			if text.find(row[0]) != -1:
 				text = text.replace(row[0],row[random.randint(1,len(row)-1)],1)
-				text = text.replace('@','\n')
 				return text
-
-#def fetchText(indText):	
-#	"""This function fetch the text for the image with just only one character
-#	rtext.csv definition is: 1st column the name of the file (i.e. A001.png), 2nd x-coord, 3rd y-coord, 4th and subsequent, the possible outcomes
-#	Delimiter is ; and line feeds @, if there aren't any options, it returns 0 (no text)
-#	It returns a tuple (x,y,text)"""
-#	with open(fileDir+"rtext.csv") as rtext:
-#		csvReader = csv.reader(rtext,delimiter=';')
-#		for row in csvReader:
-#			if row[0]==indText:
-#				if len(row)>2:
-#					return row[1],row[2],row[random.randint(3,len(row)-1)].replace('@','\n')
-#				else:
-#					return 0
 
 def fetchText(indText):
 	"""This function fetch the text for the image with two characters
-	rtext.csv definition is: 1st column the name of the file (i.e. B001.png), 2nd x-coord, 3rd y-coord of the first string
-	4th x-coord, 5th y-coord of the second string, 6th and subsequent are the outcomes, alternated as the odd one is an
-	answer to the even one
+	rtext.csv definition is: 1st column the name of the file (i.e. B001.png), 2nd number of actors (at the moment
+	they are limited to two; then a couple of columns or each actor with x and y coord of the strings; after the coords the outcomes, 
+	one column for each actor
 	Delimiter is ; and line feeds @, if there aren't any options, it returns 0 (no text)
-	It returns a tuple(x1,y1,x2,y2,text1,text2)"""
+	It returns two arrays, coords is a tuple (x,y) and result is the outcome"""
 	with open(fileDir+"rtext.csv") as rtext:
 		csvReader = csv.reader(rtext,delimiter=';')
 		for row in csvReader:
 			if row[0]==indText:
-				if len(row)>2:
-					rand1 = random.randint(5,len(row)-1)
-					if rand1 %2 == 0:
-						rand1 -=1
-					rand2 = rand1+1
-					try:
-						return row[1],row[2],row[3],row[4],row[rand1].replace('@','\n'),row[rand2].replace('@','\n')
-					except IndexError:
-						print("Error in database row number:")
-						print(indText)
-						quit()
-				else:
+				noActors = int(row[1])
+				if noActors == 0:
 					return 0
+				else:
+					firstElement = 2+(noActors*2)
+					lastElement = len(row)-(noActors-1)
+					randQuote = random.randrange(firstElement,lastElement,noActors)
+					coords = []
+					result = []
+					for x in range(0,noActors):
+						coords.append((row[2+x*2],row[3+x*2]))
+						result.append(row[randQuote+x])
+					return coords,result
+
 				
 def fetchVign():
 	"""This functions fetch an image, randomly, chosen from a markov tree defined in ram.csv
@@ -101,22 +87,20 @@ def writeStrip(story,fontSize):
 	repeats the last object."""
 	strip = []
 	for indVign in story:
-		#if indVign!="000":
 		try:
 			vign = Image.open(fileDir+indVign).convert('RGBA')
 			addtext = ImageDraw.Draw(vign)
 			fnt = ImageFont.truetype(fileDir+"ubuntu.ttf",fontSize)
 			textVign = fetchText(indVign)
-			if textVign!=0:
-				text1 = textVign[4]
-				text2 = textVign[5]
-				while text1.find('$') != -1:
-					text1 = replaceText(text1)
-				while text2.find('$') != -1:
-					text2 = replaceText(text2)
-				addtext.multiline_text((int(textVign[0]),int(textVign[1])),text1,fill="#000000",font=fnt,align="center")
-				addtext.multiline_text((int(textVign[2]),int(textVign[3])),text2,fill="#000000",font=fnt,align="center")
 			
+			if textVign!=0:
+				for x in range(len(textVign[0])):
+					text_vign = textVign[1][x]
+					while text_vign.find('$') != -1:
+						text_vign = replaceText(text_vign)
+					text_vign = text_vign.replace('@','\n')
+					addtext.multiline_text((int(textVign[0][x][0]),int(textVign[0][x][1])),text_vign,fill="#000000",font=fnt,align="center")
+					
 			obj = addThing(indVign)
 			if obj!=0:
 				if obj[0] == 'R':
@@ -153,7 +137,7 @@ if __name__ == "__main__":
 	import argparse
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-s','--story',metavar='story',default='',nargs=4,help='name of the images')
-	parser.add_argument('-m','--multiple',metavar='multiple',default=[1],nargs=1,type=int,help='multiple output')
+	parser.add_argument('-m','--multiple',metavar='multiple',default=[1],nargs=1,type=int,help='multiple output (int >0)')
 	args = parser.parse_args()
 	if args.multiple[0] <= 0:
 		quit()
