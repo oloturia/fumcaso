@@ -138,6 +138,7 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-s','--story',metavar='story',default='',nargs=4,help='name of the images')
 	parser.add_argument('-m','--multiple',metavar='multiple',default=[1],nargs=1,type=int,help='multiple output (int >0)')
+	parser.add_argument('-x','--xsize',metavar='xsize',default=0,type=int,nargs=1,help='resize image x')
 	args = parser.parse_args()
 	if args.multiple[0] <= 0:
 		quit()
@@ -151,4 +152,7 @@ if __name__ == "__main__":
 		print(story)
 		finalStrip = writeStrip(story,22)
 		if args.multiple[0] == 1:
-			finalStrip.show()
+			if args.xsize == 0:
+				finalStrip.show()
+			else:
+				finalStrip.resize((args.xsize[0],int(args.xsize[0]/2400*500))).show()
