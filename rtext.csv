@@ -29,8 +29,8 @@ A27.png;1;90;113;Ahh...;Eh... oh!;$NAME e $NAME saranno@soddisfatti;È ora di pr
 A28.png;1;157;204;Stiamo@precipitando@su $PLANET;I sensori dicono@che l'aria@su $PLANET è@respirabile;Oh no stiamo@andando@alla deriva@nello Spazio!;La rotta di Kessler@in meno di@$NUMERO Parsec!;Come sono@finito qui?;I viaggi@nel cosmo!;Lo Spazio!;Da qui@la vista è@meravigliosa
 A29.png;1;126;65;Un piccolo passo per un uomo...;Un piccolo passo per una donna...;Ciao $NAME;Da qui si vede casa mia;La Terra da quassù è bella;Reclamo questo pianeta
 A30.png;1;309;87;Sono dentro@al Matrix!;Sono nella@REALTÀ VIRTUALE!;SONO IN UN@UNIVERSO PARALLELO!;Tiratemi fuori@da questo computer!;Il vortice delle@informazioni!;Vedo il@CYBERSPAZIO!;Sono@nell'INTERNET!
-A31.png;1;113;111;281;309;ALLARME $COLORA;$HELP;ALLARME $COLORA;$DESPAIR
-A32.png;1;109;91;134;213;Spazio, ultima frontiera...;$LUOGOCP;Spazio, ultima frontiera;$PLANET;Diario del capitano, oggi anno $NUMERO;$PLANET
+A31.png;2;113;111;281;309;ALLARME $COLORA;$HELP;ALLARME $COLORA;$DESPAIR
+A32.png;2;109;91;134;213;Spazio, ultima frontiera...;$LUOGOCP;Spazio, ultima frontiera;$PLANET;Diario del capitano, oggi anno $NUMERO;$PLANET
 ART00.png;1;62;90;Hm... la personale di@$NAME $COGNAME;Vado alla mostra di@$NAME $COGNAME;Una rassegna sui $ARTE $MOVIMENTO;...$NAME $COGNAME faceva@parte del movimento dei@$MOVIMENTO;Una rassegna@di $ARTE, che bello!
 ART01.png;1;70;80;Hm...@"$TITOLARTE"; "$TITOLARTE" è un@chiaro esempio@dell'arte dei@$MOVIMENTO;Questo è il famoso@ "$TITOLARTE";Un'opera di@$NAME $COGNAME; "$TITOLARTE"@di $NAME $COGNAME
 ART02.png;0
