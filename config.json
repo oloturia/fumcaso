@@ -1,0 +1,23 @@
+{
+	"defaultProfile": "oloturia",
+	
+	"oloturia": {
+		"saveLocation": "/var/tmp",
+		"filename": "/image.png",
+		"imagesLocation": "./oloturia",
+		"csvLocation": "./oloturia",
+		"font": "./ubuntu.ttf",
+		"twitter": {
+			"token": "./twitter_token",
+			"filename": "/twitter.png"
+		},
+		"mastodon": {
+			"token": "./mastodon_token",
+			"filename": "/mastodon.png"
+		},
+		"telegram": {
+			"token": "./telegram_token",
+			"filename": "/telegram.png"
+		}
+	}
+}

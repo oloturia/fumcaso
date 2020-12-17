@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 import tweepy
-from randstrip import createStrip
+from randstrip import createStrip,readConfig
 import os
 
 fileDir = os.path.dirname(os.path.abspath(__file__))
 fileDir = fileDir +"/"
 
 if __name__ == "__main__":
-	status = createStrip("twitter.png")
+	config = readConfig(platform="twitter")
+	status = createStrip(config)
 	if status == 0:
-		with open(fileDir+"twitter_token") as f:
+		with open(config["token"]) as f:
 			tokens = f.readlines()
 		tokens = [x.strip() for x in tokens]
 		auth = tweepy.OAuthHandler(tokens[0],tokens[1])
@@ -19,7 +20,7 @@ if __name__ == "__main__":
 		for i in range(0,100):
 			try:
 				api.verify_credentials()
-				api.update_with_media(fileDir+"twitter.png","Generatore automatico di strip. Striscia di oggi.")
+				api.update_with_media(config["saveLocation"]+config["filename"],"Generatore automatico di strip. Striscia di oggi.")
 				published = True
 			except:
 				continue
