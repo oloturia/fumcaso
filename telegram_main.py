@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 from telegram.ext import Updater, CommandHandler
 from randstrip import createStrip,readConfig
 import requests
