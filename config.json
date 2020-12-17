@@ -6,6 +6,10 @@
 		"filename": "/image.png",
 		"imagesLocation": "./oloturia",
 		"csvLocation": "./oloturia",
+		"csvTree": "ram.csv",
+		"csvSpeech": "rtext.csv",
+		"csvSubs": "subs.csv",
+		"csvObj": "obj.csv",
 		"font": "./ubuntu.ttf",
 		"xSize":2400,
 		"ySize":500,
@@ -21,6 +25,9 @@
 		"telegram": {
 			"token": "./telegram_token",
 			"filename": "/telegram.png"
+		},
+		"android": {
+			"filename": "android.png"
 		}
 	}
 }

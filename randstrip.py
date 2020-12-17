@@ -13,7 +13,7 @@ fileDir = os.path.dirname(os.path.abspath(__file__))
 def replaceText(text,config):
 	"""This function replace $WILDCARD with a word found in subs.csv
 	subs.csv definition is 1st colum $WILDCARD, subsequent columns, possible values (chosen at random), delimiter is ;"""
-	with open(config["csvLocation"]+"/"+"subs.csv") as subs: 
+	with open(config["csvLocation"]+"/"+config["csvSubs"]) as subs: 
 		csvReader = csv.reader(subs,delimiter=";") 
 		for row in csvReader:
 			if text.find(row[0]) != -1:
@@ -27,7 +27,7 @@ def fetchText(indText,config):
 	one column for each actor
 	Delimiter is ; and line feeds @, if there aren't any options, it returns 0 (no text)
 	It returns two arrays, coords is a tuple (x,y) and result is the outcome"""
-	with open(config["csvLocation"]+"/rtext.csv") as rtext:
+	with open(config["csvLocation"]+"/"+config["csvSpeech"]) as rtext:
 		csvReader = csv.reader(rtext,delimiter=';')
 		for row in csvReader:
 			if row[0]==indText:
@@ -55,7 +55,7 @@ def fetchVign(config):
 	nvign = 0
 	currVign = "000"
 	story = []
-	with open(config["csvLocation"]+"/ram.csv") as ram:
+	with open(config["csvLocation"]+"/"+config["csvTree"]) as ram:
 		csvReader = csv.reader(ram)
 		for row in csvReader:
 			starts.append(row[0])
@@ -74,7 +74,7 @@ def addThing(indVign,config):
 	"""This function adds a small image (object) to a larger image
 	obj.csv definition is: name of the image (i.e. A001.png), x-coord, y-coord, subsequent columns possible outcomes
 	It returns a tuple (object file name, x, y)"""
-	with open(config["csvLocation"]+"/obj.csv") as obj:
+	with open(config["csvLocation"]+"/"+config["csvObj"]) as obj:
 		csvReader = csv.reader(obj)
 		for row in csvReader:
 			if row[0] == indVign:
@@ -153,6 +153,10 @@ def readConfig(profile=False,platform=False):
 	saveLocation = checkLocal(config[profile]["saveLocation"])
 	imagesLocation = checkLocal(config[profile]["imagesLocation"])
 	csvLocation = checkLocal(config[profile]["csvLocation"])
+	csvTree = config[profile]["csvTree"]
+	csvSpeech = config[profile]["csvSpeech"]
+	csvSubs = config[profile]["csvSubs"]
+	csvObj = config[profile]["csvObj"]
 	font = checkLocal(config[profile]["font"])
 	xSize = config[profile]["xSize"]
 	ySize = config[profile]["ySize"]
@@ -160,9 +164,9 @@ def readConfig(profile=False,platform=False):
 	if platform:
 		token = checkLocal(config[profile][platform]["token"])
 		filename = checkLocal(config[profile][platform]["filename"])
-		return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"font":font,"token":token,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength}
+		return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"font":font,"token":token,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj}
 	filename = config[profile]["filename"]
-	return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"font":font,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength}
+	return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"font":font,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj}
 		
 def checkLocal(directory):
 	"""Checks if it's a relative or absolute path"""
