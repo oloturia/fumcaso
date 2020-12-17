@@ -1,13 +1,13 @@
 # fumcaso
 Random Comic Generator/Bot
 
-randstrip.py [NAME] - create a random strip, writes [NAME] in png format, if name is not specified the image is shown with ImageMagick.
+randstrip.py - Create a random strip and show it with ImageMagick.
 
-mastodon_main.py - Publish a new strip on Mastodon. The token must be in a file called "mastodon_token".
+mastodon_main.py - Publish a new strip on Mastodon.
 
-twitter_main.py - Publish a new strip on Twitter. The token must be in a file called "twitter_token".
+twitter_main.py - Publish a new strip on Twitter.
 
-telegram_main.py - Launches the Telegram bot. The token must be in a file called "telegram_token".
+telegram_main.py - Launches the Telegram bot.
 
 
 Libraries needed: 
@@ -29,50 +29,54 @@ telegram_main.py:
 
 Configuration file is a JSON with this tree:
 {
-	defaultProfile: 		the name of the profile used if not specified
+	defaultProfile: 		name of the profile used if not specified
 
-	"profile name" :{		the name of the profile
-		saveLocation: 		the location where the file is saved
-		filename:		the default filename used by function createStrip, if not specified (not used in any of the scripts, at the moment)
-		imagesLocation:		the folder where the different panels are stored
-		csvLocation:		the folder where the csv are stored
-		xSize:				width of the final image
-		ySize:				height of the final image
-		panelLength:		length of the single panel (roughly panelLength * number-of-panels should be = xSize)
-		font:			the font used
+	"profile name" :{		name of the profile
+		saveLocation: 		location for temporary files
+		filename:		default filename used by function createStrip, if not specified (not used in any of the scripts, at the moment)
+		imagesLocation:		folder where the different panels are stored
+		csvLocation:		folder where the csv are stored
+		csvTree:		name of file containing panel chains
+		csvSpeech:		name of file containing speech
+		csvSubs:		name of file containing substitutions in text
+		csvObj:			name of file containing information about objects location
+		xSize:			width of the final image
+		ySize:			height of the final image
+		panelLength:		length of a single panel (roughly panelLength * number-of-panels should be = xSize)
+		font:			font used
 		"application":{ 	special instruction for applications, like "twitter", "mastodon", "telegram"
 			"token"		token location
-			"filename"	the filename used for the temporary image
+			"filename"	filename used for the temporary image
 		}
 	}
 }
 
-There are four different csv with instruction on how to compose a new strip.
+There are four different csv files:
 
-ram.csv		this has the chain (markov-like) of the different panels, the first column is the previous panel, other columns are the possible outcomes;
-		it starts always with 000, if the file is not found it just prints nothing (it can be useful), it ends with END
-		when the story is completed, the script adds ".png" to the entries
+csvTree		Contains the chain (markov-like) about how the different panels are combined. The first column is the previous panel, other columns are the different possible outcomes.
+		It always starts with 000, if a file is not found it does nothing, it ends with END.
+		The script adds ".png" to the entries.
 		
 		origin,	destination, destination, destination...
 
-rtext.csv	the random text table, in the first column there is the name of the panel, then the number of actors, then the location, x and y, for the
-		text of each actor, then the random text; if there are more than one actors, the text is "1st location,2nd location" so if we have two
-		characters speaking, that would be "question,answer";for silent panels, just put 0 in the 2nd column;for a line break put @; different
-	 	words can be randomly chosen with a substitution tag, tags are marked with a dollar sign, (like $TAG)
+csvSpeech	Contains the random text table. In the first column there is the name of the panel, then the number of actors, then the location (x and y) on the panel
+		for text of each actor, then the random text. If there are more than one actors, the text is "1st location,2nd location" so if we have two
+		characters speaking, that would be "question,answer". For silent panels, just put 0 in the 2nd column. For a line break put @. Different
+	 	words can be randomly chosen with a substitution tag, tags are marked with a dollar sign, (like $TAG).
 		
 		name.png,0 				(silent panel name.png)
 		name.png,1,100,200,Hello,Hi		(single character that says "Hello" or "Hi" placing text on x100 y200)
 		name.png,2,100,200,300,200,Hello,Hi	(two characters, the first says "Hello" the second answers "Hi", the first has text on x100 y200, the second on x300 y200)
 		name.png,1,100,200,$GREETING		(single character that says a random greeting defined in subs.csv)
 
-subs.csv	every $ tag is in the first column of this file, the tag is substituted with a random word in the following columns, it's possible to insert
-		tags in the substitution text; this csv uses semicolons
+csvSubs	every $ tag is in the first column of this file, the tag is substituted with a random word in the following columns, it's possible to insert
+		tags in the substitution text. This csv uses semicolons.
 		
 		$GREETING;Hi;Hello;Hallo		($GREETING is substituted with "Hi", "Hello" or "Hallo")
 		$COLOUR;red;green;$GREETING		($COLOUR is substituted with "red", "green" or a random greeting)
 
-obj.csv		this csv has the location of random objects that can be placed on the panel; on the first column there is the name of the panel, then the x
-		and y of the location on the panel, the the possible image files of the objects; if a "R" is placed instead of the list of possible files,
+csvObj		Contains the location of random objects that can be placed on a panel. On the first column there is the name of the panel (like A00.png), then the x
+		and y placement on the panel, then different image files of the objects to choose from. If a "R" is placed instead of the list,
 		the last object used is repeated
 		
 		panel.png,100,200,obj00.png,obj01.png	(on panel.png a random object chosen among obj00.png and obj01.png is placed at x100 y200)
