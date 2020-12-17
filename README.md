@@ -36,6 +36,9 @@ Configuration file is a JSON with this tree:
 		filename:		the default filename used by function createStrip, if not specified (not used in any of the scripts, at the moment)
 		imagesLocation:		the folder where the different panels are stored
 		csvLocation:		the folder where the csv are stored
+		xSize:				width of the final image
+		ySize:				height of the final image
+		panelLength:		length of the single panel (roughly panelLength * number-of-panels should be = xSize)
 		font:			the font used
 		"application":{ 	special instruction for applications, like "twitter", "mastodon", "telegram"
 			"token"		token location

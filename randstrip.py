@@ -112,11 +112,11 @@ def writeStrip(story,fontSize,config):
 			strip.append(vign)
 		except FileNotFoundError:
 			pass
-	image = Image.new('RGBA',(2400,500))
+	image = Image.new('RGBA',(config["xSize"],config["ySize"]))
 	xshift=0
 	for vign in strip:
 		image.paste(vign,(xshift,0))
-		xshift += 600
+		xshift += config["panelLength"]
 	return image
 
 def createStrip(config,specialPlatform="",fontSize=22):
@@ -154,12 +154,15 @@ def readConfig(profile=False,platform=False):
 	imagesLocation = checkLocal(config[profile]["imagesLocation"])
 	csvLocation = checkLocal(config[profile]["csvLocation"])
 	font = checkLocal(config[profile]["font"])
+	xSize = config[profile]["xSize"]
+	ySize = config[profile]["ySize"]
+	panelLength = config[profile]["panelLength"]
 	if platform:
 		token = checkLocal(config[profile][platform]["token"])
 		filename = checkLocal(config[profile][platform]["filename"])
-		return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"font":font,"token":token,"filename":filename}
+		return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"font":font,"token":token,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength}
 	filename = config[profile]["filename"]
-	return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"font":font,"filename":filename}
+	return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"font":font,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength}
 		
 def checkLocal(directory):
 	"""Checks if it's a relative or absolute path"""
