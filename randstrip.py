@@ -94,12 +94,22 @@ def writeStrip(story,fontSize,config):
 			textVign = fetchText(indVign,config)
 			
 			if textVign!=0:
-				for x in range(len(textVign[0])):
-					text_vign = textVign[1][x]
-					while text_vign.find('$') != -1:
-						text_vign = replaceText(text_vign,config)
-					text_vign = text_vign.replace('@','\n')
-					addtext.multiline_text((int(textVign[0][x][0]),int(textVign[0][x][1])),text_vign,fill="#000000",font=fnt,align="center")
+				try:
+					for x in range(len(textVign[0])):
+						text_vign = textVign[1][x]
+						try:
+							while text_vign.find('$') != -1:
+								text_vign = replaceText(text_vign,config)
+						except AttributeError:
+							print("Problem parsing:")
+							print(textVign)
+							quit()
+						text_vign = text_vign.replace('@','\n')
+						addtext.multiline_text((int(textVign[0][x][0]),int(textVign[0][x][1])),text_vign,fill="#000000",font=fnt,align="center")
+				except TypeError:
+					print("Problem finding text for:")
+					print(indVign)
+					quit()
 					
 			obj = addThing(indVign,config)
 			if obj!=0:
@@ -122,6 +132,7 @@ def writeStrip(story,fontSize,config):
 def createStrip(config,specialPlatform="",fontSize=22):
 	"""Create strip and save it
 	createStrip(str path/filename)"""
+
 	try:
 		story = fetchVign(config)
 		finalStrip = writeStrip(story,fontSize,config)
@@ -148,7 +159,7 @@ def readConfig(profile=False,platform=False):
 	try:
 		checkProfile = config[profile]
 	except KeyError:
-		print("Profile not found")
+		print("Profile "+profile+" not found")
 		quit()
 	saveLocation = checkLocal(config[profile]["saveLocation"])
 	imagesLocation = checkLocal(config[profile]["imagesLocation"])
@@ -178,25 +189,47 @@ def checkLocal(directory):
 
 if __name__ == "__main__":
 	import argparse
+
+
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-s','--story',metavar='story',default='',nargs=4,help='name of the images')
 	parser.add_argument('-m','--multiple',metavar='multiple',default=[1],nargs=1,type=int,help='multiple output (int >0)')
 	parser.add_argument('-x','--xsize',metavar='xsize',default=0,type=int,nargs=1,help='resize image x')
 	parser.add_argument('-p','--profile',metavar='profile',default="",type=str,nargs=1,help='profile')
+	parser.add_argument('-o','--output',metavar='output',const=True,default=False,nargs="?",help='output file, if name not specified, default path will be used')
 	args = parser.parse_args()
-	if args.multiple[0] <= 0:
+	
+	if args.multiple[0] <= 0:			#Wrong multiple choice
 		quit()
 	config = readConfig(profile=args.profile)
-	for x in range(0,args.multiple[0]):
-		if (args.story == ''):
+	
+	if args.output == True:				#Output on but no filename specified
+		fileName = config["saveLocation"]+config["filename"]
+	elif type(args.output) == str:		#Output specified
+			fileName = args.output
+
+	for ist in range(0,args.multiple[0]):
+		if (args.story == ''):			#No story specified
 			story = fetchVign(config)
 		else:
-			story = []
+			story = []					#Story specified
 			for x in args.story:
 				story.append(x)
 		finalStrip = writeStrip(story,22,config)
-		if args.multiple[0] == 1:
-			if args.xsize == 0:
+		
+		if args.xsize != 0:				#Resize specified
+			finalStrip = finalStrip.resize((args.xsize[0],int(args.xsize[0]/2400*500)))
+		
+		if args.multiple[0] == 1:		#No multiple selected
+			if args.output == False:
 				finalStrip.show()
 			else:
-				finalStrip.resize((args.xsize[0],int(args.xsize[0]/2400*500))).show()
+				finalStrip.save(fileName)
+		else:							#Multiple selected
+			if args.output == False:
+				print(story)
+			else:
+				finalStrip.save(str(ist)+fileName+".png")
+			
+			
+			

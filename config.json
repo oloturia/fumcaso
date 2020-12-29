@@ -29,5 +29,35 @@
 		"android": {
 			"filename": "android.png"
 		}
-	}
+	},
+
+	"oloeng": {
+		"saveLocation": "/var/tmp",
+		"filename": "/image.png",
+		"imagesLocation": "./oloturia",
+		"csvLocation": "./oloeng",
+		"csvTree": "ram.csv",
+		"csvSpeech": "rtext.csv",
+		"csvSubs": "subs.csv",
+		"csvObj": "obj.csv",
+		"font": "./ubuntu.ttf",
+		"xSize":2400,
+		"ySize":500,
+		"panelLength":600,
+		"twitter": {
+			"token": "./twitter_token",
+			"filename": "/twitter.png"
+		},
+		"mastodon": {
+			"token": "./mastodon_token",
+			"filename": "/mastodon.png"
+		},
+		"telegram": {
+			"token": "./telegram_token",
+			"filename": "/telegram.png"
+		},
+		"android": {
+			"filename": "android.png"
+		}
+	}	
 }

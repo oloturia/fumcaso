@@ -7,8 +7,8 @@ import os
 fileDir = os.path.dirname(os.path.abspath(__file__))
 fileDir = fileDir +"/"
 
-def newStrip(bot, update):
-	config = readConfig(platform="telegram")
+def newStrip(bot, update, args):
+	config = readConfig(platform="telegram",profile=args)
 	status = createStrip(config)
 	if status == 0:
 		try:
@@ -26,6 +26,6 @@ if __name__ == "__main__":
 	token = content[0].strip()
 	updater = Updater(token)
 	dp = updater.dispatcher
-	dp.add_handler(CommandHandler('strip',newStrip))
+	dp.add_handler(CommandHandler('strip',newStrip, pass_args=True))
 	updater.start_polling()
 	updater.idle()
