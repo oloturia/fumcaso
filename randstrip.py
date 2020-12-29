@@ -178,7 +178,7 @@ def readConfig(profile=False,platform=False):
 		try:
 			text = config[profile][platform]["text"]
 		except KeyError:
-			postText = False
+			text = False
 		
 		return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"font":font,"token":token,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj,"text":text}
 	filename = config[profile]["filename"]
