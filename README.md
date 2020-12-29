@@ -47,6 +47,7 @@ Configuration file is a JSON with this tree:
 		"application":{ 	special instruction for applications, like "twitter", "mastodon", "telegram"
 			"token"		token location
 			"filename"	filename used for the temporary image
+			"text"		text for the post on Twitter and Mastodon (optional)
 		}
 	}
 }

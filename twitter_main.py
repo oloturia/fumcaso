@@ -1,13 +1,18 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 import tweepy
 from randstrip import createStrip,readConfig
 import os
+import sys
 
 fileDir = os.path.dirname(os.path.abspath(__file__))
 fileDir = fileDir +"/"
 
 if __name__ == "__main__":
-	config = readConfig(platform="twitter")
+	if len(sys.argv) == 2:
+		altProfile = [sys.argv[1]]
+	else:
+		altProfile = False
+	config = readConfig(platform="twitter",profile=altProfile)
 	status = createStrip(config)
 	if status == 0:
 		with open(config["token"]) as f:
@@ -20,7 +25,7 @@ if __name__ == "__main__":
 		for i in range(0,100):
 			try:
 				api.verify_credentials()
-				api.update_with_media(config["saveLocation"]+config["filename"],"Generatore automatico di strip. Striscia di oggi.")
+				api.update_with_media(config["saveLocation"]+config["filename"],config["text"])
 				published = True
 			except:
 				continue

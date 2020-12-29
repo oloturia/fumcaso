@@ -16,11 +16,13 @@
 		"panelLength":600,
 		"twitter": {
 			"token": "./twitter_token",
-			"filename": "/twitter.png"
+			"filename": "/twitter.png",
+			"text": "Generatore automatico di strip. Striscia di oggi."
 		},
 		"mastodon": {
 			"token": "./mastodon_token",
-			"filename": "/mastodon.png"
+			"filename": "/mastodon.png",
+			"text": "Nuova striscia"
 		},
 		"telegram": {
 			"token": "./telegram_token",
@@ -46,11 +48,13 @@
 		"panelLength":600,
 		"twitter": {
 			"token": "./twitter_token",
-			"filename": "/twitter.png"
+			"filename": "/twitter.png",
+			"text": "Automatic comic strip generator."			
 		},
 		"mastodon": {
 			"token": "./mastodon_token",
-			"filename": "/mastodon.png"
+			"filename": "/mastodon.png",
+			"text": "New comic"			
 		},
 		"telegram": {
 			"token": "./telegram_token",

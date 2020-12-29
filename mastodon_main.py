@@ -1,14 +1,19 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 from randstrip import createStrip,readConfig
 from mastodon import Mastodon
 import os
+import sys
 
 fileDir = os.path.dirname(os.path.abspath(__file__))
 fileDir = fileDir +"/"
 API_URL = "https://botsin.space"
 	
 if __name__ == "__main__":
-	config = readConfig(platform="mastodon")
+	if len(sys.argv) == 2:
+		altProfile = [sys.argv[1]]
+	else:
+		altProfile = False
+	config = readConfig(platform="mastodon",profile=altProfile)
 	
 	with open(config["token"]) as f:
 		createapp = f.readlines()
@@ -21,7 +26,7 @@ if __name__ == "__main__":
 		for i in range(1,100):
 			try:
 				new_strip = mastodon.media_post(config["saveLocation"]+config["filename"],"image/png")
-				mastodon.status_post("Nuova striscia",media_ids=new_strip)
+				mastodon.status_post(config["text"],media_ids=new_strip)
 				published = True
 			except:
 				continue
