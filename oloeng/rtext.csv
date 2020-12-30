@@ -12,12 +12,12 @@ A10.png;0
 A11.png;0
 A12.png;0
 A13.png;0
-A14.png;1;330;168;I'm bored;I want to get back@to $LUOGOCP;I'm here since@$ANNO;I'd like a @$OBJECT;I miss@$NAME;I would eat even@$FOOD;It's $NUMERO@days since my arrival here;Hopefully@it's not raining;$SWEARING;It's all $NAME@fault;I need @$OBJECT to build@a raft;It's a ship over there?;Eeeeeh...
+A14.png;1;330;168;I'm bored;I want to get back@to $LUOGOCP;I'm here since@$ANNO;I'd like a @$OBJECT;I miss@$NAME;I would eat even@$FOOD;It's $NUMERO@days since my@arrival here;Hopefully@it's not raining;$SWEARING;It's all $NAME@fault;I need @$OBJECT to build@a raft;It's a ship over there?;Eeeeeh...
 A15.png;0
 A16.png;0
 A17.png;0
 A18.png;0
-A19.png;1;122;108;What a melanchonic@sunset...;I wonder what will happen@in $NUMERO years...;I wonder how is@life after death...;I wonder what@happened to $NAME;I wonder if we@will ever solve the problem@$QUESTOP;I miss my@$PET;I miss $NAME;$NAME was right;What a beautiful sunset...
+A19.png;1;122;108;What a melanchonic@sunset...;I wonder what will happen@in $NUMERO years...;I wonder how is@life after death...;I wonder what@happened to $NAME;I wonder if we@will ever solve the problem of@$QUESTOP;I miss my@$PET;I miss $NAME;$NAME was right;What a beautiful sunset...
 A20ENG.png;0
 A21.png;0
 A22.png;1;123;110;Anyway...;However...;Perhaps...;Mm...;Of course, of course...;So...;On the other hand...;Maybe...
@@ -30,10 +30,10 @@ A29.png;1;126;65;A small step for a man...;A small step for a woman...;Hello $NA
 A30.png;1;309;87;I'm inside@the Matrix!;This is the@VIRTUAL REALITY!;I'M IN A@PARALLEL UNIVERSE!;Get me out of@this computer!;The vortex of@informations!;I see@CYBERSPACE!;I'm on the@INTERNET!
 A31.png;2;113;111;281;309;$COLORA ALERT!;$HELP;$COLORA ALERT;$DESPAIR
 A32.png;2;109;91;134;213;Space, last frotier...;$LUOGOCP;Space, last frontier;$PLANET;Captain's log, star date $NUMERO;$PLANET
-ART00ENG.png;1;62;90;Hm... an exhibition by@$NAME $COGNAME;An exibithion of $ARTE $MOVIMENTO;...$COGNAME was part@of the $MOVIMENTO movement;An $ARTE exibithion!@Neat!
+ART00ENG.png;1;62;90;Hm... an exhibition by@$NAME $COGNAME;An exibithion of $MOVIMENTO $ARTE ;...$COGNAME was part@of the $MOVIMENTO movement;A $ARTE exibithion!@Neat!
 ART01.png;1;70;80;Hm...@"$TITOLARTE"; "$TITOLARTE" is an@unsurpassed example@of $MOVIMENTO movement;This is the famous@"$TITOLARTE";A work by@$NAME $COGNAME; "$TITOLARTE"@by $NAME $COGNAME
 ART02.png;0
-ART03.png;1;54;66;WOW, this work@$VALUTAZIONE;I'm disappointed;This work is worth@$NUMERO euros!;A classic from@$MOVIMENTO movement;They shoud have called it@"$TITOLARTE";Why?;It's fake!;$NAME would say that it's@$VALUTAZIONE, but I think that@$VALUTAZIONE instead;$VALUTAZIONE
+ART03.png;1;54;66;WOW, this work@$VALUTAZIONE;I'm disappointed;This work is worth@$NUMERO euros!;A classic from@$MOVIMENTO movement;They shoud have called it@"$TITOLARTE";Why?;It's fake!;$NAME would say that @$VALUTAZIONE, but I think that@$VALUTAZIONE instead;$VALUTAZIONE
 B00.0.png;2;40;48;288;78;Excuse me@where is the train@station?;The train what?;What do you think about@$QUESTOP?;$ANSOP;How do you prepare@$FOOD?;I don't know;Do you know $NAME?;I don't think so;Are you $NAME?;No, I'm $NAME;Are we friend on@$SOCIAL?;Maybe;Your car is in the way;OK, I'll move it;I've got bad news@for your $PET;Oh no,@what happened?;How's the match?;$TEAMCALCIO is $RISULTATOCALCIO@vs $TEAMCALCIO
 B00.1.png;2;159;45;315;122;Excuse me;What do you want?;I'd like a $OBJECT;Marine or land grown?;Where's the toilet?;Get out@of my home!;The bathroom@is infested by@$ANIMAL!;$SWEARING!;Where's the toilet?;Over there!;An interview for the@$QUOTID;$RSTAMPA;Who are you?;I'm $NAME;Shush...;But...;How's the match?;$TEAMCALCIO is $RISULTATOCALCIO@vs $TEAMCALCIO
 B00.2.png;2;48;32;330;55;$HELP;$HELP;It's all your fault!;No, it's your fault!;It's all your fault;It's not my fault@it's the $COMPLOTTS;$TEAMCALCIO scored!;YAY!;$CORPONOME found us!;$DESPAIR;It's a conspyracy@of $COMPLOTTS;$SWEARING
@@ -93,6 +93,6 @@ Q16.png;2;111;97;259;148;You introduced $NUMERO taxes!;You did it!;You don't hav
 Q17.png;1;105;100;Good evening and welcome to@this debate.@Today we have sen. $COGNAME and@sen. $COGNAME who discuss about $PROBLEM
 Q18.png;2;201;105;375;159;I punch you in the face!;Security!;I'll kill you!;Stop it!;I'll kick your ass;No no NO!
 Q19.png;2;110;143;366;192;I quit!;Oh well;It's impossible to@reason with you!;Please stay!;This sucks!;What?
-Q20.png;1;170;129;Drive a $AUTO@means freedom;$MARCAAUTO $AUTO@at $NUMERO Euro
+Q20.png;1;170;129;Driving a $AUTO@means freedom;$MARCAAUTO $AUTO@at $NUMERO Euro
 Q21.png;1;201;129;Eau de $NAME@pour homme;Buy this thing;$NUMERO euro!
-U00.png;1;63;153;Oh noes! Ufos are @$UFO;Oh no! Ufos are @$UFO
+U00.png;1;63;153;Oh noes! Ufos @$UFO;Oh no! Ufos @$UFO
