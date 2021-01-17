@@ -42,7 +42,7 @@ B01.png;2;160;38;250;80;Idiot!;Mind your language;I hate you!;Who cares!;I'm cal
 B02.png;2;219;67;227;180;$INSULT;$INSULT
 B03.png;2;188;79;270;172;I got a present!;For me?;I got you this!;Wow!;This was in the@mailbox;It has finally@arrived!
 B04ENG.png;0
-B05.png;2;171;102;200;220;What?;What what?;But...;It's all your falut!;Sea greaves?;Yes!;But...;Not a chance!;So, it wasn't $NAME?;No! It was $NAME!;Whoops, was it private?;Yes, and you posted@it on $SOCIAL;
+B05.png;2;171;102;200;220;What?;What what?;But...;It's all your fault!;Sea greaves?;Yes!;But...;Not a chance!;So, it wasn't $NAME?;No! It was $NAME!;Whoops, was it private?;Yes, and you posted@it on $SOCIAL;
 B06.png;2;179;80;245;165;Sorry;Buzz off;But I prepared $FOOD;Eat it yourself!;I thought that...;You thought it wrong
 B07.png;1;297;89;What a surprise!;I wonder what's inside!;I'm excited!
 B08.png;1;80;106;OH NOES! COCKCHICKEN!;COCKCHICKEN!
@@ -90,7 +90,7 @@ Q13.png;1;256;184;Let's taste it!
 Q14.png;0
 Q15.png;1;213;89;mmm;yum!;good;not bad;it tastes gross;it sucks;call an ambulance;too sour;too sweet;too bitter
 Q16.png;2;111;97;259;148;You introduced $NUMERO taxes!;You did it!;You don't have respect!;You don't have it!;Where were you when it was around?;Where were you instead!;You stole $NUMERO from the@budget!;You stole it!;Don't interrupt me!;You don't interrupt me!
-Q17.png;1;105;100;Good evening and welcome to@this debate.@Today we have sen. $COGNAME and@sen. $COGNAME who discuss about $PROBLEM
+Q17.png;1;105;100;Good evening and welcome to@this debate.@Today we have sen. $COGNAME and@sen. $COGNAME discussing about $PROBLEM
 Q18.png;2;201;105;375;159;I punch you in the face!;Security!;I'll kill you!;Stop it!;I'll kick your ass;No no NO!
 Q19.png;2;110;143;366;192;I quit!;Oh well;It's impossible to@reason with you!;Please stay!;This sucks!;What?
 Q20.png;1;170;129;Driving a $AUTO@means freedom;$MARCAAUTO $AUTO@at $NUMERO Euro
