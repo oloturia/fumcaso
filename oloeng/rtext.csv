@@ -1,4 +1,4 @@
-A00.png;1;268;77;What a lousy day;Is there anybody?;I'd like a@;Whoa!;$NAME, where are you?;Sea greaves;I'm going to buy@$OBJECT;I wonder where@$NAME is...;$FILMS was@released on Netfluxsp;I ate $FOOD
+A00.png;1;268;77;What a lousy day;Is there anybody?;I'd fancy a@;Whoa!;$NAME, where are you?;Sea greaves;I want to buy@$OBJECT;I wonder where@$NAME is...;$FILMS was@released on Netfluxsp;I just ate $FOOD
 A01.png;1;327;110;I'm nervous!;I'm very angry!;What a nuisance!;$OBJECT;Flop off!;AAAAAH!;$SWEARING;$NAME is late!
 A02.png;1;282;100;I'll get through@this!;I've got an idea!;Sea greaves;Waiter, a pizza!
 A03.png;1;296;103;I wonder what's@inside this box;I received@this parcel@from Ammazzon;Sea greaves;$NAME sent this;This is for $NAME,@should I open it?;Usually I don't@open anonymous packages;With this@I'm going to@resolve all my problems
@@ -22,19 +22,19 @@ A20ENG.png;0
 A21.png;0
 A22.png;1;123;110;Anyway...;However...;Perhaps...;Mm...;Of course, of course...;So...;On the other hand...;Maybe...
 A23.png;1;188;102;Maybe they found me;Oh no!; $SWEARING ;I forgot the oven on;I didn't return $OBJECT@to $NAME;$FOOD was poisoned;$FOOD@had gone bad;uh oh...;Someone hacked my $SOCIAL;$NAME found out that@I flirt with $NAME;It's the end
-A24.png;1;104;110;Suddenly, THE HORROR;What the...;I forgot my $PET@at the gas station;Maybe $FOOD@was poisoned;That's the true@meaning of life!;Now I finally understand@$FILMS ending;Yabba dabba bubba;$NAME is a liar!;I wonder where@I left $OBJECT
-A26.png;1;91;91;$SWEARING;I'm going to kick him!;$NAME tricked on me;I'm going to punch him@$NUMERO times;I'll avenge my $PET;I was tricked like a@child!;I didn't undersand@$FILMS ending!
+A24.png;1;104;110;Suddenly, THE HORROR;What the...;I forgot my $PET@at the gas station;Maybe $FOOD@was poisoned;That's the true@meaning of life!;Suddenly $FILMS ending now makes sense!;Yabba dabba bubba;$NAME is a liar!;I wonder where@I left $OBJECT
+A26.png;1;91;91;$SWEARING;I'm going to kick him!;$NAME tricked on me;I'm going to punch him@$NUMERO times;I'll avenge my $PET;I was tricked like a@child!;I didn't understand@$FILMS ending!
 A27.png;1;90;113;Ahh...;Eh...;$NAME and $NAME won't be@disappointed;Time for a@new $PET;Last year I earned@$NUMERO euros;I should stop buying@$OBJPLU ;It's like this!;I read it on $QUOTID
 A28.png;1;157;204;We're going@to crash@on $PLANET;Sensors detects@that air on@$PLANET is@breathable;Oh no! We're@going adrift@in the Space!;The Kellogg's route@in less than@$NUMERO Parseqs!;How did I@get there?;Trips in@space!;The Space!;From here, the@view is marvellous
 A29.png;1;126;65;A small step for a man...;A small step for a woman...;Hello $NAME;I can see my house from here;Earth from up there is nice;This planet is mine now
-A30.png;1;309;87;I'm inside@the Matrix!;This is the@VIRTUAL REALITY!;I'M IN A@PARALLEL UNIVERSE!;Get me out of@this computer!;The vortex of@informations!;I see@CYBERSPACE!;I'm on the@INTERNET!
+A30.png;1;309;87;I'm inside@the Matrix!;This is@VIRTUAL REALITY!;I'M IN A@PARALLEL UNIVERSE!;Get me out of@this computer!;The vortex of@informations!;I see@CYBERSPACE!;I'm on the@INTERNET!
 A31.png;2;113;111;281;309;$COLORA ALERT!;$HELP;$COLORA ALERT;$DESPAIR
-A32.png;2;109;91;134;213;Space, last frotier...;$LUOGOCP;Space, last frontier;$PLANET;Captain's log, star date $NUMERO;$PLANET
+A32.png;2;109;91;134;213;Space, last frontier...;$LUOGOCP;Space, last frontier;$PLANET;Captain's log, star date $NUMERO;$PLANET
 ART00ENG.png;1;62;90;Hm... an exhibition by@$NAME $COGNAME;An exibithion of $MOVIMENTO $ARTE ;...$COGNAME was part@of the $MOVIMENTO movement;A $ARTE exibithion!@Neat!
 ART01.png;1;70;80;Hm...@"$TITOLARTE"; "$TITOLARTE" is an@unsurpassed example@of $MOVIMENTO movement;This is the famous@"$TITOLARTE";A work by@$NAME $COGNAME; "$TITOLARTE"@by $NAME $COGNAME
 ART02.png;0
 ART03.png;1;54;66;WOW, this work@$VALUTAZIONE;I'm disappointed;This work is worth@$NUMERO euros!;A classic from@$MOVIMENTO movement;They shoud have called it@"$TITOLARTE";Why?;It's fake!;$NAME would say that @$VALUTAZIONE, but I think that@$VALUTAZIONE instead;$VALUTAZIONE
-B00.0.png;2;40;48;288;78;Excuse me@where is the train@station?;The train what?;What do you think about@$QUESTOP?;$ANSOP;How do you prepare@$FOOD?;I don't know;Do you know $NAME?;I don't think so;Are you $NAME?;No, I'm $NAME;Are we friend on@$SOCIAL?;Maybe;Your car is in the way;OK, I'll move it;I've got bad news@for your $PET;Oh no,@what happened?;How's the match?;$TEAMCALCIO is $RISULTATOCALCIO@vs $TEAMCALCIO
+B00.0.png;2;40;48;288;78;Excuse me@where is the train@station?;The train what?;What do you think about@$QUESTOP?;$ANSOP;How do you prepare@$FOOD?;I don't know;Do you know $NAME?;I don't think so;Are you $NAME?;No, I'm $NAME;Are we friend on@$SOCIAL?;Maybe;Your car is in the way;OK, I'm moving;I've got bad news@for your $PET;Oh no,@what happened?;How's the match?;$TEAMCALCIO is $RISULTATOCALCIO@vs $TEAMCALCIO
 B00.1.png;2;159;45;315;122;Excuse me;What do you want?;I'd like a $OBJECT;Marine or land grown?;Where's the toilet?;Get out@of my home!;The bathroom@is infested by@$ANIMAL!;$SWEARING!;Where's the toilet?;Over there!;An interview for the@$QUOTID;$RSTAMPA;Who are you?;I'm $NAME;Shush...;But...;How's the match?;$TEAMCALCIO is $RISULTATOCALCIO@vs $TEAMCALCIO
 B00.2.png;2;48;32;330;55;$HELP;$HELP;It's all your fault!;No, it's your fault!;It's all your fault;It's not my fault@it's the $COMPLOTTS;$TEAMCALCIO scored!;YAY!;$CORPONOME found us!;$DESPAIR;It's a conspyracy@of $COMPLOTTS;$SWEARING
 B00.3.png;2;90;85;286;120;$CORPONOME, $CORPOAZIONE;$REAZIONECORPO ;$CORPONOME, are you@$COGNAME ?;$REAZIONENAME
@@ -55,7 +55,7 @@ B13.png;0
 B14.png;0
 B15.png;0
 B16.png;0
-B20.png;2;145;81;335;139;Let's watch TV;click;Oh $PROGRAM is on;click;TV time;peepo;I'll watch@$FILMS on DVD;bzuuz
+B20.png;2;145;81;335;139;Let's watch some TV;click;Oh $PROGRAM is on;click;TV time;peepo;Let's watch@$FILMS on DVD;bzuuz
 B21.0.png;1;110;81;...for a THOUSAND years!;...reproduction@of $ANIMAL...;...before they could react!;...$ANIMAL eat@ $FOOD...;POW ZAP@BOOM!;...damned $COGNAME@we will see again!;...this is the recipe@for $FOOD broth;...third world war...
 B21.1.png;1;110;81;...for a THOUSAND years!;...reproduction@of $ANIMAL...;...before they could react!;...$ANIMAL eat@ $FOOD...;POW ZAP@BOOM!;...damned $COGNAME@we will see again!;...this is the recipe@for $FOOD broth;...third world war...
 B21.2.png;1;110;81;...for a THOUSAND years!;...reproduction@of $ANIMAL...;...before they could react!;...$ANIMAL eat@ $FOOD...;POW ZAP@BOOM!;...damned $COGNAME@we will see again!;...this is the recipe@for $FOOD broth;...third world war...
@@ -66,9 +66,9 @@ B25.0.png;1;131;87;Uahahah!;Funny!;Ridiculous!;Ahah that's dumb!
 B25.1.png;1;131;87;Uahahah!;Funny!;Ridiculous!;Ahah that's dumb!
 B26.0.png;0
 B26.1.png;0
-B27.png;1;157;119;I'm tired;Enough TV for today;There's only trash@on TV;I'll go make a@$FOOD sandwich;I'll check@$SOCIAL
-B28.png;2;118;43;470;92;I'd like $FOOD@with some $SIDEDISH@and $FOOD in@$DRESSING;At once@monsieur
-B29.png;2;160;61;106;152;May I suggest@$VINO from $ANNO;Let's try;Do you want some wine?;I'll take $VINO;We have some good@$VINO from $LUOGOCP;Let's try it!
+B27.png;1;157;119;I'm tired;Enough TV for today;There's only trash@on TV;Time for a@$FOOD sandwich;Time to check@$SOCIAL
+B28.png;2;118;43;470;92;I'll have $FOOD@with some $SIDEDISH@and $FOOD in@$DRESSING;At once@monsieur
+B29.png;2;160;61;106;152;May I suggest@$VINO from $ANNO;Let's try;Do you want some wine?;I'd like a $VINO;We have some good@$VINO from $LUOGOCP;Let's try it!
 B30.png;0
 B31.png;2;91;134;335;112;$REAZIONEVINO;thank you monsieur
 B32.png;2;135;157;290;109;$VERSO;Too sour, monsieur?
@@ -89,9 +89,9 @@ Q12.png;1;135;127;Cook at $NUMERO°C@for $NUMERO minutes!
 Q13.png;1;256;184;Let's taste it!
 Q14.png;0
 Q15.png;1;213;89;mmm;yum!;good;not bad;it tastes gross;it sucks;call an ambulance;too sour;too sweet;too bitter
-Q16.png;2;111;97;259;148;You introduced $NUMERO taxes!;You did it!;You don't have respect!;You don't have it!;Where were you when it was around?;Where were you instead!;You stole $NUMERO from the@budget!;You stole it!;Don't interrupt me!;You don't interrupt me!
+Q16.png;2;111;97;259;148;You introduced $NUMERO taxes!;No, you did it!;You don't have respect!;No, you don't have it!;Where were you when it was around?;Where were you instead!;You stole $NUMERO from the@budget!;No, you stole it!;Don't interrupt me!;No, you don't interrupt me!
 Q17.png;1;105;100;Good evening and welcome to@this debate.@Today we have sen. $COGNAME and@sen. $COGNAME discussing about $PROBLEM
-Q18.png;2;201;105;375;159;I punch you in the face!;Security!;I'll kill you!;Stop it!;I'll kick your ass;No no NO!
+Q18.png;2;201;105;375;159;I'll punch you in the face!;Security!;I'll kill you!;Stop it!;I'll kick your ass;No no NO!
 Q19.png;2;110;143;366;192;I quit!;Oh well;It's impossible to@reason with you!;Please stay!;This sucks!;What?
 Q20.png;1;170;129;Driving a $AUTO@means freedom;$MARCAAUTO $AUTO@at $NUMERO Euro
 Q21.png;1;201;129;Eau de $NAME@pour homme;Buy this thing;$NUMERO euro!
