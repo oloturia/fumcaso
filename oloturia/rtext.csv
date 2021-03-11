@@ -12,12 +12,12 @@ A10.png;0
 A11.png;0
 A12.png;0
 A13.png;0
-A14.png;1;330;168;Che noia!;Vorrei tornare@a $LUOGOCP;Sono qui@dall'$ANNO ormai;Come vorrei @$OBJECT;Mi manca@$NAME;Mangerei financo@$FOOD;Sono già $NUMERO@giorni che sto qui;Per fortuna@non piove;$SWEARING;È colpa di@$NAME;Mi basterebbe@$OBJECT per@costruire una zattera;Dico, una barca@all'orizzonte?;Eeeeeeh...
+A14.png;1;330;168;Che noia!;Vorrei tornare@a $LUOGOCP;Sono qui@dall'$ANNO ormai;Come vorrei @$OBJECT;Mi manca@$NAME;Mangerei financo@$FOOD;Sono già $NUMERO@giorni che sto qui;Per fortuna@non piove;$SWEARING;È colpa di@$NAME;Mi basterebbe@$OBJECT per@costruire una zattera;Dico, una barca@all'orizzonte?;Eeeeeeh...;Vorrei $OBJPLU
 A15.png;0
 A16.png;0
 A17.png;0
 A18.png;0
-A19.png;1;122;108;Che malinconia...;A volte mi chiedo@cosa accadrebbe@fra $NUMERO anni...;Chissà dove si va@dopo la morte...;Chissà che fine@ha fatto $NAME;Chissà se riusciremo@a risolvere il problema@$QUESTOP;Mi manca il mio@$PET;Avrei bisogno di@un robot@$ROBOT;Mi manca $NAME;Aveva ragione $NAME;Che bel tramonto...
+A19.png;1;122;108;Che malinconia...;A volte mi chiedo@cosa accadrebbe@fra $NUMERO anni...;Chissà dove si va@dopo la morte...;Chissà che fine@ha fatto $NAME;Chissà se riusciremo@a risolvere il problema@$QUESTOP;Mi manca il mio@$PET;Avrei bisogno di@un robot@$ROBOT;Mi manca $NAME;Aveva ragione $NAME;Che bel tramonto...;Vorrei $OBJPLU
 A20.png;0
 A21.png;0
 A22.png;1;123;110;Bhe, del resto...;Ma d'altronde...;Comunque sia...;Eh bhe...;Ma sì, ma sì...;Forse...;Ma quindi...;Però d'altra parte...
@@ -79,6 +79,10 @@ C03.png;1;343;132;Hop!@Hop!@Hop!
 C04.png;1;132;113;Aaanf!@Aaanf!@Aaanf!
 C05.png;1;123;140;Sono vicinissimo!;Sono... molto vicino!;Sono quasi arrivato!;Caspita! Sono vicino!;Arrivo!;Manca pochissimo!;Manca molto poco
 C06.png;1;317;60;Hop!@Hop!@Hop!
+MUS00.png;1;225;96;Turboeliche @$COGNAME;Magneti @$COGNAME;Succhi di frutta @$COGNAME;Carne scelta @$COGNAME;$MARCAAUTO;Fagioli @$COGNAME;Cereali @$COGNAME;Giubbini @$COGNAME;Pasta @$COGNAME;Pneumatici @$COGNAME;Brodi @$COGNAME;Olio @$COGNAME;Nasturzi @$COGNAME;Mappamondi @$COGNAME;Merendine @$COGNAME;Totani @$COGNAME
+MUS01.png;3;205;92;204;240;343;354;$NUMEROesimo;$LUOGOCP;Buonaseeera!
+MUS02.png;1;70;102;Coi testi di $COGNAME e $COGNAME@$GRUPPMUS @"$TITOLMUS"@dirige l'orchestra il maestro $COGNAME
+MUS03.png;3;61;68;150;143;38;193;$CAOS;$CAOS;$CAOS;$CAOS $CAOS;$CAOS $CAOS;$CAOS;$CAOS $CAOS $CAOS;$CAOS $CAOS;$CAOS;$CAOS $CAOS $CAOS $CAOS;$CAOS $CAOS;$CAOS
 O00.0.png;2;280;141;360;332;$OPERA;testi $COGNAME @disegni $COGNAME
 O00.1.png;2;147;200;369;351;$OPERA;testi $COGNAME @disegni $COGNAME
 O00.2.png;0
@@ -106,7 +110,7 @@ Q14.png;0
 Q15.png;1;213;89;bhe;bha;mmm;bof;yum!;buono;buonino;non male;mbleah;sigh;schifo;buonooooo;argh;chiamate un'autoambulanza;manca di sale;manca di zucchero;manca di cumino
 Q16.png;2;111;97;259;148;Dov'eravate quando i cittadini@non arrivavano a fine mese?;Dov'eravate voi?;Avete messo $NUMERO @tasse!;Le avete messe voi!;Non avete rispetto!;Voi non avete rispetto!;Restituite i $NUMERO euro@che avete rubato!;Restituiteli voi!;Alle prossime elezioni@vi faremo vedere!;Noi vi faremo vedere!;Cosa pensate di fare con@$PROBLEM?;Cosa pensate voi!;L'articolo su $QUOTID @dice che...;Non mi importa cosa dice!;Non mi interrompa! Io non l'ho interrotta!;Non mi interrompa lei!
 Q17.png;1;105;100;Buona sera e benvenuti a@$TRIBUNE @Oggi con noi avremo l'on.$COGNAME e@l'on.$COGNAME che parleranno di $PROBLEM
-Q18.png;2;201;105;375;159;Ti spacco la testa!;Pubblicità!;Ti ammazzo!;Rèclame!;Ti strozzo;Securityy!;Ti inchiodo;Oh no!;Ti rompo il muso;Fermi!
+Q18.png;2;201;105;375;159;Ti spacco la testa!;Pubblicità!;Ti ammazzo!;Rèclame!;Ti strozzo;Securityy!;Ti inchiodo;Oh no!;Ti rompo il muso;Fermi!;Ti finisco!;Oddio!
 Q19.png;2;110;143;366;192;Basta me ne vado;Va bhe;Con voi non si può parlare;Rimanga!;È impossibile, io esco!;Pubblicità
 Q20.png;1;170;129;Guidare una $AUTO@vuol dire libertà;$MARCAAUTO $AUTO @Tua a sole $NUMERO rate!@TAN $NUMERO%@TAEG $NUMERO%;Vieni a provarla@il sabato e la domenica@nei concessionari $MARCAAUTO
 Q21.png;1;201;129;Eau de $NAME@pour homme;COMPRA ANCHE TU@questa cosa;a soli $NUMERO euro!

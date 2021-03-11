@@ -19,6 +19,8 @@ def replaceText(text,config):
 			if text.find(row[0]) != -1:
 				text = text.replace(row[0],row[random.randint(1,len(row)-1)],1)
 				return text
+		print("Parsing error \""+text+"\" not found")
+		quit()
 
 def fetchText(indText,config):
 	"""This function fetch the text for the image with two characters
@@ -100,9 +102,10 @@ def writeStrip(story,fontSize,config):
 						try:
 							while text_vign.find('$') != -1:
 								text_vign = replaceText(text_vign,config)
-						except AttributeError:
+						except AttributeError as err:
 							print("Problem parsing:")
 							print(textVign)
+							print(err)
 							quit()
 						text_vign = text_vign.replace('@','\n')
 						addtext.multiline_text((int(textVign[0][x][0]),int(textVign[0][x][1])),text_vign,fill="#000000",font=fnt,align="center")
