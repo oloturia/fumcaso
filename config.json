@@ -11,6 +11,7 @@
 		"csvSubs": "subs.csv",
 		"csvObj": "obj.csv",
 		"font": "./ubuntu.ttf",
+		"fontSize": 22,
 		"xSize":2400,
 		"ySize":500,
 		"panelLength":600,

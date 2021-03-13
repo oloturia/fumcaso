@@ -83,7 +83,7 @@ def addThing(indVign,config):
 				return row[random.randint(3,len(row)-1)],row[1],row[2]
 		return 0
 
-def writeStrip(story,fontSize,config):
+def writeStrip(story,config):
 	"""This function creates the strip returning an image object that could be saved or viewed. It takes an array with filenames as parameter
 	The first image is always 000, then appends to strip the files, then decorates it fetching text and adding objects. If the object is an R, then
 	repeats the last object."""
@@ -92,7 +92,7 @@ def writeStrip(story,fontSize,config):
 		try:
 			vign = Image.open(config["imagesLocation"]+"/"+indVign).convert('RGBA')
 			addtext = ImageDraw.Draw(vign)
-			fnt = ImageFont.truetype(config["font"],fontSize)
+			fnt = ImageFont.truetype(config["font"],config["fontSize"])
 			textVign = fetchText(indVign,config)
 			
 			if textVign!=0:
@@ -132,13 +132,13 @@ def writeStrip(story,fontSize,config):
 		xshift += config["panelLength"]
 	return image
 
-def createStrip(config,specialPlatform="",fontSize=22):
+def createStrip(config,specialPlatform=""):
 	"""Create strip and save it
 	createStrip(str path/filename)"""
 
 	try:
 		story = fetchVign(config)
-		finalStrip = writeStrip(story,fontSize,config)
+		finalStrip = writeStrip(story,config)
 		if specialPlatform == "android":
 			return finalStrip
 		else:
@@ -172,6 +172,7 @@ def readConfig(profile=False,platform=False):
 	csvSubs = config[profile]["csvSubs"]
 	csvObj = config[profile]["csvObj"]
 	font = checkLocal(config[profile]["font"])
+	fontSize = int((config[profile]["fontSize"]))
 	xSize = config[profile]["xSize"]
 	ySize = config[profile]["ySize"]
 	panelLength = config[profile]["panelLength"]
@@ -183,9 +184,9 @@ def readConfig(profile=False,platform=False):
 		except KeyError:
 			text = False
 		
-		return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"font":font,"token":token,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj,"text":text}
+		return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"fontSize":fontSize,"font":font,"token":token,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj,"text":text}
 	filename = config[profile]["filename"]
-	return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"font":font,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj}
+	return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"fontSize":fontSize,"font":font,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj}
 		
 def checkLocal(directory):
 	"""Checks if it's a relative or absolute path"""
@@ -223,7 +224,7 @@ if __name__ == "__main__":
 			story = []					#Story specified
 			for x in args.story:
 				story.append(x)
-		finalStrip = writeStrip(story,22,config)
+		finalStrip = writeStrip(story,config)
 		
 		if args.xsize != 0:				#Resize specified
 			finalStrip = finalStrip.resize((args.xsize[0],int(args.xsize[0]/2400*500)))

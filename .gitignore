@@ -1,0 +1,14 @@
+telegram_token
+twitter_token
+mastodon_token
+telegram.png
+mastodon.png
+twitter.png
+android.png
+__pycache__/*
+oloturia_credentials.secret
+history/*
+bin/*
+temp/*
+show.html
+*.pyc
