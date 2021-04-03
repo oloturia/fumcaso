@@ -116,4 +116,9 @@ Q20.png;1;170;129;Guidare una $AUTO@vuol dire libertà;$MARCAAUTO $AUTO @Tua a s
 Q21.png;1;201;129;Eau de $NAME@pour homme;COMPRA ANCHE TU@questa cosa;a soli $NUMERO euro!
 Q22.png;1;105;176;Eau de $NAME;Il medicinale puòavere@effetticolanteralianche@gravinonsomuinstraxu@zodblflpylxyx;Chiara e fresca come nevischio!;Meglio oggi che domani!
 Q23.png;1;164;326;Elimina fino al $NUMERO @ percento dei batteri;L'acqua $COGNAME @ha gli oligoelementi;Povera di sbodio;Rimuove le impurità e migliora@ del $NUMERO percento la lucentezza
+SET00.png;1;223;143;Proviamo con@ $ENIGMO;Risolviamo@ $ENIGMO;C'è $ENIGMO @ancora da finire;Mi manca una definizione@per finire $ENIGMO ;Non riesco a risolvere@ $ENIGMO
+SET01.png;1;180;90;$NUMERO orizzontale:@ $DEFINIZ;$NUMERO verticale:@ $DEFINIZ;Questa è difficile:@$DEFINIZ;$NUMERG lettere:@$DEFINIZ;Inizia per 'g',@di $NUMERG lettere:@$DEFINIZ
+SET02.png;0
+SET03.png;1;297;163;$CAON
+SET04.png;1;180;90;$NUMERO orizzontale:@ $DEFINIZ;$NUMERO verticale:@ $DEFINIZ;Questa è difficile@$DEFINIZ;$NUMERG lettere,@$DEFINIZ;Inizia per 'g',@di $NUMERG lettere,@$DEFINIZ
 U00.png;1;63;153;Ho no! Gli ufo @$UFO;Oh no! Gli ufo @$UFO
