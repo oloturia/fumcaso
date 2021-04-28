@@ -44,6 +44,40 @@
 		"csvSubs": "subs.csv",
 		"csvObj": "obj.csv",
 		"font": "./ubuntu.ttf",
+		"fontSize": 22,
+		"xSize":2400,
+		"ySize":500,
+		"panelLength":600,
+		"twitter": {
+			"token": "./twitter_token",
+			"filename": "/twitter.png",
+			"text": "Automatic comic strip generator."			
+		},
+		"mastodon": {
+			"token": "./mastodon_token",
+			"filename": "/mastodon.png",
+			"text": "New comic"			
+		},
+		"telegram": {
+			"token": "./telegram_token",
+			"filename": "/telegram.png"
+		},
+		"android": {
+			"filename": "android.png"
+		}
+	},
+
+	"olofra": {
+		"saveLocation": "/var/tmp",
+		"filename": "/image.png",
+		"imagesLocation": "./oloturia",
+		"csvLocation": "./olofra",
+		"csvTree": "ram.csv",
+		"csvSpeech": "rtext.csv",
+		"csvSubs": "subs.csv",
+		"csvObj": "obj.csv",
+		"font": "./ubuntu.ttf",
+		"fontSize": 22,
 		"xSize":2400,
 		"ySize":500,
 		"panelLength":600,

@@ -1,7 +1,7 @@
-A00.png;1;268;77;What a lousy day;Is there anybody?;I'd fancy a@;Whoa!;$NAME, where are you?;Sea greaves;I want to buy@$OBJECT;I wonder where@$NAME is...;$FILMS was@released on Netfluxsp;I just ate $FOOD
+A00.png;1;268;77;What a lousy day;Is there anyone?;I'd fancy a@;Whoa!;$NAME, where are you?;Sea greaves;I want to buy@$OBJECT;I wonder where@$NAME is...;$FILMS was@released on Netfluxsp;I just ate $FOOD
 A01.png;1;327;110;I'm nervous!;I'm very angry!;What a nuisance!;$OBJECT;Flop off!;AAAAAH!;$SWEARING;$NAME is late!
 A02.png;1;282;100;I'll get through@this!;I've got an idea!;Sea greaves;Waiter, a pizza!
-A03.png;1;296;103;I wonder what's@inside this box;I received@this parcel@from Ammazzon;Sea greaves;$NAME sent this;This is for $NAME,@should I open it?;Usually I don't@open anonymous packages;With this@I'm going to@resolve all my problems
+A03.png;1;296;103;I wonder what's@inside this box;I received@this parcel@from Ammazzon;Sea greaves;$NAME sent this;This is for $NAME,@should I open it?;Usually I don't@open anonymous packages;With this@I'm going to@solve all my problems
 A04ENG.png;0
 A05.png;0
 A06.png;0
@@ -12,12 +12,12 @@ A10.png;0
 A11.png;0
 A12.png;0
 A13.png;0
-A14.png;1;330;168;I'm bored;I want to get back@to $LUOGOCP;I'm here since@$ANNO;I'd like a @$OBJECT;I miss@$NAME;I would eat even@$FOOD;It's $NUMERO@days since my@arrival here;Hopefully@it's not raining;$SWEARING;It's all $NAME@fault;I need @$OBJECT to build@a raft;It's a ship over there?;Eeeeeh...
+A14.png;1;330;168;I'm bored;I want to get back@to $LUOGOCP;I'm here since@$ANNO;I'd like a @$OBJECT;I miss@$NAME;I would even eat @$FOOD;It's $NUMERO@days since my@arrival here;Luckily@it doesn't rain;$SWEARING;It's all $NAME@fault;I need @$OBJECT to build@a raft;Is it a ship over there?;Eeeeeh...
 A15.png;0
 A16.png;0
 A17.png;0
 A18.png;0
-A19.png;1;122;108;What a melanchonic@sunset...;I wonder what will happen@in $NUMERO years...;I wonder how is@life after death...;I wonder what@happened to $NAME;I wonder if we@will ever solve the problem of@$QUESTOP;I miss my@$PET;I miss $NAME;$NAME was right;What a beautiful sunset...
+A19.png;1;122;108;What a melanchonic@sunset...;Who knows what will happen@in $NUMERO years...;I wonder how is@life after death...;I wonder what@happened to $NAME;I wonder if we@will ever solve the problem of@$QUESTOP;I miss my@$PET;I miss $NAME;$NAME was right;What a beautiful sunset...
 A20ENG.png;0
 A21.png;0
 A22.png;1;123;110;Anyway...;However...;Perhaps...;Mm...;Of course, of course...;So...;On the other hand...;Maybe...
@@ -82,14 +82,14 @@ Q05.png;1;190;89;Detective!@Body of $TITOLO $COGNAME@was stabbed@$NUMERO times!;
 Q06.png;2;150;80;260;188;$SOSPETTO@is the culprit;$SURPRISE;The weapon@is a $WEAPON;$SURPRISE;Let's ask $SOSPETTO@about it;$SURPRISE;I give up!;$SURPRISE;Clearly a case of suicide!;$SURPRISE
 Q07.png;0
 Q08ENG.png;1;220;257;Chef $COGNAME
-Q09.png;1;125;119;Today I present $FOOD@in $DRESSING;Let's prepare a cup of@creamy $DRESSING;You will need a spoonful@of $DRESSING for the $SIDEDISH
+Q09.png;1;125;119;The recipe of the day is:@$FOOD in $DRESSING;Let's prepare a cup of@creamy $DRESSING;You will need a spoonful@of $DRESSING for the $SIDEDISH
 Q10.png;1;190;156;Emulsionate@some $SIDEDISH;Mix together $DRESSING;and $SIDEDISH;Add some $DRESSING
 Q11.png;1;247;137;Et voila!@$FOOD;Ready for the oven!;Serve it in a warm cup;Meanwhile, prepare some @$FOOD;I hope@restaurants are@still open
 Q12.png;1;135;127;Cook at $NUMERO°C@for $NUMERO minutes!
 Q13.png;1;256;184;Let's taste it!
 Q14.png;0
 Q15.png;1;213;89;mmm;yum!;good;not bad;it tastes gross;it sucks;call an ambulance;too sour;too sweet;too bitter
-Q16.png;2;111;97;259;148;You introduced $NUMERO taxes!;No, you did it!;You don't have respect!;No, you don't have it!;Where were you when it was around?;Where were you instead!;You stole $NUMERO from the@budget!;No, you stole it!;Don't interrupt me!;No, you don't interrupt me!
+Q16.png;2;111;97;259;148;You raised $NUMERO taxes!;No, you did it!;You don't have respect!;No, you don't have it!;Where were you when it was around?;Where were you instead!;You stole $NUMERO from the@budget!;No, you stole it!;Don't interrupt me!;No, you don't interrupt me!
 Q17.png;1;105;100;Good evening and welcome to@this debate.@Today we have sen. $COGNAME and@sen. $COGNAME discussing about $PROBLEM
 Q18.png;2;201;105;375;159;I'll punch you in the face!;Security!;I'll kill you!;Stop it!;I'll kick your ass;No no NO!
 Q19.png;2;110;143;366;192;I quit!;Oh well;It's impossible to@reason with you!;Please stay!;This sucks!;What?
