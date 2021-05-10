@@ -247,7 +247,7 @@ if __name__ == "__main__":
 				if args.output == False:
 					print(story)
 				else:
-					finalStrip.save(str(ist)+fileName+".png")
+					finalStrip.save(fileName + str(ist).zfill(3) + ".png")
 	
 	if args.a4:
 		ypos = 100
