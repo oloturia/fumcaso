@@ -202,7 +202,8 @@ if __name__ == "__main__":
 
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-s','--story',metavar='story',default='',nargs=4,help='name of the images')
-	parser.add_argument('-m','--multiple',metavar='multiple',default=[1],nargs=1,type=int,help='multiple output (int >0)')
+	parser.add_argument('-a','--a4',default=False,action='store_true',help='print on an A4 in PDF, needs -o output, disables -x xsize')
+	parser.add_argument('-m','--multiple',metavar='multiple',default=[1],nargs=1,type=int,help='multiple output (int >0), if no output -o specified, it just tests the stories')
 	parser.add_argument('-x','--xsize',metavar='xsize',default=0,type=int,nargs=1,help='resize image x')
 	parser.add_argument('-p','--profile',metavar='profile',default="",type=str,nargs=1,help='profile')
 	parser.add_argument('-o','--output',metavar='output',const=True,default=False,nargs="?",help='output file, if name not specified, default path will be used')
@@ -211,12 +212,15 @@ if __name__ == "__main__":
 	if args.multiple[0] <= 0:			#Wrong multiple choice
 		quit()
 	config = readConfig(profile=args.profile)
-	
+		
 	if args.output == True:				#Output on but no filename specified
 		fileName = config["saveLocation"]+config["filename"]
 	elif type(args.output) == str:		#Output specified
 			fileName = args.output
 
+
+	pdfs = list() 						#Prepare a list for the PDF
+		
 	for ist in range(0,args.multiple[0]):
 		if (args.story == ''):			#No story specified
 			story = fetchVign(config)
@@ -226,19 +230,42 @@ if __name__ == "__main__":
 				story.append(x)
 		finalStrip = writeStrip(story,config)
 		
-		if args.xsize != 0:				#Resize specified
-			finalStrip = finalStrip.resize((args.xsize[0],int(args.xsize[0]/2400*500)))
-		
-		if args.multiple[0] == 1:		#No multiple selected
-			if args.output == False:
-				finalStrip.show()
-			else:
-				finalStrip.save(fileName)
-		else:							#Multiple selected
-			if args.output == False:
-				print(story)
-			else:
-				finalStrip.save(str(ist)+fileName+".png")
+		if args.a4:						#Prints a PDF
+			finalStrip = finalStrip.resize((2249,516))
+			pdfs.append(finalStrip)
+		else:							
+			if args.xsize != 0:			#Resize specified
+				finalStrip = finalStrip.resize((args.xsize[0],int(args.xsize[0]/2400*500)))
+				
 			
+			if args.multiple[0] == 1:	#No multiple selected
+				if args.output == False:
+					finalStrip.show()
+				else:
+					finalStrip.save(fileName)
+			else:						#Multiple selected
+				if args.output == False:
+					print(story)
+				else:
+					finalStrip.save(str(ist)+fileName+".png")
+	
+	if args.a4:
+		ypos = 100
+		nopage = 0
+		if args.output == False:
+			print("Output not specified")
+			quit()
 			
+		pagePdf = list()
+		for pag in range(0,int(args.multiple[0]/6)+1):
+			pagePdf.append(Image.new('RGB',(2479,3508),(255,255,255)))
 			
+		for ist,strip_num in enumerate(range(0,args.multiple[0])):
+			pagePdf[nopage].paste(pdfs[strip_num],box=(110,ypos))
+			ypos += 516
+			if ypos > 3508-569:
+				ypos = 100
+				nopage += 1
+		if fileName[len(fileName)-4:] != ".pdf":
+				fileName += ".pdf"
+		pagePdf[0].save(fileName,save_all=True, append_images=pagePdf[1:])
