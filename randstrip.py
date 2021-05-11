@@ -257,7 +257,7 @@ if __name__ == "__main__":
 			quit()
 			
 		pagePdf = list()
-		for pag in range(0,int(args.multiple[0]/6)+1):
+		for pag in range(0,int((args.multiple[0]-1)/6+1)):
 			pagePdf.append(Image.new('RGB',(2479,3508),(255,255,255)))
 			
 		for ist,strip_num in enumerate(range(0,args.multiple[0])):
