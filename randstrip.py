@@ -130,6 +130,7 @@ def writeStrip(story,config):
 	for vign in strip:
 		image.paste(vign,(xshift,0))
 		xshift += config["panelLength"]
+	ImageDraw.Draw(image).rectangle([0,0,config["xSize"]-1,config["ySize"]-1], fill=None, outline="black", width=1)
 	return image
 
 def createStrip(config,specialPlatform=""):
@@ -257,15 +258,18 @@ if __name__ == "__main__":
 			quit()
 			
 		pagePdf = list()
-		for pag in range(0,int(args.multiple[0]/6)+1):
-			pagePdf.append(Image.new('RGB',(2479,3508),(255,255,255)))
+		for pag in range(0,int((args.multiple[0]-1)/6+1)):
+			image = Image.new('RGB',(2479,3508),(255,255,255))
+			fnt = ImageFont.truetype(config["font"],config["fontSize"])
+			ImageDraw.Draw(image).text((2479 - 500, 3508 - 200),"https://github.com/oloturia/fumcaso",fill="black",font=fnt)
+			pagePdf.append(image)
 			
 		for ist,strip_num in enumerate(range(0,args.multiple[0])):
 			pagePdf[nopage].paste(pdfs[strip_num],box=(110,ypos))
-			ypos += 516
+			ypos += 516 + 20
 			if ypos > 3508-569:
 				ypos = 100
 				nopage += 1
 		if fileName[len(fileName)-4:] != ".pdf":
 				fileName += ".pdf"
-		pagePdf[0].save(fileName,save_all=True, append_images=pagePdf[1:])
+		pagePdf[0].save(fileName, resolution=300, save_all=True, append_images=pagePdf[1:])
