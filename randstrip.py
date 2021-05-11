@@ -272,4 +272,4 @@ if __name__ == "__main__":
 				nopage += 1
 		if fileName[len(fileName)-4:] != ".pdf":
 				fileName += ".pdf"
-		pagePdf[0].save(fileName,save_all=True, append_images=pagePdf[1:])
+		pagePdf[0].save(fileName, resolution=300, save_all=True, append_images=pagePdf[1:])
