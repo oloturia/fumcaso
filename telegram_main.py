@@ -12,7 +12,9 @@ def newStrip(bot, update, args):
 	status = createStrip(config)
 	if status == 0:
 		try:
-			bot.send_photo(chat_id=update.message.chat_id,photo=open(config["saveLocation"]+config["filename"],"rb"))
+			strip_file=open(config["saveLocation"]+config["filename"],"rb")
+			bot.send_photo(chat_id=update.message.chat_id,photo=strip_file)
+			strip_file.close()
 		except Exception as err:
 			print(err)
 	else:
