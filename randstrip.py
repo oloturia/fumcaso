@@ -76,12 +76,13 @@ def addThing(indVign,config):
 	"""This function adds a small image (object) to a larger image
 	obj.csv definition is: name of the image (i.e. A001.png), x-coord, y-coord, subsequent columns possible outcomes
 	It returns a tuple (object file name, x, y)"""
+	objects = list()
 	with open(config["csvLocation"]+"/"+config["csvObj"]) as obj:
 		csvReader = csv.reader(obj)
 		for row in csvReader:
 			if row[0] == indVign:
-				return row[random.randint(3,len(row)-1)],row[1],row[2]
-		return 0
+				objects.append( (row[random.randint(3,len(row)-1)],row[1],row[2] ))
+	return objects
 
 def writeStrip(story,config):
 	"""This function creates the strip returning an image object that could be saved or viewed. It takes an array with filenames as parameter
@@ -114,15 +115,17 @@ def writeStrip(story,config):
 					print(indVign)
 					quit()
 					
-			obj = addThing(indVign,config)
-			if obj!=0:
-				if obj[0] == 'R':
-					objImg = Image.open(config["imagesLocation"]+"/"+prevObj[0])
-				else:
-					prevObj = obj
-					objImg = Image.open(config["imagesLocation"]+"/"+obj[0])
-				vign.paste(objImg,(int(obj[1]),int(obj[2])))
+			obj_list = addThing(indVign,config)
+			if obj_list!=0:
+				for obj in obj_list:
+					if obj[0] == 'R':
+						objImg = Image.open(config["imagesLocation"]+"/"+prevObj[0])
+					else:
+						prevObj = obj
+						objImg = Image.open(config["imagesLocation"]+"/"+obj[0])
+					vign.paste(objImg,(int(obj[1]),int(obj[2])))
 			strip.append(vign)
+			
 		except FileNotFoundError:
 			pass
 	image = Image.new('RGBA',(config["xSize"],config["ySize"]))

@@ -79,7 +79,7 @@ C03.png;1;343;132;Hop!@Hop!@Hop!
 C04.png;1;132;113;Aaanf!@Aaanf!@Aaanf!
 C05.png;1;123;140;Sono vicinissimo!;Sono... molto vicino!;Sono quasi arrivato!;Caspita! Sono vicino!;Arrivo!;Manca pochissimo!;Manca molto poco
 C06.png;1;317;60;Hop!@Hop!@Hop!
-MUS00.png;1;225;96;Turboeliche @$COGNAME;Magneti @$COGNAME;Succhi di frutta @$COGNAME;Carne scelta @$COGNAME;$MARCAAUTO;Fagioli @$COGNAME;Cereali @$COGNAME;Giubbini @$COGNAME;Pasta @$COGNAME;Pneumatici @$COGNAME;Brodi @$COGNAME;Olio @$COGNAME;Nasturzi @$COGNAME;Mappamondi @$COGNAME;Merendine @$COGNAME;Totani @$COGNAME
+MUS00.png;1;225;86;Turboeliche @$COGNAME;Magneti @$COGNAME;Succhi di frutta @$COGNAME;Carne scelta @$COGNAME;$MARCAAUTO;Fagioli @$COGNAME;Cereali @$COGNAME;Giubbini @$COGNAME;Pasta @$COGNAME;Pneumatici @$COGNAME;Brodi @$COGNAME;Olio @$COGNAME;Nasturzi @$COGNAME;Mappamondi @$COGNAME;Merendine @$COGNAME;Totani @$COGNAME
 MUS01.png;3;205;92;204;240;343;354;$NUMEROesimo;$LUOGOCP;Buonaseeera!
 MUS02.png;1;70;102;Coi testi di $COGNAME e $COGNAME@$GRUPPMUS @"$TITOLMUS"@dirige l'orchestra il maestro $COGNAME
 MUS03.png;3;61;68;150;143;38;193;$CAOS;$CAOS;$CAOS;$CAOS $CAOS;$CAOS $CAOS;$CAOS;$CAOS $CAOS $CAOS;$CAOS $CAOS;$CAOS;$CAOS $CAOS $CAOS $CAOS;$CAOS $CAOS;$CAOS
@@ -91,6 +91,9 @@ O01.png;2;53;55;350;278;Sei un mostro orrendo!;$VERSO;Muori bestia immonda, muor
 O02.png;2;365;128;96;133;I fantasmi!;$VERSO;Gli zombi!;$VERSO;Gli spettri!;$VERSO;I vampiri!;$VERSO;I marziani!;$VERSO
 O04.png;1;74;61;Non è colpa tua...;Non potevi salvarlo...;È finita ora...;L'incubo è finito;Hai vendicato $NAME
 O05.png;1;122;103;Ma chi è il vero mostro?;I veri mostri SIAMO NOI;Il vero tesoro è L'AMICIZIA
+PRE00.png;2;329;104;112;341;Buonasera;gen.$COGNAME;Signore e Signori@buonasera;ten.$COGNAME;Buonasssera;presenta@$NAME $COGNAME;Vediamo il tempo@per il weekend; ;Buongiorno!!!; 
+PRE01.png;1;61;368;In serata@$METEO sparsi;Il tempo per domani@$NUMERO $MESE;Ecco il tempo@su tutta la penisola;$METEO sul meridione@mentre al nord $METEO;A nord $METEO@mentre al sud $METEO;$METEO su@tutta la penisola;Mari mossi e molto mossi;Venti fino a@$NUMERO km/h
+PRE02.png;4;370;169;145;110;104;247;277;255;Le temperature@di domani;$LUOGOCP;$NUMERO °C;$NUMERO °C
 Q00.png;0
 Q01.png;1;200;183;Ep n.$NUMERO@Bingu va in campagna;Ep n.$NUMERO@Bingu salva il pianeta;Ep n.$NUMERO@Bingu pazzo;Ep n.$NUMERO@Bingu gioca a cricket;Ep n.$NUMERO@Bingu a $LUOGOCP;Ep n.$NUMERO@Bingu supereroe;Ep n.$NUMERO@Bingu supersonico;Ep n.$NUMERO@Bingu fa la dich. dei redditi;Ep n.$NUMERO@Bingu esplode;Ep n.$NUMERO@Bingu nello spazio;Ep n.$NUMERO@Bingu spara@$LUOGOCP risponde;Ep n.$NUMERO@Bingu pela $FOOD;Ep n.$NUMERO@Bingu gioca a palla;Ep n.$NUMERO@Bingu commenta Kant
 Q02.0.png;2;111;125;300;167;nuorg... nuorgon...;bopsulapsi;asgkanazewani;okhotooo;urialenea;guoabauob;mufurghiu;acadpeo;cipbrobzal;fungublast;turtigliaz;menubauos;kobrobangkoegh;giufbans;origiogao;bmububmlfumb;gieobobo;pingdfo;zkobkbfm;gogogo;auguaugu;igneosvuz;spaziobin;ghauruf;orghorsof;pantido;bglibul;asplru;ssooosfm;bbbubbusbn;itsudo;vudizby;anvufnv;eiegugu;sivivivivbibiib;clckcju
