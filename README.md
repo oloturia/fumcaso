@@ -14,17 +14,21 @@ Libraries needed:
 
 twitter_main.py: 
 - tweepy
+
   $ pip3 install tweepy
 
 mastodon_main.py:
 - Mastodon.py
+
   $ pip3 install Mastodon.py
   
 telegram_main.py:
 - libssl
+
   $ sudo apt-get install libssl-dev
 
 - python-telegram-bot 
+
   $ pip3 install python-telegram-bot
 
 Configuration file is a JSON with this tree:
