@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Random Strip</title>
+<script>
+function reloadImage() {
+	var now = new Date();
+	var el = document.getElementById("image");
+	el.src = "file:///var/tmp/image.png?t=" + now;
+	setTimeout("reloadImage()",10000);
+}
+setTimeout("reloadImage()",10000);
+</script>
+</head>
+<body>
+<img id="image" src="file:///var/tmp/image.png" width=1500>
+</body>
+</html>

@@ -10,5 +10,4 @@ oloturia_credentials.secret
 history/*
 bin/*
 temp/*
-show.html
 *.pyc
