@@ -205,11 +205,11 @@ if __name__ == "__main__":
 
 
 	parser = argparse.ArgumentParser()
-	parser.add_argument('-s','--story',metavar='story',default='',nargs=4,help='name of the images')
+	parser.add_argument('-s','--story',metavar='story',default='',nargs=4,help='story = image file name')
 	parser.add_argument('-a','--a4',default=False,action='store_true',help='print on an A4 in PDF, needs -o output, disables -x xsize')
 	parser.add_argument('-m','--multiple',metavar='multiple',default=[1],nargs=1,type=int,help='multiple output (int >0), if no output -o specified, it just tests the stories')
-	parser.add_argument('-x','--xsize',metavar='xsize',default=0,type=int,nargs=1,help='resize image x')
-	parser.add_argument('-p','--profile',metavar='profile',default="",type=str,nargs=1,help='profile')
+	parser.add_argument('-x','--xsize',metavar='xsize',default=0,type=int,nargs=1,help='output image width')
+	parser.add_argument('-p','--profile',metavar='profile',default="",type=str,nargs=1,help='select a profile registered in config.json, if it doesn\'t exist it will use the default one')
 	parser.add_argument('-o','--output',metavar='output',const=True,default=False,nargs="?",help='output file, if name not specified, default path will be used')
 	args = parser.parse_args()
 	
