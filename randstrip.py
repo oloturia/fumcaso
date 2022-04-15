@@ -167,7 +167,7 @@ def readConfig(profile=False,platform=False):
 		checkProfile = config[profile]
 	except KeyError:
 		print("Profile "+profile+" not found")
-		quit()
+		profile = config["defaultProfile"]
 	saveLocation = checkLocal(config[profile]["saveLocation"])
 	imagesLocation = checkLocal(config[profile]["imagesLocation"])
 	csvLocation = checkLocal(config[profile]["csvLocation"])
