@@ -78,7 +78,7 @@ Q02.0.png;2;111;125;300;167;nuorg... nuorgon...;bopsulapsi;asgkanazewani;okhotoo
 Q02.1.png;0
 Q03.png;0
 Q04ENG.png;2;290;226;247;349;$COGNAME;$NAME $COGNAME
-Q05.png;1;190;89;Detective!@Body of $TITOLO $COGNAME@was stabbed@$NUMERO times!;Detective!@We don't have any clues!;Detective!@the waitress heard a@shot around@ten o'clock;Detective!@we suspect of@$SOSPETTO;Detective!@someone poisoned@$FOOD!;Detective!@The assassin used@$WEAPON
+Q05.png;1;190;89;Detective!@Body of $TITOLO $COGNAME@was stabbed@$NUMERO times!;Detective!@We don't have any clues!;Detective!@the waitress heard a@shot around@ten o'clock;Detective!@we have suspects about@$SOSPETTO;Detective!@someone poisoned@$FOOD!;Detective!@The assassin used@$WEAPON
 Q06.png;2;150;80;260;188;$SOSPETTO@is the culprit;$SURPRISE;The weapon@is a $WEAPON;$SURPRISE;Let's ask $SOSPETTO@about it;$SURPRISE;I give up!;$SURPRISE;Clearly a case of suicide!;$SURPRISE
 Q07.png;0
 Q08ENG.png;1;220;257;Chef $COGNAME
