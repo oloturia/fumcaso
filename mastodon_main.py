@@ -8,13 +8,8 @@ fileDir = os.path.dirname(os.path.abspath(__file__))
 fileDir = fileDir +"/"
 API_URL = "https://botsin.space"
 	
-if __name__ == "__main__":
-	if len(sys.argv) == 2:
-		altProfile = [sys.argv[1]]
-	else:
-		altProfile = False
+def publishStrip(altProfile=False,user=False):
 	config = readConfig(platform="mastodon",profile=altProfile)
-	
 	with open(config["token"]) as f:
 		createapp = f.readlines()
 	createapp = [x.strip() for x in createapp]
@@ -26,7 +21,10 @@ if __name__ == "__main__":
 		for i in range(1,100):
 			try:
 				new_strip = mastodon.media_post(config["saveLocation"]+config["filename"],"image/png")
-				mastodon.status_post(config["text"],media_ids=new_strip)
+				if not(user):
+					mastodon.status_post(config["text"],media_ids=new_strip)
+				else:
+					mastodon.status_post(user+" "+config["text"],media_ids=new_strip,visibility="direct")
 				published = True
 			except:
 				continue
@@ -36,3 +34,9 @@ if __name__ == "__main__":
 	else:
 		print("error creating image\n")
 		print(status)
+
+if __name__ == "__main__":
+	if len(sys.argv) == 2:
+		publishStrip([sys.argv[1]])
+	else:
+		publishStrip()

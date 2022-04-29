@@ -1,8 +1,6 @@
 {
 	"defaultProfile": "oloturia",
-	"defaultMastodonToken": "./mastodon_token",
-	"defaultTelegramToken": "./telegram_token",
-	"defaultTwitterToken": "./twitter_token",	
+	"mastodonListenerToken": "./mastodon_listener_token",
 	
 	"oloturia": {
 		"saveLocation": "/var/tmp",

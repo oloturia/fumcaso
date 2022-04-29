@@ -11,3 +11,5 @@ history/*
 bin/*
 temp/*
 *.pyc
+secret
+mastodon_listener_token
