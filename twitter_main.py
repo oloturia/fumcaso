@@ -27,9 +27,11 @@ if __name__ == "__main__":
 				api.verify_credentials()
 				api.update_with_media(config["saveLocation"]+config["filename"],config["text"])
 				published = True
+				os.remove(config["saveLocation"]+config["filename"]
 			except:
 				continue
 			break
+		
 		if not(published):
 			print("Auth error")
 	else:

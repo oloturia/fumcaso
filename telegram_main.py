@@ -15,6 +15,7 @@ def newStrip(bot, update, args):
 			strip_file=open(config["saveLocation"]+config["filename"],"rb")
 			bot.send_photo(chat_id=update.message.chat_id,photo=strip_file)
 			strip_file.close()
+			os.remove(config["saveLocation"]+config["filename"])
 		except Exception as err:
 			print(err)
 	else:

@@ -25,6 +25,7 @@ def publishStrip(altProfile=False,user=False):
 					mastodon.status_post(config["text"],media_ids=new_strip)
 				else:
 					mastodon.status_post(user+" "+config["text"],media_ids=new_strip,visibility="direct")
+				os.remove(config["saveLocation"]+config["filename"]
 				published = True
 			except:
 				continue
