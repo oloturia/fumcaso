@@ -31,11 +31,11 @@ telegram_main.py:
 
   $ pip3 install python-telegram-bot
 
-Configuration file is a JSON with this tree:
-{
-	defaultProfile: 		name of the profile used if not specified
+Configuration is JSON file. This is an example:
 
-	"profile name" :{		name of the profile
+    {
+        defaultProfile: 		name of the profile used if not specified
+        "profile name" :{		name of the profile
 		saveLocation: 		location for temporary files
 		filename:		default filename used by function createStrip, if not specified (not used in any of the scripts, at the moment)
 		imagesLocation:		folder where the different panels are stored
@@ -53,8 +53,8 @@ Configuration file is a JSON with this tree:
 			"filename"	filename used for the temporary image
 			"text"		text for the post on Twitter and Mastodon (optional)
 		}
-	}
-}
+        }
+    }
 
 There are four different csv files:
 
