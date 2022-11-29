@@ -6,6 +6,7 @@ from mastodon_main import publishStrip
 import json
 import os
 import sys
+import time
 
 fileDir = os.path.dirname(os.path.abspath(__file__))
 fileDir = fileDir + "/"
@@ -39,4 +40,8 @@ if __name__ == "__main__":
 	TOKEN = createapp[0]
 	mastodon = Mastodon(access_token = TOKEN,api_base_url = API_URL)
 	listener = stripListener()
-	mastodon.stream_user(listener)
+	while True:
+		try:
+			mastodon.stream_user(listener)
+		except:
+			time.sleep(10)
