@@ -123,7 +123,10 @@ def writeStrip(story,config):
 					else:
 						prevObj = obj
 						objImg = Image.open(config["imagesLocation"]+"/"+obj[0])
-					vign.paste(objImg,(int(obj[1]),int(obj[2])))
+					try:
+						vign.paste(objImg,(int(obj[1]),int(obj[2])),objImg)
+					except ValueError:
+						vign.paste(objImg,(int(obj[1]),int(obj[2])))
 			strip.append(vign)
 			
 		except FileNotFoundError:
