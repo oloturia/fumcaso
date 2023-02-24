@@ -44,6 +44,7 @@ Configuration is JSON file. This is an example:
 		csvSpeech:		name of file containing speech
 		csvSubs:		name of file containing substitutions in text
 		csvObj:			name of file containing information about objects location
+		csvAltText:		name of file containing alternate text
 		xSize:			width of the final image
 		ySize:			height of the final image
 		panelLength:		length of a single panel (roughly panelLength * number-of-panels should be = xSize)

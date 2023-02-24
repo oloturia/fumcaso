@@ -15,12 +15,12 @@ def publishStrip(altProfile=False,user=False):
 	createapp = [x.strip() for x in createapp]
 	TOKEN = createapp[0]
 	mastodon = Mastodon(access_token = TOKEN,api_base_url = API_URL)
-	status = createStrip(config)
+	status,altText = createStrip(config,altTextRequested=True)
 	if status == 0:
 		published = False
 		for i in range(1,100):
 			try:
-				new_strip = mastodon.media_post(config["saveLocation"]+config["filename"],"image/png")
+				new_strip = mastodon.media_post(config["saveLocation"]+config["filename"],"image/png",description=altText)
 				if not(user):
 					mastodon.status_post(config["text"],media_ids=new_strip)
 				else:

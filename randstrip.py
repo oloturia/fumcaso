@@ -84,37 +84,54 @@ def addThing(indVign,config):
 				objects.append( (row[random.randint(3,len(row)-1)],row[1],row[2] ))
 	return objects
 
+def fetchAltText(config,csvFile,indVign):
+	"""Function to fetch the correct alt text for the image"""
+	if os.path.exists(config["csvLocation"]+"/"+config["csvAltText"]):
+		with open(csvFile) as alt_text_csv:
+			csvReader = csv.reader(alt_text_csv,delimiter=";")
+			for row in csvReader:
+				if row[0] == indVign:
+					return row[1]
+	else:
+		return ""
+
 def writeStrip(story,config):
 	"""This function creates the strip returning an image object that could be saved or viewed. It takes an array with filenames as parameter
 	The first image is always 000, then appends to strip the files, then decorates it fetching text and adding objects. If the object is an R, then
-	repeats the last object."""
+	repeats the last object. It also generates alt text if setted correctly in the config file."""
 	strip = []
+	alt_text = ""
 	for indVign in story:
 		try:
 			vign = Image.open(config["imagesLocation"]+"/"+indVign).convert('RGBA')
 			addtext = ImageDraw.Draw(vign)
 			fnt = ImageFont.truetype(config["font"],config["fontSize"])
-			textVign = fetchText(indVign,config)
-			
-			if textVign!=0:
+			text_vign_ind = fetchText(indVign,config)
+			ind_text_vign = 1
+			alt_text += fetchAltText(config,config["csvLocation"]+"/"+config["csvAltText"],indVign)+"\n"
+			if text_vign_ind!=0:
 				try:
-					for x in range(len(textVign[0])):
-						text_vign = textVign[1][x]
+					for x in range(len(text_vign_ind[0])):
+						text_vign = text_vign_ind[1][x]
 						try:
 							while text_vign.find('$') != -1:
 								text_vign = replaceText(text_vign,config)
 						except AttributeError as err:
 							print("Problem parsing:")
-							print(textVign)
+							print(text_vign_ind)
 							print(err)
 							quit()
+							
+						while '$'+str(ind_text_vign) in alt_text:
+							alt_text = alt_text.replace('$'+str(ind_text_vign),text_vign.replace('@'," "))
+						ind_text_vign += 1						
 						text_vign = text_vign.replace('@','\n')
-						addtext.multiline_text((int(textVign[0][x][0]),int(textVign[0][x][1])),text_vign,fill="#000000",font=fnt,align="center")
+						addtext.multiline_text((int(text_vign_ind[0][x][0]),int(text_vign_ind[0][x][1])),text_vign,fill="#000000",font=fnt,align="center")
+						text_vign = ""
 				except TypeError:
 					print("Problem finding text for:")
 					print(indVign)
 					quit()
-					
 			obj_list = addThing(indVign,config)
 			if obj_list!=0:
 				for obj in obj_list:
@@ -127,8 +144,9 @@ def writeStrip(story,config):
 						vign.paste(objImg,(int(obj[1]),int(obj[2])),objImg)
 					except ValueError:
 						vign.paste(objImg,(int(obj[1]),int(obj[2])))
+				if "$0" in alt_text:
+					alt_text = alt_text.replace("$0",fetchAltText(config,config["csvLocation"]+"/"+config["csvAltText"],obj_list[0][0])+" ")
 			strip.append(vign)
-			
 		except FileNotFoundError:
 			pass
 	image = Image.new('RGBA',(config["xSize"],config["ySize"]))
@@ -137,20 +155,23 @@ def writeStrip(story,config):
 		image.paste(vign,(xshift,0))
 		xshift += config["panelLength"]
 	ImageDraw.Draw(image).rectangle([0,0,config["xSize"]-1,config["ySize"]-1], fill=None, outline="black", width=1)
-	return image
+	
+	return image,alt_text
 
-def createStrip(config,specialPlatform=""):
-	"""Create strip and save it
+def createStrip(config,specialPlatform="",altTextRequested=False):
+	"""Create strip and save it, if altTextRequested is True then returns also the alt text
 	createStrip(str path/filename)"""
-
 	try:
 		story = fetchVign(config)
-		finalStrip = writeStrip(story,config)
+		finalStrip,altText = writeStrip(story,config)
 		if specialPlatform == "android":
 			return finalStrip
 		else:
 			finalStrip.save(config["saveLocation"]+config["filename"])
-			return 0
+			if altTextRequested:
+				return 0,altText
+			else:
+				return 0
 	except Exception as err:
 		return err
 
@@ -178,6 +199,7 @@ def readConfig(profile=False,platform=False):
 	csvSpeech = config[profile]["csvSpeech"]
 	csvSubs = config[profile]["csvSubs"]
 	csvObj = config[profile]["csvObj"]
+	csvAltText = config[profile]["csvAltText"]
 	font = checkLocal(config[profile]["font"])
 	fontSize = int((config[profile]["fontSize"]))
 	xSize = config[profile]["xSize"]
@@ -191,9 +213,9 @@ def readConfig(profile=False,platform=False):
 		except KeyError:
 			text = False
 		
-		return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"fontSize":fontSize,"font":font,"token":token,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj,"text":text}
+		return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"fontSize":fontSize,"font":font,"token":token,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj,"csvAltText":csvAltText,"text":text}
 	filename = config[profile]["filename"]
-	return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"fontSize":fontSize,"font":font,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj}
+	return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"fontSize":fontSize,"font":font,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj,"csvAltText":csvAltText}
 		
 def checkLocal(directory):
 	"""Checks if it's a relative or absolute path"""
@@ -235,7 +257,7 @@ if __name__ == "__main__":
 			story = []					#Story specified
 			for x in args.story:
 				story.append(x)
-		finalStrip = writeStrip(story,config)
+		finalStrip,alt_text = writeStrip(story,config)
 		
 		if args.a4:						#Prints a PDF
 			finalStrip = finalStrip.resize((2249,516))
@@ -248,11 +270,12 @@ if __name__ == "__main__":
 			if args.multiple[0] == 1:	#No multiple selected
 				if args.output == False:
 					finalStrip.show()
+					print(alt_text)
 				else:
 					finalStrip.save(fileName)
 			else:						#Multiple selected
 				if args.output == False:
-					print(story)
+					print(story,alt_text)
 				else:
 					finalStrip.save(fileName + str(ist).zfill(3) + ".png")
 	

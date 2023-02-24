@@ -1,0 +1,151 @@
+A00.png;un tizio dice: «$1»
+A01.png;un tizio arrabbiato dice: «$1»
+A02.png;un tizio dice con fare risoluto: «$1»
+A03.png;un tizio ha in mano un pacco e dice: «$1»
+A04.png;didascalia: poco dopo
+A05.png;il tizio rimane in silenzio
+A06.png;il tizio apre il pacco
+A07.png;c'è cazzopollo e il tizio esclama: «$1»
+A08.png;il tizio arrabbiato esclama: «$1»
+A09.png;il tizio con fare risoluto dice: «$1»
+A10.png;esplode tutto
+A11.png;il tizio ha estratto dal pacco $0
+A12.png;il tizio viene inondato dallo spruetz di cazzopollo
+A13.png;c'è un tizio su un'isola deserta
+A14.png;il tizio dice: «$1»
+A15.png;inizia a piovere
+A16.png;il tizio sta in silenzio sull'isola
+A17.png;il tizio sta in silenzio sull'isola
+A18.png;il tizio sta in silenzio sull'isola
+A19.png;un tizio osserva il tramonto e pensa: «$1»
+A20.png;didascalia: molti anni dopo...
+A21.png;il tizio pensa
+A22.png;il tizio pensa: «$1»
+A23.png;il tizio suda e pensa: «$1»
+A24.png;il tizio allarmato pensa: «$1»
+A25.png;un tizio legge un fumetto e dice: «$1»
+A26.png;il tizio con fare risoluto pensa: «$1»
+A27.png;il tizio soddisfatto pensa: «$1»
+A28.png;un tizio è su una astronave e dice: «$1»
+A29.png;il tizio pianta una bandiera che rappresenta $0 su un pianeta e dice: «$1»
+A30.png;il tizio è nel matrix e dice: «$1»
+A31.png;l'allarme dice: «$1», il tizio urla «$2»
+A32.png;l'astronave segue il cartello «$1» mentre una voce fuori campo commenta: «$2»
+ART00.png;un tizio va alla galleria d'arte e pensa: «$1»
+ART01.png;il tizio guarda un'opera d'arte e pensa: «$1»
+ART02.png;il tizio guarda l'opera con fare pensoso
+ART03.png;il tizio esclama: «$1»
+B00.0.png;un tizio dice: «$1», un altro risponde: «$2»
+B00.1.png;un tizio sbuca e dice: «$1», un altro risponde: «$2»
+B00.2.png;un tizio dice: «$1», un altro risponde: «$2»
+B00.3.png;una guardia mostra il distintivo e dice: «$1» e un tizio risponde «$2»
+B01.png;il primo è arrabbiato e dice: «$1», il secondo calmo risponde: «$2»
+B02.png;il primo risponde nervosamente: «$1», il secondo furioso dice: «$2»
+B03.png;il primo porge un pacco dicendo: «$1», il secondo risponde: «$2»
+B04.png;didascalia: poco dopo
+B05.png;il primo tizio perplesso dice: «$1», il secondo nervosamente esclama: «$2»
+B06.png;il primo tizio perplesso dice: «$1», il secondo scocciato se ne va dicendo: «$2»
+B07.png;il secondo tizio ringrazia dicendo: «$1»
+B08.png;arriva cazzopollo ed entrambi dicono: «$1»
+B09.0.png;il primo tizio spara al secondo
+B09.1.png;il secondo tizio spara al primo
+B10.png;il secondo tizio mostra le natiche al primo
+B11.png;il secondo tizio vomita mentre il primo esclama: «$1»
+B12.png;il tizio rimasto urla: «$1»
+B13.png;dentro il pacco c'era $0 il tizio è soddisfatto
+B14.png;dentro il pacco c'era $0 il tizio è insoddisfatto
+B15.png;i due ridono
+B16.png;cazzopollo ricopre i due con abbondante spruetz
+B20.png;un tizio guarda la tv e dice: «$1» la TV fa $2
+B21.0.png;la TV fa $2
+B22.png;il tizio è innervosito e dice: «$1»
+B24.png;didascalia: nel frattempo
+B25.0.png;il tizio ridendo dice: «$1»
+B26.0.png;il tizio cambia canale
+B21.1.png;la TV fa: «$1»
+B25.1.png;il tizio ridendo dice: «$1»
+B26.1.png;il tizio cambia canale
+B21.2.png;la TV fa: «$1»
+B23.png;il tizio lancia il telecomando alla TV
+B27.png;il tizio spegne la TV e dice: «$1»
+B28.png;al ristorante un tizio ordina: «$1» e il cameriere: «$2»
+B29.png;il cameriere propone: «$1» e il cliente risponde: «$2»
+B30.png;il cliente assaggia il vino
+B31.png;il cliente soddisfatto dice: «$1» e il cameriere ringrazia: «$2»
+B32.png;il cliente vomita: «$1» e il cameriere si scusa: «$2»
+C01.png;Capitan Pelato riassunto: «$1»
+C02.png;Capitan Pelato corre
+C03.png;Capitan Pelato corre
+C04.png;Capitan Pelato prende fiato
+C05.png;Capitan Pelato corre ed esclama: «$1»
+C06.png;Capitan Pelato corre
+MUS00.png;Lo sponsor $1 presenta
+MUS01.png;Il $1 festival di $2 il presentatore dice: «$3»
+MUS02.png;La presentatrice dice: «$1»
+MUS03.png;La band canta «$1 $2 $3»
+O00.0.png;Frontespizio di Dylan Bugo in $1 $2
+O00.1.png;Frontespizio di Nathan Nuca in $1 $2
+O00.2.png;Frontespizio di Quando meno te l'aspetti Cazzopollo
+O00.3.png;Frontespizio di Juliana l'investigatrice matta in $1 $2
+O01.png;Dylan Bugo spara a un mostro urlando: «$1»
+O02.png;Dylan Bugo è minacciato da un mostro che urla: «$2» e Dylan risponde: «$1»
+O04.png;Dylan Bugo è consolato dall'assistente che dice: «$1» davanti a loro ceneri fumanti
+O05.png;Dylan Bugo dice: «$1»
+PRE00.png;Previsioni del tempo
+PRE01.png;Il tizio delle previsioni dice: «$1» mentre mostra la cartina d'Italia
+PRE02.png;Il tizio delle previsioni dice: «$1» mentre mostra le massime ($3) e le minime ($4) di $2
+Q00.png;Inizia Bingu; episodio $1 dal titolo $2
+Q01.png;Ci sono Bingu e Binga
+Q02.0.png;Bingu e Binga dicono «$1» e «$2»
+Q02.1.png;Bingu e Binga stanno in silenzio
+Q03.png;Bingu soffre di meteorismo
+Q04.png;Inizia il programma L'ispettore $1 con $2
+Q05.png;Un poliziotto dice: «$1»
+Q06.png;L'ispettore dice: «$1» e il poliziotto esclama: «$2»
+Q07.png;Cambio canale
+Q08.png;Trasmissione in cucina con: $1
+Q09.png;Il cuoco dice: «$1»
+Q10.png;Il cuoco mescola e dice: «$1»
+Q11.png;Il cuoco mostra il preparato e dice: «$1»
+Q12.png;Il cuoco ha messo il tutto in forno e dice: «$1»
+Q13.png;Il cuoco assaggia e dice: «$1»
+Q14.png;Il cuoco vomita
+Q15.png;Il cuoco si lecca i baffi e dice: «$1»
+Q16.png;I due litigano uno dice «$1» e l'altro risponde «$2»
+Q17.png;Il presentatore dice: «$1»
+Q18.png;I due si azzuffano dicendo: «$1» e il presentatore esclama: «$2»
+Q19.png;Uno dei due se ne va dicendo: «$1»
+Q20.png;La pubblicità dice: «$1»
+Q21.png;La pubblicità dice: «$1» mentre mostra un $0
+Q22.png;La pubblicità dice: «$1»
+Q23.png;La pubblicità dice: «$1»
+Q24.png;Inizia Super Quork
+Q25.png;C'è un animale in un bosco e la voce dice: «$1»
+Q26.png;La voce dice: «$1»
+Q27.png;La voce dice: «$1»
+Q28.png;La voce dice: «$1»
+Q29.png;Inizia Super Quork
+Q30.png;La voce dice: «$1»
+SET00.png;Un tizio sulla spiaggia sotto l'ombrellone dice: «$1»
+SET01.png;Il tizio dice: «$1»
+SET02.png;Il tizio pensa
+SET03.png;Il tizio scrive: $1
+SET04.png;Il tizio pensa: «$1»
+U00.png;Degli ufo attaccano la città e un tizio esclama: «$1»
+OBJ00.png;un biglietto 'puppa'
+OBJ01.png;una banana
+OBJ02.png;un cactus
+OBJ03.png;una bomba
+OBJ04.png;una dentiera
+OBJ05.png;un dildo
+OBJ06.png;un coso
+OBJ07.png;una papera
+OBJ08.png;una banconota da 10€
+OBJ09.png;una scatola
+OBJ10.png;una trombetta
+OBJ11.png;un libro di B.Vespa
+OBJ12.png;un fiore
+OBJ13.png;un razzo
+OBJ14.png;una torta
+OBJ15.png;una foto di natiche
+OBJ16.png;un CD di Bugo
