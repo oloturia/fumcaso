@@ -30,7 +30,7 @@ A28.png;un tizio è su una astronave e dice: «$1»
 A29.png;il tizio pianta una bandiera che rappresenta $0 su un pianeta e dice: «$1»
 A30.png;il tizio è nel matrix e dice: «$1»
 A31.png;l'allarme dice: «$1», il tizio urla «$2»
-A32.png;l'astronave segue il cartello «$1» mentre una voce fuori campo commenta: «$2»
+A32.png;l'astronave segue il cartello «$2» mentre una voce fuori campo commenta: «$1»
 ART00.png;un tizio va alla galleria d'arte e pensa: «$1»
 ART01.png;il tizio guarda un'opera d'arte e pensa: «$1»
 ART02.png;il tizio guarda l'opera con fare pensoso
@@ -83,10 +83,10 @@ MUS00.png;Lo sponsor $1 presenta
 MUS01.png;Il $1 festival di $2 il presentatore dice: «$3»
 MUS02.png;La presentatrice dice: «$1»
 MUS03.png;La band canta «$1 $2 $3»
-O00.0.png;Frontespizio di Dylan Bugo in $1 $2
-O00.1.png;Frontespizio di Nathan Nuca in $1 $2
+O00.0.png;Frontespizio di Dylan Bugo in «$1» $2
+O00.1.png;Frontespizio di Nathan Nuca in «$1» $2
 O00.2.png;Frontespizio di Quando meno te l'aspetti Cazzopollo
-O00.3.png;Frontespizio di Juliana l'investigatrice matta in $1 $2
+O00.3.png;Frontespizio di Juliana l'investigatrice matta in «$1» $2
 O01.png;Dylan Bugo spara a un mostro urlando: «$1»
 O02.png;Dylan Bugo è minacciato da un mostro che urla: «$2» e Dylan risponde: «$1»
 O04.png;Dylan Bugo è consolato dall'assistente che dice: «$1» davanti a loro ceneri fumanti
