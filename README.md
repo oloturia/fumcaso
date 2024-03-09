@@ -47,8 +47,11 @@ Configuration is JSON file. This is an example:
 		csvAltText:		name of file containing alternate text
 		xSize:			width of the final image
 		ySize:			height of the final image
-		panelLength:		length of a single panel (roughly panelLength * number-of-panels should be = xSize)
+		panelLength:		length of a single panel (roughly panelLength * number-of-panels / panelsPerRow should be = xSize)
+  		panelHeight:		height of a single panel (roughly panelHeight * number-of-panels / panelsPerRow should be = ySize)
+    		panelsPerRow:		number of panels per single row
 		font:			font used
+  		fontSize:		size of font
 		"application":{ 	special instruction for applications, like "twitter", "mastodon", "telegram"
 			"token"		token location
 			"filename"	filename used for the temporary image
