@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3.6
 from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
@@ -149,13 +149,20 @@ def writeStrip(story,config):
 			strip.append(vign)
 		except FileNotFoundError:
 			pass
-	image = Image.new('RGBA',(config["xSize"],config["ySize"]))
-	xshift=0
-	for vign in strip:
-		image.paste(vign,(xshift,0))
-		xshift += config["panelLength"]
-	ImageDraw.Draw(image).rectangle([0,0,config["xSize"]-1,config["ySize"]-1], fill=None, outline="black", width=1)
 	
+	image = Image.new('RGBA',(config["xSize"],config["ySize"]))
+	xshift = yshift = 0
+	pprow = config["panelsPerRow"]
+	for vign in strip:
+		image.paste(vign,(xshift,yshift))
+		pprow -= 1
+		if pprow > 0:
+			xshift += config["panelLength"]
+		else:
+			xshift = 0
+			yshift += config["panelHeight"]
+			pprow = config["panelsPerRow"]
+	ImageDraw.Draw(image).rectangle([0,0,config["xSize"]-1,config["ySize"]-1], fill=None, outline="black", width=1)
 	return image,alt_text
 
 def createStrip(config,specialPlatform="",altTextRequested=False):
@@ -205,6 +212,8 @@ def readConfig(profile=False,platform=False):
 	xSize = config[profile]["xSize"]
 	ySize = config[profile]["ySize"]
 	panelLength = config[profile]["panelLength"]
+	panelHeight = config[profile]["panelHeight"]
+	pprow = config[profile]["panelsPerRow"]
 	if platform:
 		token = checkLocal(config[profile][platform]["token"])
 		filename = checkLocal(config[profile][platform]["filename"])
@@ -213,9 +222,9 @@ def readConfig(profile=False,platform=False):
 		except KeyError:
 			text = False
 		
-		return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"fontSize":fontSize,"font":font,"token":token,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj,"csvAltText":csvAltText,"text":text}
+		return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"fontSize":fontSize,"font":font,"token":token,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"panelHeight":panelHeight,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj,"csvAltText":csvAltText,"text":text,"panelsPerRow":pprow}
 	filename = config[profile]["filename"]
-	return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"fontSize":fontSize,"font":font,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj,"csvAltText":csvAltText}
+	return {"saveLocation":saveLocation,"imagesLocation":imagesLocation,"csvLocation":csvLocation,"fontSize":fontSize,"font":font,"filename":filename,"xSize":xSize,"ySize":ySize,"panelLength":panelLength,"panelHeight":panelHeight,"csvTree":csvTree,"csvSpeech":csvSpeech,"csvSubs":csvSubs,"csvObj":csvObj,"csvAltText":csvAltText,"panelsPerRow":pprow}
 		
 def checkLocal(directory):
 	"""Checks if it's a relative or absolute path"""
@@ -234,8 +243,10 @@ if __name__ == "__main__":
 	parser.add_argument('-a','--a4',default=False,action='store_true',help='print on an A4 in PDF, needs -o output, disables -x xsize')
 	parser.add_argument('-m','--multiple',metavar='multiple',default=[1],nargs=1,type=int,help='multiple output (int >0), if no output -o specified, it just tests the stories')
 	parser.add_argument('-x','--xsize',metavar='xsize',default=0,type=int,nargs=1,help='output image width')
+	parser.add_argument('-y','--ysize',metavar='ysize',default=0,type=int,nargs=1,help='output image height')
 	parser.add_argument('-p','--profile',metavar='profile',default="",type=str,nargs=1,help='select a profile registered in config.json, if it doesn\'t exist it will use the default one')
 	parser.add_argument('-o','--output',metavar='output',const=True,default=False,nargs="?",help='output file, if name not specified, default path will be used')
+	parser.add_argument('-r','--pprows',metavar='panelsPerRow',default=4,type=int,nargs=1,help='number of panels per row, default is 4')
 	args = parser.parse_args()
 	
 	if args.multiple[0] <= 0:			#Wrong multiple choice
