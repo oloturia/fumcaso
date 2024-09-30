@@ -122,8 +122,8 @@ Q23.png;1;164;326;Elimina fino al $NUMERO @ percento dei batteri;L'acqua $COGNAM
 Q24.png;0
 Q25.png;1;94;88;Il $DOCUMANIM vive nella@ foresta di $LUOGOCP e@si nutre di $ANIMAL selvatici;Il $DOCUMANIM è un animale@socievole e intelligente;Il $DOCUMANIM vive@ in branchi di  $NUMERO esemplari;Il $DOCUMANIM fa parte della@stessa famiglia dei $ANIMAL;Ecco vediamo un raro@esemplare di $DOCUMANIM;Del raro $DOCUMANIM sono@rimasti solo $NUMERO esemplari
 Q26.png;1;106;90;Deve il suo nome a@ $COGNAME che per primo lo classificò;Si riproduce nel mese di $MESE @e depone $NUMERO uova;È viviparo;È un piccolo mammifero originario@del $LUOGOCP
-Q27.png;1;71;69;Altrimenti conosciuto come il@$DOCUMANIM del $COGNAME;A volte viene confuso con il@ $DOCUMANIM;Il suo verso inconfondibile@eccheggia nelle forseste di $LUOGOCP
-Q28.png;1;71;69;È altrimenti conosciuto come il@$DOCUMANIM del $COGNAME;A volte viene confuso con il@ $DOCUMANIM;Il suo verso inconfondibile@eccheggia nelle foreste di $LUOGOCP
+Q27.png;1;71;69;Altrimenti conosciuto come il@$DOCUMANIM del $COGNAME;A volte viene confuso con il@ $DOCUMANIM;Il suo verso inconfondibile@echeggia nelle forseste di $LUOGOCP
+Q28.png;1;71;69;È altrimenti conosciuto come il@$DOCUMANIM del $COGNAME;A volte viene confuso con il@ $DOCUMANIM;Il suo verso inconfondibile@echeggia nelle foreste di $LUOGOCP
 Q29.png;0
 Q30.png;1;106;90;Deve il suo nome a@ $COGNAME che per primo lo classificò;Si riproduce nel mese di $MESE @e depone $NUMERO uova;È viviparo;È un piccolo mammifero originario@del $LUOGOCP
 SET00.png;1;223;143;Proviamo con@ $ENIGMO;Risolviamo@ $ENIGMO;C'è $ENIGMO @ancora da finire;Mi manca una definizione@per finire $ENIGMO ;Non riesco a risolvere@ $ENIGMO
