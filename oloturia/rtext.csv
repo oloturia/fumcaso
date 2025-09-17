@@ -100,7 +100,7 @@ Q02.0.png;2;111;125;300;167;nuorg... nuorgon...;bopsulapsi;asgkanazewani;okhotoo
 Q02.1.png;0
 Q03.png;0
 Q04.png;2;290;226;247;349;$COGNAME;$NAME $COGNAME
-Q05.png;1;190;89;Ispettore!@Il corpo del $TITOLO $COGNAME@è stato pugnalato@$NUMERO volte!;Ispettore!@Questo arzigogolo pare@irrisolvibile! Tutti@hanno u alibi!;Ispettore!@brancoliamo nel buio!;Ispettore!@la cameriera ha sentito un@rumore sospetto attorno alle@dieci;Ispettore!@tutti i sospetti ricadono su@$SOSPETTO;Ispettore!@sospettiamo che@ abbiano avveleato@$FOOD!;Ispettore!@ci sono tracce di $TRACCIA @e $TRACCIA;Ispettore!@L'assassino ha usato@$WEAPON
+Q05.png;1;190;89;Ispettore!@Il corpo del $TITOLO $COGNAME@è stato pugnalato@$NUMERO volte!;Ispettore!@Questo arzigogolo pare@irrisolvibile! Tutti@hanno un alibi!;Ispettore!@brancoliamo nel buio!;Ispettore!@la cameriera ha sentito un@rumore sospetto attorno alle@dieci;Ispettore!@tutti i sospetti ricadono su@$SOSPETTO;Ispettore!@sospettiamo che@ abbiano avveleato@$FOOD!;Ispettore!@ci sono tracce di $TRACCIA @e $TRACCIA;Ispettore!@L'assassino ha usato@$WEAPON
 Q06.png;2;110;60;210;180;Ho capito, la colpa è de@$SOSPETTO;$SURPRISE;Ci sono!@L'arma del delitto è@$WEAPON;$SURPRISE;Facciamo due domande a@$SOSPETTO;$SURPRISE;Mi arrendo non so@risolvere questo caso;$SURPRISE;Si tratta chiaramente di@SUICIDIO!;$SURPRISE;Dov'era $SOSPETTO@all'ora del delitto?;A $LUOGOCP;È stato $NAME;$SURPRISE;Controlliamo@gli ultimi accessi a@ $SOCIAL @de $SOSPETTO;$SURPRISE;Hanno rubato qualcosa?;$OBJPLU;Sospetto di@ $NAME $COGNAME;Santo cielo!@Ma è $SOSPETTO!;Vedo tracce di@ $WEAPON...;$SURPRISE
 Q07.png;0
 Q08.png;1;220;257;Chef $COGNAME
